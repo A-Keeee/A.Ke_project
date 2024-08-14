@@ -1,0 +1,10 @@
+[0.030s] Invoking command in '/home/ake/桌面/ros2_ws/build/learning_tf2_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/桌面/ros2_ws/build/learning_tf2_cpp -- -j2 -l2
+[0.288s] [31mCMake Error at CMakeLists.txt:2:
+[0.289s]   Parse error.  Expected a newline, got identifier with text
+[0.289s]   "cmake_minimum_required".
+[0.289s] 
+[0.289s] [0m
+[0.289s] -- Configuring incomplete, errors occurred!
+[0.289s] See also "/home/ake/桌面/ros2_ws/build/learning_tf2_cpp/CMakeFiles/CMakeOutput.log".
+[0.306s] gmake: *** [Makefile:226：cmake_check_build_system] 错误 1
+[0.306s] Invoked command in '/home/ake/桌面/ros2_ws/build/learning_tf2_cpp' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/桌面/ros2_ws/build/learning_tf2_cpp -- -j2 -l2

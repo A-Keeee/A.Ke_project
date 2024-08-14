@@ -1,0 +1,4 @@
+Invoking command in '/home/ake/桌面/ros2_ws/build/learning_tf2_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/桌面/ros2_ws/build/learning_tf2_cpp -- -j2 -l2
+Invoked command in '/home/ake/桌面/ros2_ws/build/learning_tf2_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/桌面/ros2_ws/build/learning_tf2_cpp -- -j2 -l2
+Invoking command in '/home/ake/桌面/ros2_ws/build/learning_tf2_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/桌面/ros2_ws/build/learning_tf2_cpp
+Invoked command in '/home/ake/桌面/ros2_ws/build/learning_tf2_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/桌面/ros2_ws/build/learning_tf2_cpp
