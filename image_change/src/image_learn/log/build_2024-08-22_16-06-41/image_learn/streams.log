@@ -1,0 +1,69 @@
+[0.054s] Invoking command in '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn
+[1.505s] -- The C compiler identification is GNU 11.4.0
+[2.098s] -- The CXX compiler identification is GNU 11.4.0
+[2.402s] -- Detecting C compiler ABI info
+[2.786s] -- Detecting C compiler ABI info - done
+[2.796s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.799s] -- Detecting C compile features
+[2.835s] -- Detecting C compile features - done
+[2.894s] -- Detecting CXX compiler ABI info
+[3.143s] -- Detecting CXX compiler ABI info - done
+[3.159s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.159s] -- Detecting CXX compile features
+[3.159s] -- Detecting CXX compile features - done
+[3.368s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.902s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.162s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[6.165s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.197s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.268s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.414s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.579s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.119s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.174s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.916s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.000s] -- Found FastRTPS: /opt/ros/humble/include  
+[8.081s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.239s] -- Looking for pthread.h
+[8.503s] -- Looking for pthread.h - found
+[8.503s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.716s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.718s] -- Found Threads: TRUE  
+[9.525s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[9.565s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.835s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.835s] -- Configured cppcheck include dirs: 
+[9.835s] -- Configured cppcheck exclude dirs and/or files: 
+[9.843s] -- Added test 'lint_cmake' to check CMake code style
+[9.860s] -- Added test 'uncrustify' to check C / C++ code style
+[9.861s] -- Configured uncrustify additional arguments: 
+[9.862s] -- Added test 'xmllint' to check XML markup files
+[9.917s] -- Configuring done
+[9.975s] -- Generating done
+[9.979s] -- Build files have been written to: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn
+[9.994s] Invoked command in '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn
+[9.995s] Invoking command in '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn -- -j2 -l2
+[10.103s] [ 50%] [32mBuilding CXX object CMakeFiles/image_change.dir/src/image_change.cpp.o[0m
+[17.755s] [100%] [32m[1mLinking CXX executable image_change[0m
+[19.474s] [100%] Built target image_change
+[19.495s] Invoked command in '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn -- -j2 -l2
+[19.570s] Invoking command in '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn
+[19.582s] -- Install configuration: ""
+[19.582s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/lib/image_learn/image_change
+[19.584s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/lib/image_learn/image_change" to ""
+[19.585s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/ament_index/resource_index/package_run_dependencies/image_learn
+[19.585s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/ament_index/resource_index/parent_prefix_path/image_learn
+[19.586s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/environment/ament_prefix_path.sh
+[19.586s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/environment/ament_prefix_path.dsv
+[19.586s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/environment/path.sh
+[19.586s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/environment/path.dsv
+[19.586s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/local_setup.bash
+[19.586s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/local_setup.sh
+[19.588s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/local_setup.zsh
+[19.588s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/local_setup.dsv
+[19.588s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/package.dsv
+[19.588s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/ament_index/resource_index/packages/image_learn
+[19.588s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/cmake/image_learnConfig.cmake
+[19.588s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/cmake/image_learnConfig-version.cmake
+[19.588s] -- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/package.xml
+[19.590s] Invoked command in '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn

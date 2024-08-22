@@ -1,0 +1,272 @@
+[0.000000] (-) TimerEvent: {}
+[0.000620] (image_learn) JobQueued: {'identifier': 'image_learn', 'dependencies': OrderedDict()}
+[0.000653] (image_learn) JobStarted: {'identifier': 'image_learn'}
+[0.053896] (image_learn) JobProgress: {'identifier': 'image_learn', 'progress': 'cmake'}
+[0.053967] (image_learn) Command: {'cmd': ['/usr/bin/cmake', '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn', '-DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn'], 'cwd': '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1105'), ('SYSTEMD_EXEC_PID', '1309'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5982'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20193'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1289,unix/ake-virtual-machine:/tmp/.ICE-unix/1289'), ('INVOCATION_ID', '99c6f9da11f1463e8be60ee73ddba915'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XDX6S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-12ccb412d7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099500] (-) TimerEvent: {}
+[0.200096] (-) TimerEvent: {}
+[0.301726] (-) TimerEvent: {}
+[0.402113] (-) TimerEvent: {}
+[0.502400] (-) TimerEvent: {}
+[0.602890] (-) TimerEvent: {}
+[0.704638] (-) TimerEvent: {}
+[0.805512] (-) TimerEvent: {}
+[0.906408] (-) TimerEvent: {}
+[1.006708] (-) TimerEvent: {}
+[1.110607] (-) TimerEvent: {}
+[1.211716] (-) TimerEvent: {}
+[1.312773] (-) TimerEvent: {}
+[1.414076] (-) TimerEvent: {}
+[1.505922] (image_learn) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.514268] (-) TimerEvent: {}
+[1.615297] (-) TimerEvent: {}
+[1.715778] (-) TimerEvent: {}
+[1.816784] (-) TimerEvent: {}
+[1.917400] (-) TimerEvent: {}
+[2.018478] (-) TimerEvent: {}
+[2.098925] (image_learn) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.118662] (-) TimerEvent: {}
+[2.239289] (-) TimerEvent: {}
+[2.339830] (-) TimerEvent: {}
+[2.402937] (image_learn) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.439979] (-) TimerEvent: {}
+[2.544726] (-) TimerEvent: {}
+[2.645238] (-) TimerEvent: {}
+[2.747522] (-) TimerEvent: {}
+[2.786879] (image_learn) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.796189] (image_learn) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.799776] (image_learn) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.835220] (image_learn) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.847945] (-) TimerEvent: {}
+[2.894915] (image_learn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.948114] (-) TimerEvent: {}
+[3.049539] (-) TimerEvent: {}
+[3.143702] (image_learn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.149799] (-) TimerEvent: {}
+[3.159301] (image_learn) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.159504] (image_learn) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.159613] (image_learn) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.249938] (-) TimerEvent: {}
+[3.350239] (-) TimerEvent: {}
+[3.368690] (image_learn) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.450438] (-) TimerEvent: {}
+[3.551725] (-) TimerEvent: {}
+[3.652162] (-) TimerEvent: {}
+[3.753430] (-) TimerEvent: {}
+[3.853858] (-) TimerEvent: {}
+[3.901802] (image_learn) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.953967] (-) TimerEvent: {}
+[4.054674] (-) TimerEvent: {}
+[4.155280] (-) TimerEvent: {}
+[4.255695] (-) TimerEvent: {}
+[4.356611] (-) TimerEvent: {}
+[4.457431] (-) TimerEvent: {}
+[4.558016] (-) TimerEvent: {}
+[4.658668] (-) TimerEvent: {}
+[4.759261] (-) TimerEvent: {}
+[4.859657] (-) TimerEvent: {}
+[4.960146] (-) TimerEvent: {}
+[5.060954] (-) TimerEvent: {}
+[5.161879] (-) TimerEvent: {}
+[5.162150] (image_learn) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.262040] (-) TimerEvent: {}
+[5.362940] (-) TimerEvent: {}
+[5.463402] (-) TimerEvent: {}
+[5.564701] (-) TimerEvent: {}
+[5.665028] (-) TimerEvent: {}
+[5.765364] (-) TimerEvent: {}
+[5.866082] (-) TimerEvent: {}
+[5.966735] (-) TimerEvent: {}
+[6.067538] (-) TimerEvent: {}
+[6.165757] (image_learn) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.167784] (-) TimerEvent: {}
+[6.197448] (image_learn) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.268077] (-) TimerEvent: {}
+[6.268972] (image_learn) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.368188] (-) TimerEvent: {}
+[6.414198] (image_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.468409] (-) TimerEvent: {}
+[6.568876] (-) TimerEvent: {}
+[6.579702] (image_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.674576] (-) TimerEvent: {}
+[6.775399] (-) TimerEvent: {}
+[6.875851] (-) TimerEvent: {}
+[6.976384] (-) TimerEvent: {}
+[7.076829] (-) TimerEvent: {}
+[7.118967] (image_learn) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.174810] (image_learn) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.176867] (-) TimerEvent: {}
+[7.277658] (-) TimerEvent: {}
+[7.388254] (-) TimerEvent: {}
+[7.488537] (-) TimerEvent: {}
+[7.588984] (-) TimerEvent: {}
+[7.689808] (-) TimerEvent: {}
+[7.790801] (-) TimerEvent: {}
+[7.894540] (-) TimerEvent: {}
+[7.915450] (image_learn) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.994768] (-) TimerEvent: {}
+[8.000805] (image_learn) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.081729] (image_learn) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.094892] (-) TimerEvent: {}
+[8.195232] (-) TimerEvent: {}
+[8.239585] (image_learn) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.295382] (-) TimerEvent: {}
+[8.398820] (-) TimerEvent: {}
+[8.500732] (-) TimerEvent: {}
+[8.503810] (image_learn) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.503995] (image_learn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.601139] (-) TimerEvent: {}
+[8.703715] (-) TimerEvent: {}
+[8.716820] (image_learn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.718558] (image_learn) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.803835] (-) TimerEvent: {}
+[8.906106] (-) TimerEvent: {}
+[9.007748] (-) TimerEvent: {}
+[9.109245] (-) TimerEvent: {}
+[9.211476] (-) TimerEvent: {}
+[9.313631] (-) TimerEvent: {}
+[9.415527] (-) TimerEvent: {}
+[9.519802] (-) TimerEvent: {}
+[9.525733] (image_learn) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.10.0") \n'}
+[9.565766] (image_learn) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.619950] (-) TimerEvent: {}
+[9.720584] (-) TimerEvent: {}
+[9.821267] (-) TimerEvent: {}
+[9.835017] (image_learn) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.835246] (image_learn) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[9.835301] (image_learn) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.843483] (image_learn) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.860621] (image_learn) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.861443] (image_learn) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.862633] (image_learn) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.917175] (image_learn) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.922249] (-) TimerEvent: {}
+[9.975817] (image_learn) StdoutLine: {'line': b'-- Generating done\n'}
+[9.979595] (image_learn) StdoutLine: {'line': b'-- Build files have been written to: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn\n'}
+[9.994744] (image_learn) CommandEnded: {'returncode': 0}
+[9.995152] (image_learn) JobProgress: {'identifier': 'image_learn', 'progress': 'build'}
+[9.995188] (image_learn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1105'), ('SYSTEMD_EXEC_PID', '1309'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5982'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20193'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1289,unix/ake-virtual-machine:/tmp/.ICE-unix/1289'), ('INVOCATION_ID', '99c6f9da11f1463e8be60ee73ddba915'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XDX6S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-12ccb412d7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.031185] (-) TimerEvent: {}
+[10.103141] (image_learn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/image_change.dir/src/image_change.cpp.o\x1b[0m\n'}
+[10.132076] (-) TimerEvent: {}
+[10.235586] (-) TimerEvent: {}
+[10.346962] (-) TimerEvent: {}
+[10.447892] (-) TimerEvent: {}
+[10.548547] (-) TimerEvent: {}
+[10.649217] (-) TimerEvent: {}
+[10.749893] (-) TimerEvent: {}
+[10.850215] (-) TimerEvent: {}
+[10.950594] (-) TimerEvent: {}
+[11.052022] (-) TimerEvent: {}
+[11.152493] (-) TimerEvent: {}
+[11.253964] (-) TimerEvent: {}
+[11.354344] (-) TimerEvent: {}
+[11.454954] (-) TimerEvent: {}
+[11.555349] (-) TimerEvent: {}
+[11.655725] (-) TimerEvent: {}
+[11.756438] (-) TimerEvent: {}
+[11.856870] (-) TimerEvent: {}
+[11.957835] (-) TimerEvent: {}
+[12.058755] (-) TimerEvent: {}
+[12.159266] (-) TimerEvent: {}
+[12.261727] (-) TimerEvent: {}
+[12.362077] (-) TimerEvent: {}
+[12.462721] (-) TimerEvent: {}
+[12.566996] (-) TimerEvent: {}
+[12.668262] (-) TimerEvent: {}
+[12.771542] (-) TimerEvent: {}
+[12.872639] (-) TimerEvent: {}
+[12.974096] (-) TimerEvent: {}
+[13.075224] (-) TimerEvent: {}
+[13.176181] (-) TimerEvent: {}
+[13.277718] (-) TimerEvent: {}
+[13.378717] (-) TimerEvent: {}
+[13.479091] (-) TimerEvent: {}
+[13.580048] (-) TimerEvent: {}
+[13.681718] (-) TimerEvent: {}
+[13.782067] (-) TimerEvent: {}
+[13.884720] (-) TimerEvent: {}
+[13.985066] (-) TimerEvent: {}
+[14.085433] (-) TimerEvent: {}
+[14.186178] (-) TimerEvent: {}
+[14.286721] (-) TimerEvent: {}
+[14.388546] (-) TimerEvent: {}
+[14.489105] (-) TimerEvent: {}
+[14.591117] (-) TimerEvent: {}
+[14.693004] (-) TimerEvent: {}
+[14.794640] (-) TimerEvent: {}
+[14.896039] (-) TimerEvent: {}
+[15.000058] (-) TimerEvent: {}
+[15.101535] (-) TimerEvent: {}
+[15.203177] (-) TimerEvent: {}
+[15.304900] (-) TimerEvent: {}
+[15.406620] (-) TimerEvent: {}
+[15.507865] (-) TimerEvent: {}
+[15.611376] (-) TimerEvent: {}
+[15.711748] (-) TimerEvent: {}
+[15.812412] (-) TimerEvent: {}
+[15.914749] (-) TimerEvent: {}
+[16.015441] (-) TimerEvent: {}
+[16.120617] (-) TimerEvent: {}
+[16.246122] (-) TimerEvent: {}
+[16.352719] (-) TimerEvent: {}
+[16.453737] (-) TimerEvent: {}
+[16.554752] (-) TimerEvent: {}
+[16.655104] (-) TimerEvent: {}
+[16.758618] (-) TimerEvent: {}
+[16.859718] (-) TimerEvent: {}
+[16.961074] (-) TimerEvent: {}
+[17.062479] (-) TimerEvent: {}
+[17.164243] (-) TimerEvent: {}
+[17.267514] (-) TimerEvent: {}
+[17.370842] (-) TimerEvent: {}
+[17.478528] (-) TimerEvent: {}
+[17.584087] (-) TimerEvent: {}
+[17.684978] (-) TimerEvent: {}
+[17.755563] (image_learn) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_change\x1b[0m\n'}
+[17.785146] (-) TimerEvent: {}
+[17.885567] (-) TimerEvent: {}
+[17.986352] (-) TimerEvent: {}
+[18.087061] (-) TimerEvent: {}
+[18.187351] (-) TimerEvent: {}
+[18.287722] (-) TimerEvent: {}
+[18.388033] (-) TimerEvent: {}
+[18.488529] (-) TimerEvent: {}
+[18.588858] (-) TimerEvent: {}
+[18.689442] (-) TimerEvent: {}
+[18.789845] (-) TimerEvent: {}
+[18.890242] (-) TimerEvent: {}
+[18.991171] (-) TimerEvent: {}
+[19.092572] (-) TimerEvent: {}
+[19.193581] (-) TimerEvent: {}
+[19.294765] (-) TimerEvent: {}
+[19.395252] (-) TimerEvent: {}
+[19.474964] (image_learn) StdoutLine: {'line': b'[100%] Built target image_change\n'}
+[19.495056] (image_learn) CommandEnded: {'returncode': 0}
+[19.495462] (-) TimerEvent: {}
+[19.559842] (image_learn) JobProgress: {'identifier': 'image_learn', 'progress': 'install'}
+[19.568199] (image_learn) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn'], 'cwd': '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1105'), ('SYSTEMD_EXEC_PID', '1309'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5982'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20193'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1289,unix/ake-virtual-machine:/tmp/.ICE-unix/1289'), ('INVOCATION_ID', '99c6f9da11f1463e8be60ee73ddba915'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XDX6S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-12ccb412d7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/build/image_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[19.581835] (image_learn) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.582368] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/lib/image_learn/image_change\n'}
+[19.584897] (image_learn) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/lib/image_learn/image_change" to ""\n'}
+[19.585121] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/ament_index/resource_index/package_run_dependencies/image_learn\n'}
+[19.585735] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/ament_index/resource_index/parent_prefix_path/image_learn\n'}
+[19.585853] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/environment/ament_prefix_path.sh\n'}
+[19.586386] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/environment/ament_prefix_path.dsv\n'}
+[19.586722] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/environment/path.sh\n'}
+[19.586826] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/environment/path.dsv\n'}
+[19.586925] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/local_setup.bash\n'}
+[19.587023] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/local_setup.sh\n'}
+[19.588281] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/local_setup.zsh\n'}
+[19.588410] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/local_setup.dsv\n'}
+[19.588509] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/package.dsv\n'}
+[19.588606] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/ament_index/resource_index/packages/image_learn\n'}
+[19.588728] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/cmake/image_learnConfig.cmake\n'}
+[19.588827] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/cmake/image_learnConfig-version.cmake\n'}
+[19.588959] (image_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/image_change/src/image_learn/install/image_learn/share/image_learn/package.xml\n'}
+[19.590501] (image_learn) CommandEnded: {'returncode': 0}
+[19.595786] (-) TimerEvent: {}
+[19.696401] (-) TimerEvent: {}
+[19.797592] (-) TimerEvent: {}
+[19.860957] (image_learn) JobEnded: {'identifier': 'image_learn', 'rc': 0}
+[19.861922] (-) EventReactorShutdown: {}
