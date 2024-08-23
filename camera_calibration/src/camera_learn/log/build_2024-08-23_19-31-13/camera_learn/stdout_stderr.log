@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target camera_learn[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o[0m
+[100%] [32m[1mLinking CXX executable camera_learn[0m
+[100%] Built target camera_learn
+-- Install configuration: ""
+-- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/camera_learn/camera_learn
+-- Set runtime path of "/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/camera_learn/camera_learn" to ""
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/package_run_dependencies/camera_learn
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/parent_prefix_path/camera_learn
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/path.sh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/path.dsv
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.bash
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.sh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.zsh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.dsv
+-- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.dsv
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/packages/camera_learn
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/cmake/camera_learnConfig.cmake
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/cmake/camera_learnConfig-version.cmake
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.xml

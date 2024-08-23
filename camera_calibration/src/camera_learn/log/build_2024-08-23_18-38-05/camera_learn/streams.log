@@ -1,0 +1,26 @@
+[0.026s] Invoking command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn -- -j2 -l2
+[0.130s] [35m[1mConsolidate compiler generated dependencies of target camera_learn[0m
+[0.181s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o[0m
+[6.715s] [100%] [32m[1mLinking CXX executable camera_learn[0m
+[9.628s] [100%] Built target camera_learn
+[9.659s] Invoked command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn -- -j2 -l2
+[9.763s] Invoking command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn
+[9.776s] -- Install configuration: ""
+[9.776s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/camera_learn/camera_learn
+[9.778s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/camera_learn/camera_learn" to ""
+[9.778s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/package_run_dependencies/camera_learn
+[9.803s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/parent_prefix_path/camera_learn
+[9.804s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/ament_prefix_path.sh
+[9.822s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/ament_prefix_path.dsv
+[9.822s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/path.sh
+[9.823s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/path.dsv
+[9.823s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.bash
+[9.824s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.sh
+[9.825s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.zsh
+[9.825s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.dsv
+[9.826s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.dsv
+[9.826s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/packages/camera_learn
+[9.827s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/cmake/camera_learnConfig.cmake
+[9.827s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/cmake/camera_learnConfig-version.cmake
+[9.828s] -- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.xml
+[9.829s] Invoked command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn

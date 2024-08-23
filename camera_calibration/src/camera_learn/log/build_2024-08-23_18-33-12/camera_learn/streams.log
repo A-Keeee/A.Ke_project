@@ -1,0 +1,64 @@
+[0.022s] Invoking command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn -- -j2 -l2
+[0.112s] [35m[1mConsolidate compiler generated dependencies of target camera_learn[0m
+[0.193s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o[0m
+[31.169s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[31.169s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[31.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[31.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[31.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[31.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[31.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[31.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[31.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[31.173s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[31.173s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[31.174s]                  from [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:1[m[K:
+[31.174s] [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:[m[K In member function ‘[01m[Kvoid CameraCalibrationNode::calibrateCamera()[m[K’:
+[31.174s] [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:89:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kformat(cv::Mat&)[m[K’
+[31.174s]    89 |         RCLCPP_INFO(this->get_logger(), "相机内参矩阵:\n %s", [01;31m[Kcv::format(cameraMatrix)[m[K.c_str());
+[31.174s]       |                                                               [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[31.174s] In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:3415[m[K,
+[31.174s]                  from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[31.174s]                  from [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:2[m[K:
+[31.174s] [01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Ptr<cv::Formatted> cv::format(cv::InputArray, cv::Formatter::FormatType)[m[K’
+[31.174s]   431 | Ptr<Formatted> [01;36m[Kformat[m[K(InputArray mtx, Formatter::FormatType fmt)
+[31.175s]       |                [01;36m[K^~~~~~[m[K
+[31.175s] [01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[31.175s] [01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::String cv::format(const char*, ...)[m[K’
+[31.175s]   499 | CV_EXPORTS String [01;36m[Kformat[m[K(const char* fmt, ...) CV_FORMAT_PRINTF(1, 2);
+[31.175s]       |                   [01;36m[K^~~~~~[m[K
+[31.175s] [01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:38:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Mat[m[K’ to ‘[01m[Kconst char*[m[K’
+[31.181s]   499 | CV_EXPORTS String format([01;36m[Kconst char* fmt[m[K, ...) CV_FORMAT_PRINTF(1, 2);
+[31.181s]       |                          [01;36m[K~~~~~~~~~~~~^~~[m[K
+[31.181s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[31.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[31.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[31.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[31.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[31.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[31.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[31.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[31.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[31.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[31.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[31.183s]                  from [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:1[m[K:
+[31.183s] [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:90:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kformat(cv::Mat&)[m[K’
+[31.183s]    90 |         RCLCPP_INFO(this->get_logger(), "畸变系数:\n %s", [01;31m[Kcv::format(distCoeffs)[m[K.c_str());
+[31.183s]       |                                                           [01;31m[K~~~~~~~~~~^~~~~~~~~~~~[m[K
+[31.183s] In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:3415[m[K,
+[31.183s]                  from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[31.188s]                  from [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:2[m[K:
+[31.188s] [01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Ptr<cv::Formatted> cv::format(cv::InputArray, cv::Formatter::FormatType)[m[K’
+[31.188s]   431 | Ptr<Formatted> [01;36m[Kformat[m[K(InputArray mtx, Formatter::FormatType fmt)
+[31.188s]       |                [01;36m[K^~~~~~[m[K
+[31.188s] [01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[31.188s] [01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::String cv::format(const char*, ...)[m[K’
+[31.188s]   499 | CV_EXPORTS String [01;36m[Kformat[m[K(const char* fmt, ...) CV_FORMAT_PRINTF(1, 2);
+[31.188s]       |                   [01;36m[K^~~~~~[m[K
+[31.188s] [01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:38:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Mat[m[K’ to ‘[01m[Kconst char*[m[K’
+[31.189s]   499 | CV_EXPORTS String format([01;36m[Kconst char* fmt[m[K, ...) CV_FORMAT_PRINTF(1, 2);
+[31.189s]       |                          [01;36m[K~~~~~~~~~~~~^~~[m[K
+[32.791s] gmake[2]: *** [CMakeFiles/camera_learn.dir/build.make:76：CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o] 错误 1
+[32.799s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/camera_learn.dir/all] 错误 2
+[32.799s] gmake: *** [Makefile:146：all] 错误 2
+[32.900s] Invoked command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn -- -j2 -l2

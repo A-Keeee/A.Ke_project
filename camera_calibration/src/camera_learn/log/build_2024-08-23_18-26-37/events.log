@@ -1,0 +1,213 @@
+[0.000000] (-) TimerEvent: {}
+[0.001660] (camera_learn) JobQueued: {'identifier': 'camera_learn', 'dependencies': OrderedDict()}
+[0.001750] (camera_learn) JobStarted: {'identifier': 'camera_learn'}
+[0.019509] (camera_learn) JobProgress: {'identifier': 'camera_learn', 'progress': 'cmake'}
+[0.021650] (camera_learn) JobProgress: {'identifier': 'camera_learn', 'progress': 'build'}
+[0.021750] (camera_learn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1111'), ('SYSTEMD_EXEC_PID', '1301'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4940'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21039'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1272,unix/ake-virtual-machine:/tmp/.ICE-unix/1272'), ('INVOCATION_ID', '8d5b3d53b6474e35862380b7f71e8a21'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GISYS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b1b70e719e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.072620] (camera_learn) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.103828] (-) TimerEvent: {}
+[0.225089] (-) TimerEvent: {}
+[0.283711] (camera_learn) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.323494] (camera_learn) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.328360] (camera_learn) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.328709] (-) TimerEvent: {}
+[0.346798] (camera_learn) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.359064] (camera_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.384032] (camera_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.433160] (-) TimerEvent: {}
+[0.469495] (camera_learn) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.477821] (camera_learn) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.533521] (-) TimerEvent: {}
+[0.634126] (-) TimerEvent: {}
+[0.652968] (camera_learn) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.734981] (-) TimerEvent: {}
+[0.835338] (-) TimerEvent: {}
+[0.860172] (camera_learn) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.937436] (-) TimerEvent: {}
+[0.991813] (camera_learn) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.992071] (camera_learn) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.992184] (camera_learn) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.995034] (camera_learn) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.032796] (camera_learn) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.034192] (camera_learn) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.037561] (-) TimerEvent: {}
+[1.043974] (camera_learn) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.044133] (camera_learn) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.045616] (camera_learn) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.045758] (camera_learn) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.058658] (camera_learn) StdoutLine: {'line': b'-- Generating done\n'}
+[1.060680] (camera_learn) StdoutLine: {'line': b'-- Build files have been written to: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn\n'}
+[1.122742] (camera_learn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o\x1b[0m\n'}
+[1.137810] (-) TimerEvent: {}
+[1.256217] (-) TimerEvent: {}
+[1.357596] (-) TimerEvent: {}
+[1.458108] (-) TimerEvent: {}
+[1.559534] (-) TimerEvent: {}
+[1.660007] (-) TimerEvent: {}
+[1.761650] (-) TimerEvent: {}
+[1.861996] (-) TimerEvent: {}
+[1.962343] (-) TimerEvent: {}
+[2.063202] (-) TimerEvent: {}
+[2.163647] (-) TimerEvent: {}
+[2.264045] (-) TimerEvent: {}
+[2.364389] (-) TimerEvent: {}
+[2.464979] (-) TimerEvent: {}
+[2.565531] (-) TimerEvent: {}
+[2.665951] (-) TimerEvent: {}
+[2.766275] (-) TimerEvent: {}
+[2.875084] (-) TimerEvent: {}
+[2.975445] (-) TimerEvent: {}
+[3.075807] (-) TimerEvent: {}
+[3.176145] (-) TimerEvent: {}
+[3.276506] (-) TimerEvent: {}
+[3.376846] (-) TimerEvent: {}
+[3.481231] (-) TimerEvent: {}
+[3.581729] (-) TimerEvent: {}
+[3.682152] (-) TimerEvent: {}
+[3.782594] (-) TimerEvent: {}
+[3.883127] (-) TimerEvent: {}
+[3.983821] (-) TimerEvent: {}
+[4.084276] (-) TimerEvent: {}
+[4.184791] (-) TimerEvent: {}
+[4.286761] (-) TimerEvent: {}
+[4.387641] (-) TimerEvent: {}
+[4.488122] (-) TimerEvent: {}
+[4.588510] (-) TimerEvent: {}
+[4.690483] (-) TimerEvent: {}
+[4.791382] (-) TimerEvent: {}
+[4.893010] (-) TimerEvent: {}
+[4.996573] (-) TimerEvent: {}
+[5.097718] (-) TimerEvent: {}
+[5.198370] (-) TimerEvent: {}
+[5.300099] (-) TimerEvent: {}
+[5.401414] (-) TimerEvent: {}
+[5.502501] (-) TimerEvent: {}
+[5.602928] (-) TimerEvent: {}
+[5.706559] (-) TimerEvent: {}
+[5.807337] (-) TimerEvent: {}
+[5.907897] (-) TimerEvent: {}
+[6.010641] (-) TimerEvent: {}
+[6.111236] (-) TimerEvent: {}
+[6.214364] (-) TimerEvent: {}
+[6.315235] (-) TimerEvent: {}
+[6.416725] (-) TimerEvent: {}
+[6.517486] (-) TimerEvent: {}
+[6.618124] (-) TimerEvent: {}
+[6.718616] (-) TimerEvent: {}
+[6.820060] (-) TimerEvent: {}
+[6.920491] (-) TimerEvent: {}
+[7.021686] (-) TimerEvent: {}
+[7.122789] (-) TimerEvent: {}
+[7.227957] (-) TimerEvent: {}
+[7.341163] (-) TimerEvent: {}
+[7.452935] (-) TimerEvent: {}
+[7.574116] (-) TimerEvent: {}
+[7.683507] (-) TimerEvent: {}
+[7.824260] (-) TimerEvent: {}
+[7.927771] (-) TimerEvent: {}
+[8.044490] (-) TimerEvent: {}
+[8.145684] (-) TimerEvent: {}
+[8.252495] (-) TimerEvent: {}
+[8.366518] (-) TimerEvent: {}
+[8.476662] (-) TimerEvent: {}
+[8.577254] (-) TimerEvent: {}
+[8.688529] (-) TimerEvent: {}
+[8.803446] (-) TimerEvent: {}
+[8.919463] (-) TimerEvent: {}
+[9.035188] (-) TimerEvent: {}
+[9.135748] (-) TimerEvent: {}
+[9.236919] (-) TimerEvent: {}
+[9.338204] (-) TimerEvent: {}
+[9.439321] (-) TimerEvent: {}
+[9.540771] (-) TimerEvent: {}
+[9.641652] (-) TimerEvent: {}
+[9.743652] (-) TimerEvent: {}
+[9.846540] (-) TimerEvent: {}
+[9.947911] (-) TimerEvent: {}
+[10.017093] (camera_learn) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[10.018087] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[10.018249] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[10.018369] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[10.018477] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[10.018599] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[10.018712] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[10.018824] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[10.018925] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.019028] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.019130] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.019231] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:1\x1b[m\x1b[K:\n'}
+[10.019332] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CameraCalibrationNode::calibrateCamera()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.019439] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:89:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kformat(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.019542] (camera_learn) StderrLine: {'line': b'   89 |         RCLCPP_INFO(this->get_logger(), "\xe7\x9b\xb8\xe6\x9c\xba\xe5\x86\x85\xe5\x8f\x82\xe7\x9f\xa9\xe9\x98\xb5:\\n %s", \x1b[01;31m\x1b[Kcv::format(cameraMatrix)\x1b[m\x1b[K.c_str());\n'}
+[10.021832] (camera_learn) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.021961] (camera_learn) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core.hpp:3415\x1b[m\x1b[K,\n'}
+[10.022068] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[10.022170] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:2\x1b[m\x1b[K:\n'}
+[10.022271] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Ptr<cv::Formatted> cv::format(cv::InputArray, cv::Formatter::FormatType)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.022373] (camera_learn) StderrLine: {'line': b'  431 | Ptr<Formatted> \x1b[01;36m\x1b[Kformat\x1b[m\x1b[K(InputArray mtx, Formatter::FormatType fmt)\n'}
+[10.022477] (camera_learn) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.038929] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[10.039150] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::String cv::format(const char*, ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.039267] (camera_learn) StderrLine: {'line': b'  499 | CV_EXPORTS String \x1b[01;36m\x1b[Kformat\x1b[m\x1b[K(const char* fmt, ...) CV_FORMAT_PRINTF(1, 2);\n'}
+[10.039372] (camera_learn) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.039475] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.039600] (camera_learn) StderrLine: {'line': b'  499 | CV_EXPORTS String format(\x1b[01;36m\x1b[Kconst char* fmt\x1b[m\x1b[K, ...) CV_FORMAT_PRINTF(1, 2);\n'}
+[10.039727] (camera_learn) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[10.039829] (camera_learn) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[10.039930] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[10.040030] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[10.040129] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[10.040227] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[10.040325] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[10.040424] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[10.040522] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[10.044076] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.044225] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.044325] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.044426] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:1\x1b[m\x1b[K:\n'}
+[10.044526] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:90:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kformat(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.044650] (camera_learn) StderrLine: {'line': b'   90 |         RCLCPP_INFO(this->get_logger(), "\xe7\x95\xb8\xe5\x8f\x98\xe7\xb3\xbb\xe6\x95\xb0:\\n %s", \x1b[01;31m\x1b[Kcv::format(distCoeffs)\x1b[m\x1b[K.c_str());\n'}
+[10.044755] (camera_learn) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.044856] (camera_learn) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core.hpp:3415\x1b[m\x1b[K,\n'}
+[10.044955] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[10.045054] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:2\x1b[m\x1b[K:\n'}
+[10.045154] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Ptr<cv::Formatted> cv::format(cv::InputArray, cv::Formatter::FormatType)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.045254] (camera_learn) StderrLine: {'line': b'  431 | Ptr<Formatted> \x1b[01;36m\x1b[Kformat\x1b[m\x1b[K(InputArray mtx, Formatter::FormatType fmt)\n'}
+[10.045354] (camera_learn) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.045459] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[10.045563] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::String cv::format(const char*, ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.049548] (-) TimerEvent: {}
+[10.049717] (camera_learn) StderrLine: {'line': b'  499 | CV_EXPORTS String \x1b[01;36m\x1b[Kformat\x1b[m\x1b[K(const char* fmt, ...) CV_FORMAT_PRINTF(1, 2);\n'}
+[10.049840] (camera_learn) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.049942] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.050044] (camera_learn) StderrLine: {'line': b'  499 | CV_EXPORTS String format(\x1b[01;36m\x1b[Kconst char* fmt\x1b[m\x1b[K, ...) CV_FORMAT_PRINTF(1, 2);\n'}
+[10.050143] (camera_learn) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[10.150018] (-) TimerEvent: {}
+[10.250894] (-) TimerEvent: {}
+[10.352293] (-) TimerEvent: {}
+[10.452640] (-) TimerEvent: {}
+[10.598297] (-) TimerEvent: {}
+[10.716184] (-) TimerEvent: {}
+[10.816630] (-) TimerEvent: {}
+[10.922831] (-) TimerEvent: {}
+[11.025653] (-) TimerEvent: {}
+[11.135156] (-) TimerEvent: {}
+[11.275102] (-) TimerEvent: {}
+[11.388906] (-) TimerEvent: {}
+[11.496068] (-) TimerEvent: {}
+[11.603627] (-) TimerEvent: {}
+[11.706936] (-) TimerEvent: {}
+[11.852691] (-) TimerEvent: {}
+[11.931990] (camera_learn) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/camera_learn.dir/build.make:76\xef\xbc\x9aCMakeFiles/camera_learn.dir/src/camera_learn.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[11.933480] (camera_learn) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/camera_learn.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[11.951909] (camera_learn) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[11.952035] (camera_learn) CommandEnded: {'returncode': 2}
+[11.984863] (-) TimerEvent: {}
+[12.092491] (-) TimerEvent: {}
+[12.231535] (-) TimerEvent: {}
+[12.346741] (-) TimerEvent: {}
+[12.473210] (-) TimerEvent: {}
+[12.573587] (-) TimerEvent: {}
+[12.682115] (-) TimerEvent: {}
+[12.760990] (camera_learn) JobEnded: {'identifier': 'camera_learn', 'rc': 2}
+[12.773282] (-) EventReactorShutdown: {}

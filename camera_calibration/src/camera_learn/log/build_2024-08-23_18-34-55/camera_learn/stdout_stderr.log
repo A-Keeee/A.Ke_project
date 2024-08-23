@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target camera_learn[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:1[m[K:
+[01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:[m[K In member function ‘[01m[Kvoid CameraCalibrationNode::calibrateCamera()[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:89:112:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct cv::Ptr<cv::Formatted>[m[K’ has no member named ‘[01m[Kc_str[m[K’
+   89 |     RCLCPP_INFO(this->get_logger(), "相机内参矩阵:\n %s", cv::format(cameraMatrix, cv::Formatter::FMT_DEFAULT).[01;31m[Kc_str[m[K());
+      |                                                                                                                [01;31m[K^~~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:90:106:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct cv::Ptr<cv::Formatted>[m[K’ has no member named ‘[01m[Kc_str[m[K’
+   90 |     RCLCPP_INFO(this->get_logger(), "畸变系数:\n %s", cv::format(distCoeffs, cv::Formatter::FMT_DEFAULT).[01;31m[Kc_str[m[K());
+      |                                                                                                          [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/camera_learn.dir/build.make:76：CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/camera_learn.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

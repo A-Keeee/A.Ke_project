@@ -1,0 +1,16 @@
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/camera_learn/camera_learn
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/package_run_dependencies/camera_learn
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/parent_prefix_path/camera_learn
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/ament_prefix_path.sh
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/ament_prefix_path.dsv
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/path.sh
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/path.dsv
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.bash
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.sh
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.zsh
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.dsv
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.dsv
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/packages/camera_learn
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/cmake/camera_learnConfig.cmake
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/cmake/camera_learnConfig-version.cmake
+/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.xml

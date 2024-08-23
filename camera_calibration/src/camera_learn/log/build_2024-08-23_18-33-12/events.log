@@ -1,0 +1,389 @@
+[0.000000] (-) TimerEvent: {}
+[0.000429] (camera_learn) JobQueued: {'identifier': 'camera_learn', 'dependencies': OrderedDict()}
+[0.000477] (camera_learn) JobStarted: {'identifier': 'camera_learn'}
+[0.015076] (camera_learn) JobProgress: {'identifier': 'camera_learn', 'progress': 'cmake'}
+[0.015778] (camera_learn) JobProgress: {'identifier': 'camera_learn', 'progress': 'build'}
+[0.016621] (camera_learn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1111'), ('SYSTEMD_EXEC_PID', '1301'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4940'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21039'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1272,unix/ake-virtual-machine:/tmp/.ICE-unix/1272'), ('INVOCATION_ID', '8d5b3d53b6474e35862380b7f71e8a21'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GISYS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b1b70e719e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099189] (-) TimerEvent: {}
+[0.111763] (camera_learn) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera_learn\x1b[0m\n'}
+[0.192843] (camera_learn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o\x1b[0m\n'}
+[0.199289] (-) TimerEvent: {}
+[0.304728] (-) TimerEvent: {}
+[0.405947] (-) TimerEvent: {}
+[0.506689] (-) TimerEvent: {}
+[0.607976] (-) TimerEvent: {}
+[0.708465] (-) TimerEvent: {}
+[0.808773] (-) TimerEvent: {}
+[0.909914] (-) TimerEvent: {}
+[1.010299] (-) TimerEvent: {}
+[1.110647] (-) TimerEvent: {}
+[1.211310] (-) TimerEvent: {}
+[1.312477] (-) TimerEvent: {}
+[1.414124] (-) TimerEvent: {}
+[1.514585] (-) TimerEvent: {}
+[1.615996] (-) TimerEvent: {}
+[1.716449] (-) TimerEvent: {}
+[1.818875] (-) TimerEvent: {}
+[1.919208] (-) TimerEvent: {}
+[2.019703] (-) TimerEvent: {}
+[2.120130] (-) TimerEvent: {}
+[2.220515] (-) TimerEvent: {}
+[2.321005] (-) TimerEvent: {}
+[2.421626] (-) TimerEvent: {}
+[2.522413] (-) TimerEvent: {}
+[2.623982] (-) TimerEvent: {}
+[2.724440] (-) TimerEvent: {}
+[2.825083] (-) TimerEvent: {}
+[2.925901] (-) TimerEvent: {}
+[3.026362] (-) TimerEvent: {}
+[3.127076] (-) TimerEvent: {}
+[3.227706] (-) TimerEvent: {}
+[3.328934] (-) TimerEvent: {}
+[3.430370] (-) TimerEvent: {}
+[3.534075] (-) TimerEvent: {}
+[3.634446] (-) TimerEvent: {}
+[3.734915] (-) TimerEvent: {}
+[3.835546] (-) TimerEvent: {}
+[3.936675] (-) TimerEvent: {}
+[4.042935] (-) TimerEvent: {}
+[4.143659] (-) TimerEvent: {}
+[4.247258] (-) TimerEvent: {}
+[4.348136] (-) TimerEvent: {}
+[4.448763] (-) TimerEvent: {}
+[4.552961] (-) TimerEvent: {}
+[4.656489] (-) TimerEvent: {}
+[4.759893] (-) TimerEvent: {}
+[4.862700] (-) TimerEvent: {}
+[4.968031] (-) TimerEvent: {}
+[5.068593] (-) TimerEvent: {}
+[5.169479] (-) TimerEvent: {}
+[5.269910] (-) TimerEvent: {}
+[5.370435] (-) TimerEvent: {}
+[5.470841] (-) TimerEvent: {}
+[5.571591] (-) TimerEvent: {}
+[5.672193] (-) TimerEvent: {}
+[5.772524] (-) TimerEvent: {}
+[5.872914] (-) TimerEvent: {}
+[5.973225] (-) TimerEvent: {}
+[6.073549] (-) TimerEvent: {}
+[6.174017] (-) TimerEvent: {}
+[6.276643] (-) TimerEvent: {}
+[6.377208] (-) TimerEvent: {}
+[6.477699] (-) TimerEvent: {}
+[6.578419] (-) TimerEvent: {}
+[6.684269] (-) TimerEvent: {}
+[6.785006] (-) TimerEvent: {}
+[6.885656] (-) TimerEvent: {}
+[6.986373] (-) TimerEvent: {}
+[7.086929] (-) TimerEvent: {}
+[7.187454] (-) TimerEvent: {}
+[7.288365] (-) TimerEvent: {}
+[7.388982] (-) TimerEvent: {}
+[7.489936] (-) TimerEvent: {}
+[7.590683] (-) TimerEvent: {}
+[7.691382] (-) TimerEvent: {}
+[7.791916] (-) TimerEvent: {}
+[7.892455] (-) TimerEvent: {}
+[7.992802] (-) TimerEvent: {}
+[8.093229] (-) TimerEvent: {}
+[8.193984] (-) TimerEvent: {}
+[8.294446] (-) TimerEvent: {}
+[8.395002] (-) TimerEvent: {}
+[8.495510] (-) TimerEvent: {}
+[8.595861] (-) TimerEvent: {}
+[8.696191] (-) TimerEvent: {}
+[8.796492] (-) TimerEvent: {}
+[8.896915] (-) TimerEvent: {}
+[8.997548] (-) TimerEvent: {}
+[9.098472] (-) TimerEvent: {}
+[9.198992] (-) TimerEvent: {}
+[9.299740] (-) TimerEvent: {}
+[9.400405] (-) TimerEvent: {}
+[9.503670] (-) TimerEvent: {}
+[9.604588] (-) TimerEvent: {}
+[9.704979] (-) TimerEvent: {}
+[9.805516] (-) TimerEvent: {}
+[9.906094] (-) TimerEvent: {}
+[10.006778] (-) TimerEvent: {}
+[10.107438] (-) TimerEvent: {}
+[10.214158] (-) TimerEvent: {}
+[10.314917] (-) TimerEvent: {}
+[10.415555] (-) TimerEvent: {}
+[10.516119] (-) TimerEvent: {}
+[10.617114] (-) TimerEvent: {}
+[10.717548] (-) TimerEvent: {}
+[10.818237] (-) TimerEvent: {}
+[10.918887] (-) TimerEvent: {}
+[11.019561] (-) TimerEvent: {}
+[11.120386] (-) TimerEvent: {}
+[11.221589] (-) TimerEvent: {}
+[11.321907] (-) TimerEvent: {}
+[11.422608] (-) TimerEvent: {}
+[11.523402] (-) TimerEvent: {}
+[11.624273] (-) TimerEvent: {}
+[11.724983] (-) TimerEvent: {}
+[11.825736] (-) TimerEvent: {}
+[11.926050] (-) TimerEvent: {}
+[12.026464] (-) TimerEvent: {}
+[12.126761] (-) TimerEvent: {}
+[12.227061] (-) TimerEvent: {}
+[12.327539] (-) TimerEvent: {}
+[12.428082] (-) TimerEvent: {}
+[12.528400] (-) TimerEvent: {}
+[12.628997] (-) TimerEvent: {}
+[12.729612] (-) TimerEvent: {}
+[12.831041] (-) TimerEvent: {}
+[12.931734] (-) TimerEvent: {}
+[13.032244] (-) TimerEvent: {}
+[13.132716] (-) TimerEvent: {}
+[13.233191] (-) TimerEvent: {}
+[13.333856] (-) TimerEvent: {}
+[13.434160] (-) TimerEvent: {}
+[13.534766] (-) TimerEvent: {}
+[13.635213] (-) TimerEvent: {}
+[13.736150] (-) TimerEvent: {}
+[13.836576] (-) TimerEvent: {}
+[13.937000] (-) TimerEvent: {}
+[14.037318] (-) TimerEvent: {}
+[14.137999] (-) TimerEvent: {}
+[14.239523] (-) TimerEvent: {}
+[14.339947] (-) TimerEvent: {}
+[14.440474] (-) TimerEvent: {}
+[14.540814] (-) TimerEvent: {}
+[14.642085] (-) TimerEvent: {}
+[14.742726] (-) TimerEvent: {}
+[14.843255] (-) TimerEvent: {}
+[14.943588] (-) TimerEvent: {}
+[15.044292] (-) TimerEvent: {}
+[15.144971] (-) TimerEvent: {}
+[15.245400] (-) TimerEvent: {}
+[15.345758] (-) TimerEvent: {}
+[15.446118] (-) TimerEvent: {}
+[15.546407] (-) TimerEvent: {}
+[15.646952] (-) TimerEvent: {}
+[15.748215] (-) TimerEvent: {}
+[15.848899] (-) TimerEvent: {}
+[15.949519] (-) TimerEvent: {}
+[16.049948] (-) TimerEvent: {}
+[16.150421] (-) TimerEvent: {}
+[16.250992] (-) TimerEvent: {}
+[16.351283] (-) TimerEvent: {}
+[16.451659] (-) TimerEvent: {}
+[16.552065] (-) TimerEvent: {}
+[16.652617] (-) TimerEvent: {}
+[16.753190] (-) TimerEvent: {}
+[16.853961] (-) TimerEvent: {}
+[16.955534] (-) TimerEvent: {}
+[17.056102] (-) TimerEvent: {}
+[17.156669] (-) TimerEvent: {}
+[17.257301] (-) TimerEvent: {}
+[17.357608] (-) TimerEvent: {}
+[17.457919] (-) TimerEvent: {}
+[17.562575] (-) TimerEvent: {}
+[17.663158] (-) TimerEvent: {}
+[17.763856] (-) TimerEvent: {}
+[17.864401] (-) TimerEvent: {}
+[17.964968] (-) TimerEvent: {}
+[18.065825] (-) TimerEvent: {}
+[18.166264] (-) TimerEvent: {}
+[18.267209] (-) TimerEvent: {}
+[18.367796] (-) TimerEvent: {}
+[18.468509] (-) TimerEvent: {}
+[18.569139] (-) TimerEvent: {}
+[18.670067] (-) TimerEvent: {}
+[18.770542] (-) TimerEvent: {}
+[18.871746] (-) TimerEvent: {}
+[18.972205] (-) TimerEvent: {}
+[19.072600] (-) TimerEvent: {}
+[19.173192] (-) TimerEvent: {}
+[19.273926] (-) TimerEvent: {}
+[19.374432] (-) TimerEvent: {}
+[19.475353] (-) TimerEvent: {}
+[19.576020] (-) TimerEvent: {}
+[19.676475] (-) TimerEvent: {}
+[19.776883] (-) TimerEvent: {}
+[19.877185] (-) TimerEvent: {}
+[19.977755] (-) TimerEvent: {}
+[20.078224] (-) TimerEvent: {}
+[20.178682] (-) TimerEvent: {}
+[20.279237] (-) TimerEvent: {}
+[20.379970] (-) TimerEvent: {}
+[20.480903] (-) TimerEvent: {}
+[20.581534] (-) TimerEvent: {}
+[20.681995] (-) TimerEvent: {}
+[20.782432] (-) TimerEvent: {}
+[20.882920] (-) TimerEvent: {}
+[20.983370] (-) TimerEvent: {}
+[21.084017] (-) TimerEvent: {}
+[21.184596] (-) TimerEvent: {}
+[21.285015] (-) TimerEvent: {}
+[21.385447] (-) TimerEvent: {}
+[21.486039] (-) TimerEvent: {}
+[21.586732] (-) TimerEvent: {}
+[21.687250] (-) TimerEvent: {}
+[21.787989] (-) TimerEvent: {}
+[21.888419] (-) TimerEvent: {}
+[21.988819] (-) TimerEvent: {}
+[22.089197] (-) TimerEvent: {}
+[22.189563] (-) TimerEvent: {}
+[22.289860] (-) TimerEvent: {}
+[22.391254] (-) TimerEvent: {}
+[22.491640] (-) TimerEvent: {}
+[22.592154] (-) TimerEvent: {}
+[22.692731] (-) TimerEvent: {}
+[22.795032] (-) TimerEvent: {}
+[22.895734] (-) TimerEvent: {}
+[22.996271] (-) TimerEvent: {}
+[23.097020] (-) TimerEvent: {}
+[23.202459] (-) TimerEvent: {}
+[23.304699] (-) TimerEvent: {}
+[23.405436] (-) TimerEvent: {}
+[23.506110] (-) TimerEvent: {}
+[23.606936] (-) TimerEvent: {}
+[23.707782] (-) TimerEvent: {}
+[23.810932] (-) TimerEvent: {}
+[23.915848] (-) TimerEvent: {}
+[24.016548] (-) TimerEvent: {}
+[24.117368] (-) TimerEvent: {}
+[24.217887] (-) TimerEvent: {}
+[24.318430] (-) TimerEvent: {}
+[24.419056] (-) TimerEvent: {}
+[24.519761] (-) TimerEvent: {}
+[24.620382] (-) TimerEvent: {}
+[24.720818] (-) TimerEvent: {}
+[24.821133] (-) TimerEvent: {}
+[24.921780] (-) TimerEvent: {}
+[25.022247] (-) TimerEvent: {}
+[25.122750] (-) TimerEvent: {}
+[25.223203] (-) TimerEvent: {}
+[25.323598] (-) TimerEvent: {}
+[25.424209] (-) TimerEvent: {}
+[25.524801] (-) TimerEvent: {}
+[25.627443] (-) TimerEvent: {}
+[25.727797] (-) TimerEvent: {}
+[25.854285] (-) TimerEvent: {}
+[25.963350] (-) TimerEvent: {}
+[26.082070] (-) TimerEvent: {}
+[26.182973] (-) TimerEvent: {}
+[26.283689] (-) TimerEvent: {}
+[26.385438] (-) TimerEvent: {}
+[26.510970] (-) TimerEvent: {}
+[26.621025] (-) TimerEvent: {}
+[26.730511] (-) TimerEvent: {}
+[26.836965] (-) TimerEvent: {}
+[26.961354] (-) TimerEvent: {}
+[27.063765] (-) TimerEvent: {}
+[27.166898] (-) TimerEvent: {}
+[27.269924] (-) TimerEvent: {}
+[27.583122] (-) TimerEvent: {}
+[27.685872] (-) TimerEvent: {}
+[27.803039] (-) TimerEvent: {}
+[28.044368] (-) TimerEvent: {}
+[28.166869] (-) TimerEvent: {}
+[28.267211] (-) TimerEvent: {}
+[28.373361] (-) TimerEvent: {}
+[28.524023] (-) TimerEvent: {}
+[28.824876] (-) TimerEvent: {}
+[29.339988] (-) TimerEvent: {}
+[29.440290] (-) TimerEvent: {}
+[29.544589] (-) TimerEvent: {}
+[29.650083] (-) TimerEvent: {}
+[29.751419] (-) TimerEvent: {}
+[29.852272] (-) TimerEvent: {}
+[29.963306] (-) TimerEvent: {}
+[30.064057] (-) TimerEvent: {}
+[30.166188] (-) TimerEvent: {}
+[30.271381] (-) TimerEvent: {}
+[30.372202] (-) TimerEvent: {}
+[30.476590] (-) TimerEvent: {}
+[30.577476] (-) TimerEvent: {}
+[30.682105] (-) TimerEvent: {}
+[30.788016] (-) TimerEvent: {}
+[30.889315] (-) TimerEvent: {}
+[30.990864] (-) TimerEvent: {}
+[31.091574] (-) TimerEvent: {}
+[31.169434] (camera_learn) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[31.169848] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[31.169965] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[31.170071] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[31.170172] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[31.170272] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[31.170372] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[31.170471] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[31.170570] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[31.170698] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[31.173855] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[31.173975] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:1\x1b[m\x1b[K:\n'}
+[31.174077] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CameraCalibrationNode::calibrateCamera()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[31.174179] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:89:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kformat(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.174280] (camera_learn) StderrLine: {'line': b'   89 |         RCLCPP_INFO(this->get_logger(), "\xe7\x9b\xb8\xe6\x9c\xba\xe5\x86\x85\xe5\x8f\x82\xe7\x9f\xa9\xe9\x98\xb5:\\n %s", \x1b[01;31m\x1b[Kcv::format(cameraMatrix)\x1b[m\x1b[K.c_str());\n'}
+[31.174380] (camera_learn) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.174480] (camera_learn) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core.hpp:3415\x1b[m\x1b[K,\n'}
+[31.174579] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[31.174680] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:2\x1b[m\x1b[K:\n'}
+[31.174779] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Ptr<cv::Formatted> cv::format(cv::InputArray, cv::Formatter::FormatType)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.174893] (camera_learn) StderrLine: {'line': b'  431 | Ptr<Formatted> \x1b[01;36m\x1b[Kformat\x1b[m\x1b[K(InputArray mtx, Formatter::FormatType fmt)\n'}
+[31.174991] (camera_learn) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[31.175089] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[31.175190] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::String cv::format(const char*, ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.175289] (camera_learn) StderrLine: {'line': b'  499 | CV_EXPORTS String \x1b[01;36m\x1b[Kformat\x1b[m\x1b[K(const char* fmt, ...) CV_FORMAT_PRINTF(1, 2);\n'}
+[31.175388] (camera_learn) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[31.175485] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.181596] (camera_learn) StderrLine: {'line': b'  499 | CV_EXPORTS String format(\x1b[01;36m\x1b[Kconst char* fmt\x1b[m\x1b[K, ...) CV_FORMAT_PRINTF(1, 2);\n'}
+[31.181754] (camera_learn) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[31.181882] (camera_learn) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[31.182057] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[31.182209] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[31.182311] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[31.182411] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[31.182509] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[31.182607] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[31.182755] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[31.182882] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[31.182986] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[31.183082] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[31.183179] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:1\x1b[m\x1b[K:\n'}
+[31.183276] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:90:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kformat(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.183373] (camera_learn) StderrLine: {'line': b'   90 |         RCLCPP_INFO(this->get_logger(), "\xe7\x95\xb8\xe5\x8f\x98\xe7\xb3\xbb\xe6\x95\xb0:\\n %s", \x1b[01;31m\x1b[Kcv::format(distCoeffs)\x1b[m\x1b[K.c_str());\n'}
+[31.183470] (camera_learn) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.183567] (camera_learn) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core.hpp:3415\x1b[m\x1b[K,\n'}
+[31.183663] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[31.187842] (camera_learn) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:2\x1b[m\x1b[K:\n'}
+[31.188033] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Ptr<cv::Formatted> cv::format(cv::InputArray, cv::Formatter::FormatType)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.188149] (camera_learn) StderrLine: {'line': b'  431 | Ptr<Formatted> \x1b[01;36m\x1b[Kformat\x1b[m\x1b[K(InputArray mtx, Formatter::FormatType fmt)\n'}
+[31.188256] (camera_learn) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[31.188359] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[31.188461] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::String cv::format(const char*, ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.188562] (camera_learn) StderrLine: {'line': b'  499 | CV_EXPORTS String \x1b[01;36m\x1b[Kformat\x1b[m\x1b[K(const char* fmt, ...) CV_FORMAT_PRINTF(1, 2);\n'}
+[31.188727] (camera_learn) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[31.188847] (camera_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.188952] (camera_learn) StderrLine: {'line': b'  499 | CV_EXPORTS String format(\x1b[01;36m\x1b[Kconst char* fmt\x1b[m\x1b[K, ...) CV_FORMAT_PRINTF(1, 2);\n'}
+[31.189051] (camera_learn) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[31.192698] (-) TimerEvent: {}
+[31.293693] (-) TimerEvent: {}
+[31.400134] (-) TimerEvent: {}
+[31.500416] (-) TimerEvent: {}
+[31.610736] (-) TimerEvent: {}
+[31.725893] (-) TimerEvent: {}
+[31.830084] (-) TimerEvent: {}
+[31.951835] (-) TimerEvent: {}
+[32.065193] (-) TimerEvent: {}
+[32.175873] (-) TimerEvent: {}
+[32.291137] (-) TimerEvent: {}
+[32.406706] (-) TimerEvent: {}
+[32.516493] (-) TimerEvent: {}
+[32.669603] (-) TimerEvent: {}
+[32.790124] (-) TimerEvent: {}
+[32.791460] (camera_learn) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/camera_learn.dir/build.make:76\xef\xbc\x9aCMakeFiles/camera_learn.dir/src/camera_learn.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[32.799648] (camera_learn) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/camera_learn.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[32.799775] (camera_learn) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[32.899750] (camera_learn) CommandEnded: {'returncode': 2}
+[32.900403] (-) TimerEvent: {}
+[33.038089] (-) TimerEvent: {}
+[33.138414] (-) TimerEvent: {}
+[33.239236] (-) TimerEvent: {}
+[33.339871] (-) TimerEvent: {}
+[33.440265] (-) TimerEvent: {}
+[33.540548] (-) TimerEvent: {}
+[33.569073] (camera_learn) JobEnded: {'identifier': 'camera_learn', 'rc': 2}
+[33.582156] (-) EventReactorShutdown: {}

@@ -1,0 +1,10 @@
+[01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:[m[K In member function ‘[01m[Kvoid CameraCalibrationNode::calibrateCamera()[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:93:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass cv::Formatted[m[K’ has no member named ‘[01m[Kprint[m[K’
+   93 |     formattedCameraMatrix->[01;31m[Kprint[m[K(cameraMatrixStream);
+      |                            [01;31m[K^~~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:99:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass cv::Formatted[m[K’ has no member named ‘[01m[Kprint[m[K’
+   99 |     formattedDistCoeffs->[01;31m[Kprint[m[K(distCoeffsStream);
+      |                          [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/camera_learn.dir/build.make:76：CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/camera_learn.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

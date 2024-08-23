@@ -1,0 +1,14 @@
+[0.022s] Invoking command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn -- -j2 -l2
+[0.116s] [35m[1mConsolidate compiler generated dependencies of target camera_learn[0m
+[0.142s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o[0m
+[4.831s] [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:[m[K In member function ‘[01m[Kvoid CameraCalibrationNode::calibrateCamera()[m[K’:
+[4.831s] [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:93:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass cv::Formatted[m[K’ has no member named ‘[01m[Kprint[m[K’
+[4.831s]    93 |     formattedCameraMatrix->[01;31m[Kprint[m[K(cameraMatrixStream);
+[4.832s]       |                            [01;31m[K^~~~~[m[K
+[4.836s] [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:99:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass cv::Formatted[m[K’ has no member named ‘[01m[Kprint[m[K’
+[4.836s]    99 |     formattedDistCoeffs->[01;31m[Kprint[m[K(distCoeffsStream);
+[4.836s]       |                          [01;31m[K^~~~~[m[K
+[6.106s] gmake[2]: *** [CMakeFiles/camera_learn.dir/build.make:76：CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o] 错误 1
+[6.106s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/camera_learn.dir/all] 错误 2
+[6.107s] gmake: *** [Makefile:146：all] 错误 2
+[6.117s] Invoked command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn -- -j2 -l2

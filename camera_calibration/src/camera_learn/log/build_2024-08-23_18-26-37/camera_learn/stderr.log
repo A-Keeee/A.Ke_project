@@ -1,0 +1,60 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:1[m[K:
+[01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:[m[K In member function ‘[01m[Kvoid CameraCalibrationNode::calibrateCamera()[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:89:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kformat(cv::Mat&)[m[K’
+   89 |         RCLCPP_INFO(this->get_logger(), "相机内参矩阵:\n %s", [01;31m[Kcv::format(cameraMatrix)[m[K.c_str());
+      |                                                               [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:3415[m[K,
+                 from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:2[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Ptr<cv::Formatted> cv::format(cv::InputArray, cv::Formatter::FormatType)[m[K’
+  431 | Ptr<Formatted> [01;36m[Kformat[m[K(InputArray mtx, Formatter::FormatType fmt)
+      |                [01;36m[K^~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::String cv::format(const char*, ...)[m[K’
+  499 | CV_EXPORTS String [01;36m[Kformat[m[K(const char* fmt, ...) CV_FORMAT_PRINTF(1, 2);
+      |                   [01;36m[K^~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:38:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Mat[m[K’ to ‘[01m[Kconst char*[m[K’
+  499 | CV_EXPORTS String format([01;36m[Kconst char* fmt[m[K, ...) CV_FORMAT_PRINTF(1, 2);
+      |                          [01;36m[K~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:1[m[K:
+[01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:90:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kformat(cv::Mat&)[m[K’
+   90 |         RCLCPP_INFO(this->get_logger(), "畸变系数:\n %s", [01;31m[Kcv::format(distCoeffs)[m[K.c_str());
+      |                                                           [01;31m[K~~~~~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:3415[m[K,
+                 from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/src/camera_learn.cpp:2[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Ptr<cv::Formatted> cv::format(cv::InputArray, cv::Formatter::FormatType)[m[K’
+  431 | Ptr<Formatted> [01;36m[Kformat[m[K(InputArray mtx, Formatter::FormatType fmt)
+      |                [01;36m[K^~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:431:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::String cv::format(const char*, ...)[m[K’
+  499 | CV_EXPORTS String [01;36m[Kformat[m[K(const char* fmt, ...) CV_FORMAT_PRINTF(1, 2);
+      |                   [01;36m[K^~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/operations.hpp:499:38:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Mat[m[K’ to ‘[01m[Kconst char*[m[K’
+  499 | CV_EXPORTS String format([01;36m[Kconst char* fmt[m[K, ...) CV_FORMAT_PRINTF(1, 2);
+      |                          [01;36m[K~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/camera_learn.dir/build.make:76：CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/camera_learn.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
