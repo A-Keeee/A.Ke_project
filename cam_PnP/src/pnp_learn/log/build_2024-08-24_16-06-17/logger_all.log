@@ -1,0 +1,105 @@
+[3.364s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.364s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7cc19b60ff10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cc19b60fa00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cc19b60fa00>>)
+[9.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[9.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[9.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[9.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[9.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[9.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[9.350s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn'
+[9.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[9.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[9.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[9.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[9.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[9.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[9.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[9.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[9.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[9.586s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'pnp_learn'
+[9.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[9.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[9.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[9.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[9.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[10.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[10.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[10.100s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 328 installed packages in /opt/ros/humble
+[10.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[10.177s] Level 5:colcon.colcon_core.verb:set package 'pnp_learn' build argument 'cmake_args' from command line to 'None'
+[10.177s] Level 5:colcon.colcon_core.verb:set package 'pnp_learn' build argument 'cmake_target' from command line to 'None'
+[10.177s] Level 5:colcon.colcon_core.verb:set package 'pnp_learn' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[10.177s] Level 5:colcon.colcon_core.verb:set package 'pnp_learn' build argument 'cmake_clean_cache' from command line to 'False'
+[10.177s] Level 5:colcon.colcon_core.verb:set package 'pnp_learn' build argument 'cmake_clean_first' from command line to 'False'
+[10.177s] Level 5:colcon.colcon_core.verb:set package 'pnp_learn' build argument 'cmake_force_configure' from command line to 'False'
+[10.178s] Level 5:colcon.colcon_core.verb:set package 'pnp_learn' build argument 'ament_cmake_args' from command line to 'None'
+[10.178s] Level 5:colcon.colcon_core.verb:set package 'pnp_learn' build argument 'catkin_cmake_args' from command line to 'None'
+[10.178s] Level 5:colcon.colcon_core.verb:set package 'pnp_learn' build argument 'catkin_skip_building_tests' from command line to 'False'
+[10.178s] DEBUG:colcon.colcon_core.verb:Building package 'pnp_learn' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn', 'merge_install': False, 'path': '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn', 'symlink_install': False, 'test_result_base': None}
+[10.178s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[10.180s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[10.180s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn' with build type 'ament_cmake'
+[10.180s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn'
+[10.192s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[10.192s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.192s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn
+[29.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn
+[29.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn -- -j2 -l2
+[49.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn -- -j2 -l2
+[49.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn
+[49.157s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pnp_learn)
+[49.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn
+[49.253s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn' for CMake module files
+[49.253s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn' for CMake config files
+[49.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('pnp_learn', 'cmake_prefix_path')
+[49.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/hook/cmake_prefix_path.ps1'
+[49.269s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/hook/cmake_prefix_path.dsv'
+[49.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/hook/cmake_prefix_path.sh'
+[49.282s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib'
+[49.283s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/bin'
+[49.283s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/pkgconfig/pnp_learn.pc'
+[49.283s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/python3.10/site-packages'
+[49.284s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/bin'
+[49.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.ps1'
+[49.287s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.dsv'
+[49.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.sh'
+[49.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.bash'
+[49.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.zsh'
+[49.319s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/colcon-core/packages/pnp_learn)
+[49.415s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pnp_learn)
+[49.415s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn' for CMake module files
+[49.416s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn' for CMake config files
+[49.416s] Level 1:colcon.colcon_core.shell:create_environment_hook('pnp_learn', 'cmake_prefix_path')
+[49.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/hook/cmake_prefix_path.ps1'
+[49.418s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/hook/cmake_prefix_path.dsv'
+[49.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/hook/cmake_prefix_path.sh'
+[49.419s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib'
+[49.419s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/bin'
+[49.419s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/pkgconfig/pnp_learn.pc'
+[49.420s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/python3.10/site-packages'
+[49.420s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/bin'
+[49.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.ps1'
+[49.421s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.dsv'
+[49.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.sh'
+[49.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.bash'
+[49.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.zsh'
+[49.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/colcon-core/packages/pnp_learn)
+[49.424s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[49.425s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[49.425s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[49.425s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[49.497s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[49.497s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[49.497s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[49.681s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[49.681s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/local_setup.ps1'
+[49.702s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/_local_setup_util_ps1.py'
+[49.716s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/setup.ps1'
+[49.725s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/local_setup.sh'
+[49.741s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/_local_setup_util_sh.py'
+[49.742s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/setup.sh'
+[49.756s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/local_setup.bash'
+[49.799s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/setup.bash'
+[49.807s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/local_setup.zsh'
+[49.827s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/setup.zsh'

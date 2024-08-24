@@ -1,0 +1,440 @@
+[0.000000] (-) TimerEvent: {}
+[0.001682] (pnp_learn) JobQueued: {'identifier': 'pnp_learn', 'dependencies': OrderedDict()}
+[0.001734] (pnp_learn) JobStarted: {'identifier': 'pnp_learn'}
+[0.049202] (pnp_learn) JobProgress: {'identifier': 'pnp_learn', 'progress': 'cmake'}
+[0.049894] (pnp_learn) Command: {'cmd': ['/usr/bin/cmake', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn', '-DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn'], 'cwd': '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1123'), ('SYSTEMD_EXEC_PID', '1300'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4315'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20947'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1271,unix/ake-virtual-machine:/tmp/.ICE-unix/1271'), ('INVOCATION_ID', 'e8ac5dd76cbf4eb49fe068a114274d81'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HQLNS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-68fb8b836f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100002] (-) TimerEvent: {}
+[0.200730] (-) TimerEvent: {}
+[0.301071] (-) TimerEvent: {}
+[0.401793] (-) TimerEvent: {}
+[0.503158] (-) TimerEvent: {}
+[0.603852] (-) TimerEvent: {}
+[0.704246] (-) TimerEvent: {}
+[0.804948] (-) TimerEvent: {}
+[0.905216] (-) TimerEvent: {}
+[1.005607] (-) TimerEvent: {}
+[1.105996] (-) TimerEvent: {}
+[1.206692] (-) TimerEvent: {}
+[1.310933] (-) TimerEvent: {}
+[1.418908] (-) TimerEvent: {}
+[1.519343] (-) TimerEvent: {}
+[1.619897] (-) TimerEvent: {}
+[1.720168] (-) TimerEvent: {}
+[1.820607] (-) TimerEvent: {}
+[1.921081] (-) TimerEvent: {}
+[2.021506] (-) TimerEvent: {}
+[2.122127] (-) TimerEvent: {}
+[2.222537] (-) TimerEvent: {}
+[2.323070] (-) TimerEvent: {}
+[2.423398] (-) TimerEvent: {}
+[2.523857] (-) TimerEvent: {}
+[2.624289] (-) TimerEvent: {}
+[2.724806] (-) TimerEvent: {}
+[2.825156] (-) TimerEvent: {}
+[2.925687] (-) TimerEvent: {}
+[2.941965] (pnp_learn) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.025994] (-) TimerEvent: {}
+[3.127113] (-) TimerEvent: {}
+[3.227596] (-) TimerEvent: {}
+[3.328173] (-) TimerEvent: {}
+[3.429223] (-) TimerEvent: {}
+[3.530031] (-) TimerEvent: {}
+[3.630670] (-) TimerEvent: {}
+[3.731740] (-) TimerEvent: {}
+[3.832078] (-) TimerEvent: {}
+[3.932387] (-) TimerEvent: {}
+[4.032900] (-) TimerEvent: {}
+[4.133575] (-) TimerEvent: {}
+[4.234073] (-) TimerEvent: {}
+[4.337906] (-) TimerEvent: {}
+[4.438373] (-) TimerEvent: {}
+[4.538723] (-) TimerEvent: {}
+[4.641690] (-) TimerEvent: {}
+[4.742209] (-) TimerEvent: {}
+[4.842659] (-) TimerEvent: {}
+[4.942922] (-) TimerEvent: {}
+[4.957472] (pnp_learn) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.043043] (-) TimerEvent: {}
+[5.143487] (-) TimerEvent: {}
+[5.243787] (-) TimerEvent: {}
+[5.344295] (-) TimerEvent: {}
+[5.446069] (-) TimerEvent: {}
+[5.546552] (-) TimerEvent: {}
+[5.586336] (pnp_learn) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.647026] (-) TimerEvent: {}
+[5.747582] (-) TimerEvent: {}
+[5.847985] (-) TimerEvent: {}
+[5.949209] (-) TimerEvent: {}
+[6.050483] (-) TimerEvent: {}
+[6.151457] (-) TimerEvent: {}
+[6.252870] (-) TimerEvent: {}
+[6.273197] (pnp_learn) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.286121] (pnp_learn) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.323936] (pnp_learn) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.352981] (-) TimerEvent: {}
+[6.371356] (pnp_learn) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.454189] (pnp_learn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.454372] (-) TimerEvent: {}
+[6.559978] (-) TimerEvent: {}
+[6.660368] (-) TimerEvent: {}
+[6.668918] (pnp_learn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.672586] (pnp_learn) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.674531] (pnp_learn) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.674672] (pnp_learn) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.760494] (-) TimerEvent: {}
+[6.861451] (-) TimerEvent: {}
+[6.962085] (-) TimerEvent: {}
+[7.062670] (-) TimerEvent: {}
+[7.083144] (pnp_learn) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[7.162894] (-) TimerEvent: {}
+[7.263655] (-) TimerEvent: {}
+[7.364395] (-) TimerEvent: {}
+[7.465252] (-) TimerEvent: {}
+[7.565939] (-) TimerEvent: {}
+[7.666711] (-) TimerEvent: {}
+[7.775657] (-) TimerEvent: {}
+[7.799869] (pnp_learn) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[7.875769] (-) TimerEvent: {}
+[7.976205] (-) TimerEvent: {}
+[8.078953] (-) TimerEvent: {}
+[8.179536] (-) TimerEvent: {}
+[8.279925] (-) TimerEvent: {}
+[8.380257] (-) TimerEvent: {}
+[8.480560] (-) TimerEvent: {}
+[8.580887] (-) TimerEvent: {}
+[8.681152] (-) TimerEvent: {}
+[8.781556] (-) TimerEvent: {}
+[8.881820] (-) TimerEvent: {}
+[8.982577] (-) TimerEvent: {}
+[9.082944] (-) TimerEvent: {}
+[9.183281] (-) TimerEvent: {}
+[9.283590] (-) TimerEvent: {}
+[9.383896] (-) TimerEvent: {}
+[9.391262] (pnp_learn) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[9.484053] (-) TimerEvent: {}
+[9.584448] (-) TimerEvent: {}
+[9.684793] (-) TimerEvent: {}
+[9.785335] (-) TimerEvent: {}
+[9.885651] (-) TimerEvent: {}
+[9.986217] (-) TimerEvent: {}
+[10.086745] (-) TimerEvent: {}
+[10.187726] (-) TimerEvent: {}
+[10.288033] (-) TimerEvent: {}
+[10.388439] (-) TimerEvent: {}
+[10.490164] (-) TimerEvent: {}
+[10.590665] (-) TimerEvent: {}
+[10.691083] (-) TimerEvent: {}
+[10.791468] (-) TimerEvent: {}
+[10.892269] (-) TimerEvent: {}
+[10.902668] (pnp_learn) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[10.992533] (-) TimerEvent: {}
+[11.024192] (pnp_learn) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[11.092848] (-) TimerEvent: {}
+[11.193176] (-) TimerEvent: {}
+[11.213975] (pnp_learn) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[11.293487] (-) TimerEvent: {}
+[11.393980] (-) TimerEvent: {}
+[11.495042] (-) TimerEvent: {}
+[11.572854] (pnp_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.595210] (-) TimerEvent: {}
+[11.695592] (-) TimerEvent: {}
+[11.795918] (-) TimerEvent: {}
+[11.896401] (-) TimerEvent: {}
+[11.996812] (-) TimerEvent: {}
+[12.016486] (pnp_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[12.098171] (-) TimerEvent: {}
+[12.200069] (-) TimerEvent: {}
+[12.300590] (-) TimerEvent: {}
+[12.401611] (-) TimerEvent: {}
+[12.501969] (-) TimerEvent: {}
+[12.602606] (-) TimerEvent: {}
+[12.703038] (-) TimerEvent: {}
+[12.803531] (-) TimerEvent: {}
+[12.829889] (pnp_learn) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[12.903643] (-) TimerEvent: {}
+[12.916977] (pnp_learn) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[13.004182] (-) TimerEvent: {}
+[13.105747] (-) TimerEvent: {}
+[13.207610] (-) TimerEvent: {}
+[13.308379] (-) TimerEvent: {}
+[13.409174] (-) TimerEvent: {}
+[13.509490] (-) TimerEvent: {}
+[13.610167] (-) TimerEvent: {}
+[13.710479] (-) TimerEvent: {}
+[13.814466] (-) TimerEvent: {}
+[13.915119] (-) TimerEvent: {}
+[14.015626] (-) TimerEvent: {}
+[14.116143] (-) TimerEvent: {}
+[14.216833] (-) TimerEvent: {}
+[14.317316] (-) TimerEvent: {}
+[14.423078] (-) TimerEvent: {}
+[14.523422] (-) TimerEvent: {}
+[14.623736] (-) TimerEvent: {}
+[14.724212] (-) TimerEvent: {}
+[14.824605] (-) TimerEvent: {}
+[14.926957] (-) TimerEvent: {}
+[15.027346] (-) TimerEvent: {}
+[15.086924] (pnp_learn) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[15.127589] (-) TimerEvent: {}
+[15.228025] (-) TimerEvent: {}
+[15.305135] (pnp_learn) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[15.328191] (-) TimerEvent: {}
+[15.375570] (pnp_learn) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[15.428473] (-) TimerEvent: {}
+[15.529220] (-) TimerEvent: {}
+[15.630578] (-) TimerEvent: {}
+[15.731208] (-) TimerEvent: {}
+[15.831941] (-) TimerEvent: {}
+[15.932914] (-) TimerEvent: {}
+[16.010949] (pnp_learn) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[16.033918] (-) TimerEvent: {}
+[16.134265] (-) TimerEvent: {}
+[16.235029] (-) TimerEvent: {}
+[16.335885] (-) TimerEvent: {}
+[16.436387] (-) TimerEvent: {}
+[16.538614] (-) TimerEvent: {}
+[16.639173] (-) TimerEvent: {}
+[16.652765] (pnp_learn) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[16.652997] (pnp_learn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[16.740867] (-) TimerEvent: {}
+[16.841695] (-) TimerEvent: {}
+[16.879461] (pnp_learn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[16.879734] (pnp_learn) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[16.941944] (-) TimerEvent: {}
+[17.043621] (-) TimerEvent: {}
+[17.144106] (-) TimerEvent: {}
+[17.247880] (-) TimerEvent: {}
+[17.348647] (-) TimerEvent: {}
+[17.449491] (-) TimerEvent: {}
+[17.550991] (-) TimerEvent: {}
+[17.654558] (-) TimerEvent: {}
+[17.755984] (-) TimerEvent: {}
+[17.857178] (-) TimerEvent: {}
+[17.957629] (-) TimerEvent: {}
+[18.058371] (-) TimerEvent: {}
+[18.159392] (-) TimerEvent: {}
+[18.260131] (-) TimerEvent: {}
+[18.360597] (-) TimerEvent: {}
+[18.395946] (pnp_learn) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.10.0") \n'}
+[18.446726] (pnp_learn) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[18.461923] (-) TimerEvent: {}
+[18.563305] (-) TimerEvent: {}
+[18.663842] (-) TimerEvent: {}
+[18.764459] (-) TimerEvent: {}
+[18.821400] (pnp_learn) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[18.821870] (pnp_learn) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[18.821989] (pnp_learn) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[18.848960] (pnp_learn) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.865883] (-) TimerEvent: {}
+[18.874473] (pnp_learn) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[18.874664] (pnp_learn) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[18.876814] (pnp_learn) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.931116] (pnp_learn) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.966865] (-) TimerEvent: {}
+[19.042952] (pnp_learn) StdoutLine: {'line': b'-- Generating done\n'}
+[19.043908] (pnp_learn) StdoutLine: {'line': b'-- Build files have been written to: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn\n'}
+[19.057337] (pnp_learn) CommandEnded: {'returncode': 0}
+[19.058086] (pnp_learn) JobProgress: {'identifier': 'pnp_learn', 'progress': 'build'}
+[19.059574] (pnp_learn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1123'), ('SYSTEMD_EXEC_PID', '1300'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4315'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20947'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1271,unix/ake-virtual-machine:/tmp/.ICE-unix/1271'), ('INVOCATION_ID', 'e8ac5dd76cbf4eb49fe068a114274d81'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HQLNS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-68fb8b836f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[19.068635] (-) TimerEvent: {}
+[19.169598] (-) TimerEvent: {}
+[19.175850] (pnp_learn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o\x1b[0m\n'}
+[19.270030] (-) TimerEvent: {}
+[19.370765] (-) TimerEvent: {}
+[19.471867] (-) TimerEvent: {}
+[19.572922] (-) TimerEvent: {}
+[19.673265] (-) TimerEvent: {}
+[19.779033] (-) TimerEvent: {}
+[19.881720] (-) TimerEvent: {}
+[19.985094] (-) TimerEvent: {}
+[20.087888] (-) TimerEvent: {}
+[20.191523] (-) TimerEvent: {}
+[20.293226] (-) TimerEvent: {}
+[20.393803] (-) TimerEvent: {}
+[20.496100] (-) TimerEvent: {}
+[20.599901] (-) TimerEvent: {}
+[20.703923] (-) TimerEvent: {}
+[20.804582] (-) TimerEvent: {}
+[20.906185] (-) TimerEvent: {}
+[21.007910] (-) TimerEvent: {}
+[21.108567] (-) TimerEvent: {}
+[21.209293] (-) TimerEvent: {}
+[21.310893] (-) TimerEvent: {}
+[21.439866] (-) TimerEvent: {}
+[21.553744] (-) TimerEvent: {}
+[21.654284] (-) TimerEvent: {}
+[21.754763] (-) TimerEvent: {}
+[21.855190] (-) TimerEvent: {}
+[21.955995] (-) TimerEvent: {}
+[22.056690] (-) TimerEvent: {}
+[22.157086] (-) TimerEvent: {}
+[22.258461] (-) TimerEvent: {}
+[22.359387] (-) TimerEvent: {}
+[22.459729] (-) TimerEvent: {}
+[22.560045] (-) TimerEvent: {}
+[22.660422] (-) TimerEvent: {}
+[22.760780] (-) TimerEvent: {}
+[22.861162] (-) TimerEvent: {}
+[22.961498] (-) TimerEvent: {}
+[23.062032] (-) TimerEvent: {}
+[23.165198] (-) TimerEvent: {}
+[23.266320] (-) TimerEvent: {}
+[23.367875] (-) TimerEvent: {}
+[23.468251] (-) TimerEvent: {}
+[23.568915] (-) TimerEvent: {}
+[23.670084] (-) TimerEvent: {}
+[23.771291] (-) TimerEvent: {}
+[23.872669] (-) TimerEvent: {}
+[23.973484] (-) TimerEvent: {}
+[24.073813] (-) TimerEvent: {}
+[24.177626] (-) TimerEvent: {}
+[24.278453] (-) TimerEvent: {}
+[24.378966] (-) TimerEvent: {}
+[24.479270] (-) TimerEvent: {}
+[24.583647] (-) TimerEvent: {}
+[24.709418] (-) TimerEvent: {}
+[24.826686] (-) TimerEvent: {}
+[24.969594] (-) TimerEvent: {}
+[25.071864] (-) TimerEvent: {}
+[25.175592] (-) TimerEvent: {}
+[25.357301] (-) TimerEvent: {}
+[25.515298] (-) TimerEvent: {}
+[25.615585] (-) TimerEvent: {}
+[25.724313] (-) TimerEvent: {}
+[25.825026] (-) TimerEvent: {}
+[25.938366] (-) TimerEvent: {}
+[26.160867] (-) TimerEvent: {}
+[26.288876] (-) TimerEvent: {}
+[26.428205] (-) TimerEvent: {}
+[26.533983] (-) TimerEvent: {}
+[26.634330] (-) TimerEvent: {}
+[26.757852] (-) TimerEvent: {}
+[26.861642] (-) TimerEvent: {}
+[26.965864] (-) TimerEvent: {}
+[27.066185] (-) TimerEvent: {}
+[27.166545] (-) TimerEvent: {}
+[27.280870] (-) TimerEvent: {}
+[27.393933] (-) TimerEvent: {}
+[27.524857] (-) TimerEvent: {}
+[27.626270] (-) TimerEvent: {}
+[27.741016] (-) TimerEvent: {}
+[27.858248] (-) TimerEvent: {}
+[27.966161] (-) TimerEvent: {}
+[28.066849] (-) TimerEvent: {}
+[28.180953] (-) TimerEvent: {}
+[28.281270] (-) TimerEvent: {}
+[28.382986] (-) TimerEvent: {}
+[28.495559] (-) TimerEvent: {}
+[28.638424] (-) TimerEvent: {}
+[29.085022] (-) TimerEvent: {}
+[29.203511] (-) TimerEvent: {}
+[29.311536] (-) TimerEvent: {}
+[29.456948] (-) TimerEvent: {}
+[29.571941] (-) TimerEvent: {}
+[29.672420] (-) TimerEvent: {}
+[29.773519] (-) TimerEvent: {}
+[29.882293] (-) TimerEvent: {}
+[29.988401] (-) TimerEvent: {}
+[30.102159] (-) TimerEvent: {}
+[30.203002] (-) TimerEvent: {}
+[30.421411] (-) TimerEvent: {}
+[30.521729] (-) TimerEvent: {}
+[30.630866] (-) TimerEvent: {}
+[30.735427] (-) TimerEvent: {}
+[30.853583] (-) TimerEvent: {}
+[30.957943] (-) TimerEvent: {}
+[31.071358] (-) TimerEvent: {}
+[31.175092] (-) TimerEvent: {}
+[31.275492] (-) TimerEvent: {}
+[31.390894] (-) TimerEvent: {}
+[31.491263] (-) TimerEvent: {}
+[31.910713] (-) TimerEvent: {}
+[32.012110] (-) TimerEvent: {}
+[32.119696] (-) TimerEvent: {}
+[32.220530] (-) TimerEvent: {}
+[32.322206] (-) TimerEvent: {}
+[32.422580] (-) TimerEvent: {}
+[32.522979] (-) TimerEvent: {}
+[32.623982] (-) TimerEvent: {}
+[32.724375] (-) TimerEvent: {}
+[32.825592] (-) TimerEvent: {}
+[33.072393] (-) TimerEvent: {}
+[33.180283] (-) TimerEvent: {}
+[33.305696] (-) TimerEvent: {}
+[33.448049] (-) TimerEvent: {}
+[33.549877] (-) TimerEvent: {}
+[33.701174] (-) TimerEvent: {}
+[33.803504] (-) TimerEvent: {}
+[34.083040] (-) TimerEvent: {}
+[34.264036] (-) TimerEvent: {}
+[34.380609] (-) TimerEvent: {}
+[34.579048] (-) TimerEvent: {}
+[34.698468] (-) TimerEvent: {}
+[34.935218] (-) TimerEvent: {}
+[35.163873] (-) TimerEvent: {}
+[35.265881] (-) TimerEvent: {}
+[35.380316] (-) TimerEvent: {}
+[35.480624] (-) TimerEvent: {}
+[35.581039] (-) TimerEvent: {}
+[35.681442] (-) TimerEvent: {}
+[35.784025] (-) TimerEvent: {}
+[35.884365] (-) TimerEvent: {}
+[35.984722] (-) TimerEvent: {}
+[36.085241] (-) TimerEvent: {}
+[36.185631] (-) TimerEvent: {}
+[36.286140] (-) TimerEvent: {}
+[36.387731] (-) TimerEvent: {}
+[36.489866] (-) TimerEvent: {}
+[36.590686] (-) TimerEvent: {}
+[36.619040] (pnp_learn) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pnp_learn\x1b[0m\n'}
+[36.691050] (-) TimerEvent: {}
+[36.792191] (-) TimerEvent: {}
+[36.898977] (-) TimerEvent: {}
+[36.999338] (-) TimerEvent: {}
+[37.099655] (-) TimerEvent: {}
+[37.200070] (-) TimerEvent: {}
+[37.300498] (-) TimerEvent: {}
+[37.403175] (-) TimerEvent: {}
+[37.504031] (-) TimerEvent: {}
+[37.605642] (-) TimerEvent: {}
+[37.706974] (-) TimerEvent: {}
+[37.807997] (-) TimerEvent: {}
+[37.915389] (-) TimerEvent: {}
+[38.015985] (-) TimerEvent: {}
+[38.116681] (-) TimerEvent: {}
+[38.217321] (-) TimerEvent: {}
+[38.323140] (-) TimerEvent: {}
+[38.423619] (-) TimerEvent: {}
+[38.525408] (-) TimerEvent: {}
+[38.626097] (-) TimerEvent: {}
+[38.726826] (-) TimerEvent: {}
+[38.829001] (-) TimerEvent: {}
+[38.830025] (pnp_learn) StdoutLine: {'line': b'[100%] Built target pnp_learn\n'}
+[38.853147] (pnp_learn) CommandEnded: {'returncode': 0}
+[38.929221] (-) TimerEvent: {}
+[38.933180] (pnp_learn) JobProgress: {'identifier': 'pnp_learn', 'progress': 'install'}
+[38.951888] (pnp_learn) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn'], 'cwd': '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1123'), ('SYSTEMD_EXEC_PID', '1300'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4315'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20947'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1271,unix/ake-virtual-machine:/tmp/.ICE-unix/1271'), ('INVOCATION_ID', 'e8ac5dd76cbf4eb49fe068a114274d81'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HQLNS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-68fb8b836f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[38.962903] (pnp_learn) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.972193] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/pnp_learn/pnp_learn\n'}
+[38.975812] (pnp_learn) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/pnp_learn/pnp_learn" to ""\n'}
+[38.975936] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/ament_index/resource_index/package_run_dependencies/pnp_learn\n'}
+[38.975991] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/ament_index/resource_index/parent_prefix_path/pnp_learn\n'}
+[38.976059] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/ament_prefix_path.sh\n'}
+[38.976122] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/ament_prefix_path.dsv\n'}
+[38.976172] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/path.sh\n'}
+[38.976223] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/path.dsv\n'}
+[38.976613] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.bash\n'}
+[38.976746] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.sh\n'}
+[38.976806] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.zsh\n'}
+[38.976853] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.dsv\n'}
+[38.976899] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.dsv\n'}
+[38.976951] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/ament_index/resource_index/packages/pnp_learn\n'}
+[38.976998] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/cmake/pnp_learnConfig.cmake\n'}
+[38.977365] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/cmake/pnp_learnConfig-version.cmake\n'}
+[38.978007] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.xml\n'}
+[38.978730] (pnp_learn) CommandEnded: {'returncode': 0}
+[39.029342] (-) TimerEvent: {}
+[39.129976] (-) TimerEvent: {}
+[39.230347] (-) TimerEvent: {}
+[39.246135] (pnp_learn) JobEnded: {'identifier': 'pnp_learn', 'rc': 0}
+[39.247383] (-) EventReactorShutdown: {}
