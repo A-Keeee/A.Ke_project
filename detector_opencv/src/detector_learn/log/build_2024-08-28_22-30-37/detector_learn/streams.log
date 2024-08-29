@@ -1,0 +1,26 @@
+[0.030s] Invoking command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn -- -j2 -l2
+[0.129s] [35m[1mConsolidate compiler generated dependencies of target detector_learn[0m
+[0.171s] [ 50%] [32mBuilding CXX object CMakeFiles/detector_learn.dir/src/detector_learn.cpp.o[0m
+[7.041s] [100%] [32m[1mLinking CXX executable detector_learn[0m
+[7.297s] [100%] Built target detector_learn
+[7.318s] Invoked command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn -- -j2 -l2
+[7.441s] Invoking command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn
+[7.453s] -- Install configuration: ""
+[7.454s] -- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib/detector_learn/detector_learn
+[7.456s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib/detector_learn/detector_learn" to ""
+[7.456s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/package_run_dependencies/detector_learn
+[7.457s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/parent_prefix_path/detector_learn
+[7.458s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/ament_prefix_path.sh
+[7.458s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/ament_prefix_path.dsv
+[7.458s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/path.sh
+[7.458s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/path.dsv
+[7.459s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.bash
+[7.459s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.sh
+[7.459s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.zsh
+[7.459s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.dsv
+[7.459s] -- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.dsv
+[7.459s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/packages/detector_learn
+[7.459s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/cmake/detector_learnConfig.cmake
+[7.459s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/cmake/detector_learnConfig-version.cmake
+[7.460s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.xml
+[7.465s] Invoked command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn

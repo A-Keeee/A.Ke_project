@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.004467] (detector_learn) JobQueued: {'identifier': 'detector_learn', 'dependencies': OrderedDict()}
+[0.004661] (detector_learn) JobStarted: {'identifier': 'detector_learn'}
+[0.025614] (detector_learn) JobProgress: {'identifier': 'detector_learn', 'progress': 'cmake'}
+[0.033994] (detector_learn) JobProgress: {'identifier': 'detector_learn', 'progress': 'build'}
+[0.034250] (detector_learn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1147'), ('SYSTEMD_EXEC_PID', '1385'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2767'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:22619'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1329,unix/ake-virtual-machine:/tmp/.ICE-unix/1329'), ('INVOCATION_ID', '24119ff031ed4b5fa58370794bf0021b'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.5RJCT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ca183344b6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn:/opt/ros/humble')]), 'shell': False}
+[0.101749] (-) TimerEvent: {}
+[0.109738] (detector_learn) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target detector_learn\x1b[0m\n'}
+[0.153665] (detector_learn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/detector_learn.dir/src/detector_learn.cpp.o\x1b[0m\n'}
+[0.210199] (-) TimerEvent: {}
+[0.311129] (-) TimerEvent: {}
+[0.413661] (-) TimerEvent: {}
+[0.514985] (-) TimerEvent: {}
+[0.615347] (-) TimerEvent: {}
+[0.716566] (-) TimerEvent: {}
+[0.818336] (-) TimerEvent: {}
+[0.919097] (-) TimerEvent: {}
+[1.019862] (-) TimerEvent: {}
+[1.122214] (-) TimerEvent: {}
+[1.222589] (-) TimerEvent: {}
+[1.323232] (-) TimerEvent: {}
+[1.426955] (-) TimerEvent: {}
+[1.527313] (-) TimerEvent: {}
+[1.627682] (-) TimerEvent: {}
+[1.729209] (-) TimerEvent: {}
+[1.829840] (-) TimerEvent: {}
+[1.931952] (-) TimerEvent: {}
+[2.032289] (-) TimerEvent: {}
+[2.133142] (-) TimerEvent: {}
+[2.235093] (-) TimerEvent: {}
+[2.338113] (-) TimerEvent: {}
+[2.438456] (-) TimerEvent: {}
+[2.539126] (-) TimerEvent: {}
+[2.640002] (-) TimerEvent: {}
+[2.740673] (-) TimerEvent: {}
+[2.849064] (-) TimerEvent: {}
+[2.949810] (-) TimerEvent: {}
+[3.051190] (-) TimerEvent: {}
+[3.158311] (-) TimerEvent: {}
+[3.258757] (-) TimerEvent: {}
+[3.359578] (-) TimerEvent: {}
+[3.471616] (-) TimerEvent: {}
+[3.573070] (-) TimerEvent: {}
+[3.675957] (-) TimerEvent: {}
+[3.776311] (-) TimerEvent: {}
+[3.876748] (-) TimerEvent: {}
+[3.977172] (-) TimerEvent: {}
+[4.077531] (-) TimerEvent: {}
+[4.180962] (-) TimerEvent: {}
+[4.281302] (-) TimerEvent: {}
+[4.382071] (-) TimerEvent: {}
+[4.483019] (-) TimerEvent: {}
+[4.583950] (-) TimerEvent: {}
+[4.589724] (detector_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/src/detector_learn.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ArmorDetector::detect_armor(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.590005] (detector_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/src/detector_learn.cpp:64:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""s\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.590132] (detector_learn) StderrLine: {'line': b'   64 |         cv::inRange(hsvImage, cv::Scalar(70, 110, 150), cv::Scalar(130, \x1b[01;31m\x1b[K150s\x1b[m\x1b[K, 255), blueMask);//cv::Scalar(100, 50, 50), cv::Scalar(125, 255, 255)\n'}
+[4.590244] (detector_learn) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.684955] (-) TimerEvent: {}
+[4.785961] (-) TimerEvent: {}
+[4.886950] (-) TimerEvent: {}
+[4.987287] (-) TimerEvent: {}
+[5.088213] (-) TimerEvent: {}
+[5.190188] (-) TimerEvent: {}
+[5.290729] (-) TimerEvent: {}
+[5.392955] (-) TimerEvent: {}
+[5.493276] (-) TimerEvent: {}
+[5.595953] (-) TimerEvent: {}
+[5.696284] (-) TimerEvent: {}
+[5.785942] (detector_learn) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/detector_learn.dir/build.make:76\xef\xbc\x9aCMakeFiles/detector_learn.dir/src/detector_learn.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[5.786396] (detector_learn) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/detector_learn.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[5.787328] (detector_learn) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[5.792265] (detector_learn) CommandEnded: {'returncode': 2}
+[5.796363] (-) TimerEvent: {}
+[5.896912] (-) TimerEvent: {}
+[5.916816] (detector_learn) JobEnded: {'identifier': 'detector_learn', 'rc': 2}
+[5.918685] (-) EventReactorShutdown: {}

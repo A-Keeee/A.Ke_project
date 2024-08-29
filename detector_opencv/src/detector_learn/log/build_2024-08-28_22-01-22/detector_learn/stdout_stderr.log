@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target detector_learn[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/detector_learn.dir/src/detector_learn.cpp.o[0m
+[01m[K/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/src/detector_learn.cpp:[m[K In member function ‘[01m[Kvoid ArmorDetector::detect_armor(cv::Mat&)[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/src/detector_learn.cpp:57:82:[m[K [01;31m[Kerror: [m[K‘[01m[KredMask1[m[K’ was not declared in this scope; did you mean ‘[01m[KredMask[m[K’?
+   57 |         cv::inRange(hsvImage, cv::Scalar(0, 100, 100), cv::Scalar(10, 255, 255), [01;31m[KredMask1[m[K); // 红色范围1
+      |                                                                                  [01;31m[K^~~~~~~~[m[K
+      |                                                                                  [32m[KredMask[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/src/detector_learn.cpp:58:85:[m[K [01;31m[Kerror: [m[K‘[01m[KredMask2[m[K’ was not declared in this scope; did you mean ‘[01m[KredMask[m[K’?
+   58 |         cv::inRange(hsvImage, cv::Scalar(170, 100, 100), cv::Scalar(180, 255, 255), [01;31m[KredMask2[m[K); // 红色范围2
+      |                                                                                     [01;31m[K^~~~~~~~[m[K
+      |                                                                                     [32m[KredMask[m[K
+gmake[2]: *** [CMakeFiles/detector_learn.dir/build.make:76：CMakeFiles/detector_learn.dir/src/detector_learn.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/detector_learn.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,26 @@
+[0.025s] Invoking command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn -- -j2 -l2
+[0.125s] [35m[1mConsolidate compiler generated dependencies of target detector_learn[0m
+[0.187s] [ 50%] [32mBuilding CXX object CMakeFiles/detector_learn.dir/src/detector_learn.cpp.o[0m
+[6.022s] [100%] [32m[1mLinking CXX executable detector_learn[0m
+[6.348s] [100%] Built target detector_learn
+[6.377s] Invoked command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn -- -j2 -l2
+[6.505s] Invoking command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn
+[6.523s] -- Install configuration: ""
+[6.523s] -- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib/detector_learn/detector_learn
+[6.528s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib/detector_learn/detector_learn" to ""
+[6.528s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/package_run_dependencies/detector_learn
+[6.528s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/parent_prefix_path/detector_learn
+[6.528s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/ament_prefix_path.sh
+[6.528s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/ament_prefix_path.dsv
+[6.528s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/path.sh
+[6.528s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/path.dsv
+[6.528s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.bash
+[6.528s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.sh
+[6.529s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.zsh
+[6.529s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.dsv
+[6.529s] -- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.dsv
+[6.529s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/packages/detector_learn
+[6.529s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/cmake/detector_learnConfig.cmake
+[6.529s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/cmake/detector_learnConfig-version.cmake
+[6.529s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.xml
+[6.535s] Invoked command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn

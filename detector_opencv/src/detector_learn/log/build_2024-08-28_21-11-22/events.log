@@ -1,0 +1,313 @@
+[0.000000] (-) TimerEvent: {}
+[0.001054] (detector_learn) JobQueued: {'identifier': 'detector_learn', 'dependencies': OrderedDict()}
+[0.002867] (detector_learn) JobStarted: {'identifier': 'detector_learn'}
+[0.054975] (detector_learn) JobProgress: {'identifier': 'detector_learn', 'progress': 'cmake'}
+[0.055039] (detector_learn) Command: {'cmd': ['/usr/bin/cmake', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn', '-DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn'], 'cwd': '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1118'), ('SYSTEMD_EXEC_PID', '1310'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4279'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21638'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1280,unix/ake-virtual-machine:/tmp/.ICE-unix/1280'), ('INVOCATION_ID', '562b604b5f11498497507c5c385939d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N4O1S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ca183344b6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099992] (-) TimerEvent: {}
+[0.201448] (-) TimerEvent: {}
+[0.301914] (-) TimerEvent: {}
+[0.402637] (-) TimerEvent: {}
+[0.503257] (-) TimerEvent: {}
+[0.603833] (-) TimerEvent: {}
+[0.704497] (-) TimerEvent: {}
+[0.805773] (-) TimerEvent: {}
+[0.914755] (-) TimerEvent: {}
+[1.016183] (-) TimerEvent: {}
+[1.116541] (-) TimerEvent: {}
+[1.219366] (-) TimerEvent: {}
+[1.320168] (-) TimerEvent: {}
+[1.420572] (-) TimerEvent: {}
+[1.523157] (-) TimerEvent: {}
+[1.583502] (detector_learn) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.623788] (-) TimerEvent: {}
+[1.726173] (-) TimerEvent: {}
+[1.826908] (-) TimerEvent: {}
+[1.927427] (-) TimerEvent: {}
+[2.029028] (-) TimerEvent: {}
+[2.131784] (-) TimerEvent: {}
+[2.232656] (-) TimerEvent: {}
+[2.322981] (detector_learn) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.332837] (-) TimerEvent: {}
+[2.433154] (-) TimerEvent: {}
+[2.534425] (-) TimerEvent: {}
+[2.576769] (detector_learn) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.635222] (-) TimerEvent: {}
+[2.736162] (-) TimerEvent: {}
+[2.838245] (-) TimerEvent: {}
+[2.939505] (-) TimerEvent: {}
+[2.986856] (detector_learn) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.001231] (detector_learn) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.003938] (detector_learn) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.033258] (detector_learn) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.040132] (-) TimerEvent: {}
+[3.105671] (detector_learn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.140264] (-) TimerEvent: {}
+[3.242064] (-) TimerEvent: {}
+[3.343170] (-) TimerEvent: {}
+[3.386855] (detector_learn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.402616] (detector_learn) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.402941] (detector_learn) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.404501] (detector_learn) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.443321] (-) TimerEvent: {}
+[3.544475] (-) TimerEvent: {}
+[3.647400] (-) TimerEvent: {}
+[3.648934] (detector_learn) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.749332] (-) TimerEvent: {}
+[3.851147] (-) TimerEvent: {}
+[3.951650] (-) TimerEvent: {}
+[4.053167] (-) TimerEvent: {}
+[4.153502] (-) TimerEvent: {}
+[4.220250] (detector_learn) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.258145] (-) TimerEvent: {}
+[4.358690] (-) TimerEvent: {}
+[4.461205] (-) TimerEvent: {}
+[4.565470] (-) TimerEvent: {}
+[4.667461] (-) TimerEvent: {}
+[4.768018] (-) TimerEvent: {}
+[4.868840] (-) TimerEvent: {}
+[4.969561] (-) TimerEvent: {}
+[5.071208] (-) TimerEvent: {}
+[5.171565] (-) TimerEvent: {}
+[5.246999] (detector_learn) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.10.0") \n'}
+[5.271688] (-) TimerEvent: {}
+[5.315516] (detector_learn) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.371880] (-) TimerEvent: {}
+[5.473577] (-) TimerEvent: {}
+[5.582160] (-) TimerEvent: {}
+[5.683106] (-) TimerEvent: {}
+[5.785446] (-) TimerEvent: {}
+[5.890761] (-) TimerEvent: {}
+[5.912510] (detector_learn) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.950706] (detector_learn) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.991085] (-) TimerEvent: {}
+[6.046043] (detector_learn) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.092337] (-) TimerEvent: {}
+[6.193079] (-) TimerEvent: {}
+[6.214589] (detector_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.294158] (-) TimerEvent: {}
+[6.389268] (detector_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.396153] (-) TimerEvent: {}
+[6.496494] (-) TimerEvent: {}
+[6.596845] (-) TimerEvent: {}
+[6.697157] (-) TimerEvent: {}
+[6.799319] (-) TimerEvent: {}
+[6.899697] (-) TimerEvent: {}
+[7.000077] (-) TimerEvent: {}
+[7.023139] (detector_learn) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.070519] (detector_learn) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.100154] (-) TimerEvent: {}
+[7.200523] (-) TimerEvent: {}
+[7.300915] (-) TimerEvent: {}
+[7.402200] (-) TimerEvent: {}
+[7.507190] (-) TimerEvent: {}
+[7.608892] (-) TimerEvent: {}
+[7.709958] (-) TimerEvent: {}
+[7.836157] (-) TimerEvent: {}
+[7.879801] (detector_learn) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.936893] (-) TimerEvent: {}
+[7.982152] (detector_learn) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.037022] (-) TimerEvent: {}
+[8.091522] (detector_learn) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.137236] (-) TimerEvent: {}
+[8.237627] (-) TimerEvent: {}
+[8.289926] (detector_learn) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.337923] (-) TimerEvent: {}
+[8.438284] (-) TimerEvent: {}
+[8.539180] (-) TimerEvent: {}
+[8.640169] (-) TimerEvent: {}
+[8.686311] (detector_learn) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.686526] (detector_learn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.740287] (-) TimerEvent: {}
+[8.841507] (-) TimerEvent: {}
+[8.886129] (detector_learn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.887812] (detector_learn) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.941622] (-) TimerEvent: {}
+[9.041967] (-) TimerEvent: {}
+[9.143414] (-) TimerEvent: {}
+[9.245188] (-) TimerEvent: {}
+[9.345571] (-) TimerEvent: {}
+[9.446163] (-) TimerEvent: {}
+[9.547590] (-) TimerEvent: {}
+[9.649228] (-) TimerEvent: {}
+[9.698596] (detector_learn) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.749339] (-) TimerEvent: {}
+[9.850034] (-) TimerEvent: {}
+[9.951113] (-) TimerEvent: {}
+[10.051785] (-) TimerEvent: {}
+[10.103864] (detector_learn) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.104132] (detector_learn) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[10.104262] (detector_learn) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.113900] (detector_learn) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.136114] (detector_learn) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[10.136332] (detector_learn) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[10.138136] (detector_learn) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.151945] (-) TimerEvent: {}
+[10.193058] (detector_learn) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.253000] (-) TimerEvent: {}
+[10.317038] (detector_learn) StdoutLine: {'line': b'-- Generating done\n'}
+[10.320389] (detector_learn) StdoutLine: {'line': b'-- Build files have been written to: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn\n'}
+[10.337378] (detector_learn) CommandEnded: {'returncode': 0}
+[10.343294] (detector_learn) JobProgress: {'identifier': 'detector_learn', 'progress': 'build'}
+[10.343518] (detector_learn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1118'), ('SYSTEMD_EXEC_PID', '1310'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4279'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21638'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1280,unix/ake-virtual-machine:/tmp/.ICE-unix/1280'), ('INVOCATION_ID', '562b604b5f11498497507c5c385939d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N4O1S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ca183344b6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.353125] (-) TimerEvent: {}
+[10.449236] (detector_learn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/detector_learn.dir/src/detector_learn.cpp.o\x1b[0m\n'}
+[10.453224] (-) TimerEvent: {}
+[10.553855] (-) TimerEvent: {}
+[10.656526] (-) TimerEvent: {}
+[10.756864] (-) TimerEvent: {}
+[10.857216] (-) TimerEvent: {}
+[10.957560] (-) TimerEvent: {}
+[11.058743] (-) TimerEvent: {}
+[11.159105] (-) TimerEvent: {}
+[11.260116] (-) TimerEvent: {}
+[11.362069] (-) TimerEvent: {}
+[11.462640] (-) TimerEvent: {}
+[11.563150] (-) TimerEvent: {}
+[11.663591] (-) TimerEvent: {}
+[11.765288] (-) TimerEvent: {}
+[11.865710] (-) TimerEvent: {}
+[11.966123] (-) TimerEvent: {}
+[12.067317] (-) TimerEvent: {}
+[12.167727] (-) TimerEvent: {}
+[12.268082] (-) TimerEvent: {}
+[12.369293] (-) TimerEvent: {}
+[12.469678] (-) TimerEvent: {}
+[12.570020] (-) TimerEvent: {}
+[12.671292] (-) TimerEvent: {}
+[12.778551] (-) TimerEvent: {}
+[12.883725] (-) TimerEvent: {}
+[12.985134] (-) TimerEvent: {}
+[13.086298] (-) TimerEvent: {}
+[13.189003] (-) TimerEvent: {}
+[13.292677] (-) TimerEvent: {}
+[13.393048] (-) TimerEvent: {}
+[13.493721] (-) TimerEvent: {}
+[13.595035] (-) TimerEvent: {}
+[13.695468] (-) TimerEvent: {}
+[13.797417] (-) TimerEvent: {}
+[13.897888] (-) TimerEvent: {}
+[13.999152] (-) TimerEvent: {}
+[14.100134] (-) TimerEvent: {}
+[14.201157] (-) TimerEvent: {}
+[14.301614] (-) TimerEvent: {}
+[14.403174] (-) TimerEvent: {}
+[14.505566] (-) TimerEvent: {}
+[14.626369] (-) TimerEvent: {}
+[14.747441] (-) TimerEvent: {}
+[14.849352] (-) TimerEvent: {}
+[14.950833] (-) TimerEvent: {}
+[15.053992] (-) TimerEvent: {}
+[15.155280] (-) TimerEvent: {}
+[15.257341] (-) TimerEvent: {}
+[15.358181] (-) TimerEvent: {}
+[15.459598] (-) TimerEvent: {}
+[15.560102] (-) TimerEvent: {}
+[15.660633] (-) TimerEvent: {}
+[15.760952] (-) TimerEvent: {}
+[15.861362] (-) TimerEvent: {}
+[15.961780] (-) TimerEvent: {}
+[16.062262] (-) TimerEvent: {}
+[16.162696] (-) TimerEvent: {}
+[16.265927] (-) TimerEvent: {}
+[16.366809] (-) TimerEvent: {}
+[16.467319] (-) TimerEvent: {}
+[16.567776] (-) TimerEvent: {}
+[16.671836] (-) TimerEvent: {}
+[16.772573] (-) TimerEvent: {}
+[16.874638] (-) TimerEvent: {}
+[16.980774] (-) TimerEvent: {}
+[17.082187] (-) TimerEvent: {}
+[17.182554] (-) TimerEvent: {}
+[17.290332] (-) TimerEvent: {}
+[17.390831] (-) TimerEvent: {}
+[17.492062] (-) TimerEvent: {}
+[17.595451] (-) TimerEvent: {}
+[17.696246] (-) TimerEvent: {}
+[17.805321] (-) TimerEvent: {}
+[17.906275] (-) TimerEvent: {}
+[18.006636] (-) TimerEvent: {}
+[18.110876] (-) TimerEvent: {}
+[18.217094] (-) TimerEvent: {}
+[18.318209] (-) TimerEvent: {}
+[18.420055] (-) TimerEvent: {}
+[18.521334] (-) TimerEvent: {}
+[18.621784] (-) TimerEvent: {}
+[18.722225] (-) TimerEvent: {}
+[18.822791] (-) TimerEvent: {}
+[18.926479] (-) TimerEvent: {}
+[19.026971] (-) TimerEvent: {}
+[19.130727] (-) TimerEvent: {}
+[19.237927] (-) TimerEvent: {}
+[19.338436] (-) TimerEvent: {}
+[19.439617] (-) TimerEvent: {}
+[19.542886] (-) TimerEvent: {}
+[19.643210] (-) TimerEvent: {}
+[19.743623] (-) TimerEvent: {}
+[19.849387] (-) TimerEvent: {}
+[19.952479] (-) TimerEvent: {}
+[20.052976] (-) TimerEvent: {}
+[20.156260] (-) TimerEvent: {}
+[20.260600] (-) TimerEvent: {}
+[20.362151] (-) TimerEvent: {}
+[20.462514] (-) TimerEvent: {}
+[20.562958] (-) TimerEvent: {}
+[20.663545] (-) TimerEvent: {}
+[20.764693] (-) TimerEvent: {}
+[20.865134] (-) TimerEvent: {}
+[20.966210] (-) TimerEvent: {}
+[21.067005] (-) TimerEvent: {}
+[21.182176] (-) TimerEvent: {}
+[21.288870] (-) TimerEvent: {}
+[21.397760] (-) TimerEvent: {}
+[21.498725] (-) TimerEvent: {}
+[21.600019] (-) TimerEvent: {}
+[21.702516] (-) TimerEvent: {}
+[21.804005] (-) TimerEvent: {}
+[21.878209] (detector_learn) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable detector_learn\x1b[0m\n'}
+[21.904987] (-) TimerEvent: {}
+[22.006652] (-) TimerEvent: {}
+[22.107149] (-) TimerEvent: {}
+[22.209154] (-) TimerEvent: {}
+[22.309506] (-) TimerEvent: {}
+[22.411151] (-) TimerEvent: {}
+[22.511745] (-) TimerEvent: {}
+[22.612755] (-) TimerEvent: {}
+[22.713432] (-) TimerEvent: {}
+[22.814397] (-) TimerEvent: {}
+[22.917573] (-) TimerEvent: {}
+[23.018360] (-) TimerEvent: {}
+[23.120732] (-) TimerEvent: {}
+[23.221245] (-) TimerEvent: {}
+[23.321917] (-) TimerEvent: {}
+[23.423620] (-) TimerEvent: {}
+[23.532493] (-) TimerEvent: {}
+[23.643963] (-) TimerEvent: {}
+[23.747857] (-) TimerEvent: {}
+[23.832450] (detector_learn) StdoutLine: {'line': b'[100%] Built target detector_learn\n'}
+[23.848835] (-) TimerEvent: {}
+[23.853474] (detector_learn) CommandEnded: {'returncode': 0}
+[23.929104] (detector_learn) JobProgress: {'identifier': 'detector_learn', 'progress': 'install'}
+[23.937050] (detector_learn) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn'], 'cwd': '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1118'), ('SYSTEMD_EXEC_PID', '1310'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4279'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21638'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1280,unix/ake-virtual-machine:/tmp/.ICE-unix/1280'), ('INVOCATION_ID', '562b604b5f11498497507c5c385939d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N4O1S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ca183344b6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[23.943987] (detector_learn) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.945437] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/package_run_dependencies/detector_learn\n'}
+[23.946310] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/parent_prefix_path/detector_learn\n'}
+[23.946503] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/ament_prefix_path.sh\n'}
+[23.946940] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/ament_prefix_path.dsv\n'}
+[23.947399] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/path.sh\n'}
+[23.948134] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/path.dsv\n'}
+[23.948847] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.bash\n'}
+[23.948961] (-) TimerEvent: {}
+[23.949524] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.sh\n'}
+[23.949708] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.zsh\n'}
+[23.950154] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.dsv\n'}
+[23.950595] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.dsv\n'}
+[23.951106] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/packages/detector_learn\n'}
+[23.951818] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/cmake/detector_learnConfig.cmake\n'}
+[23.951981] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/cmake/detector_learnConfig-version.cmake\n'}
+[23.953124] (detector_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.xml\n'}
+[23.954616] (detector_learn) CommandEnded: {'returncode': 0}
+[24.049105] (-) TimerEvent: {}
+[24.150228] (-) TimerEvent: {}
+[24.250948] (-) TimerEvent: {}
+[24.278645] (detector_learn) JobEnded: {'identifier': 'detector_learn', 'rc': 0}
+[24.280615] (-) EventReactorShutdown: {}

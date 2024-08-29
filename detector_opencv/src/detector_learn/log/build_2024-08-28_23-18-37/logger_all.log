@@ -1,0 +1,104 @@
+[0.215s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.215s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7839dfbd3ee0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7839dfbd39d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7839dfbd39d0>>)
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.547s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.547s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.566s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'detector_learn'
+[0.566s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.566s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.566s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.603s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.603s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.605s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install
+[0.607s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 328 installed packages in /opt/ros/humble
+[0.608s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'detector_learn' build argument 'cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'detector_learn' build argument 'cmake_target' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'detector_learn' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'detector_learn' build argument 'cmake_clean_cache' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'detector_learn' build argument 'cmake_clean_first' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'detector_learn' build argument 'cmake_force_configure' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'detector_learn' build argument 'ament_cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'detector_learn' build argument 'catkin_cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'detector_learn' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.690s] DEBUG:colcon.colcon_core.verb:Building package 'detector_learn' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn', 'merge_install': False, 'path': '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn', 'symlink_install': False, 'test_result_base': None}
+[0.690s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.692s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.692s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn' with build type 'ament_cmake'
+[0.693s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn'
+[0.696s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.697s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.697s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn -- -j2 -l2
+[58.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn -- -j2 -l2
+[58.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn
+[58.507s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(detector_learn)
+[58.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn
+[58.547s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn' for CMake module files
+[58.547s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn' for CMake config files
+[58.549s] Level 1:colcon.colcon_core.shell:create_environment_hook('detector_learn', 'cmake_prefix_path')
+[58.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/hook/cmake_prefix_path.ps1'
+[58.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/hook/cmake_prefix_path.dsv'
+[58.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/hook/cmake_prefix_path.sh'
+[58.555s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib'
+[58.555s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/bin'
+[58.555s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib/pkgconfig/detector_learn.pc'
+[58.555s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib/python3.10/site-packages'
+[58.556s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/bin'
+[58.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.ps1'
+[58.558s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.dsv'
+[58.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.sh'
+[58.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.bash'
+[58.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.zsh'
+[58.566s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/colcon-core/packages/detector_learn)
+[59.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(detector_learn)
+[59.611s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn' for CMake module files
+[59.611s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn' for CMake config files
+[59.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('detector_learn', 'cmake_prefix_path')
+[59.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/hook/cmake_prefix_path.ps1'
+[59.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/hook/cmake_prefix_path.dsv'
+[59.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/hook/cmake_prefix_path.sh'
+[59.615s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib'
+[59.615s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/bin'
+[59.615s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib/pkgconfig/detector_learn.pc'
+[59.615s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib/python3.10/site-packages'
+[59.616s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/bin'
+[59.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.ps1'
+[59.618s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.dsv'
+[59.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.sh'
+[59.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.bash'
+[59.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.zsh'
+[59.756s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/colcon-core/packages/detector_learn)
+[59.756s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[59.756s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[59.756s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[59.756s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[60.172s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[60.173s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[60.173s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[60.707s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[60.707s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/local_setup.ps1'
+[60.708s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/_local_setup_util_ps1.py'
+[60.710s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/setup.ps1'
+[60.711s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/local_setup.sh'
+[60.712s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/_local_setup_util_sh.py'
+[60.921s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/setup.sh'
+[61.063s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/local_setup.bash'
+[61.064s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/setup.bash'
+[61.065s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/local_setup.zsh'
+[61.065s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/setup.zsh'

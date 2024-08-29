@@ -1,0 +1,7 @@
+[01m[K/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/src/detector_learn.cpp:[m[K In member function ‘[01m[Kvoid ArmorDetector::detect_armor(cv::Mat&)[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/src/detector_learn.cpp:91:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ks[m[K’ was not declared in this scope
+   91 | [01;31m[Ks[m[K
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/detector_learn.dir/build.make:76：CMakeFiles/detector_learn.dir/src/detector_learn.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/detector_learn.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
