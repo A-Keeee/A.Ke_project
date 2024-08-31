@@ -1,0 +1,21 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/yolov8_learn.dir/src/yolov8_learn.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable yolov8_learn[0m
+[100%] Built target yolov8_learn
+-- Install configuration: ""
+-- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/lib/yolov8_learn/yolov8_learn
+-- Set runtime path of "/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/lib/yolov8_learn/yolov8_learn" to ""
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/package_run_dependencies/yolov8_learn
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/parent_prefix_path/yolov8_learn
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/path.sh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/path.dsv
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.bash
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.sh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.zsh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.dsv
+-- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/package.dsv
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/packages/yolov8_learn
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/cmake/yolov8_learnConfig.cmake
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/cmake/yolov8_learnConfig-version.cmake
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/package.xml

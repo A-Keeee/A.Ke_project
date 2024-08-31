@@ -1,0 +1,135 @@
+[0.000000] (-) TimerEvent: {}
+[0.002098] (yolov8_learn) JobQueued: {'identifier': 'yolov8_learn', 'dependencies': OrderedDict()}
+[0.002160] (yolov8_learn) JobStarted: {'identifier': 'yolov8_learn'}
+[0.067741] (yolov8_learn) JobProgress: {'identifier': 'yolov8_learn', 'progress': 'cmake'}
+[0.068229] (yolov8_learn) Command: {'cmd': ['/usr/bin/cmake', '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn', '-DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn'], 'cwd': '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1216'), ('SYSTEMD_EXEC_PID', '1390'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6043'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21516'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1372,unix/ake-virtual-machine:/tmp/.ICE-unix/1372'), ('INVOCATION_ID', 'a56a4841456a4e359162b918e8c9662d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UKCIT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c60c56bd96.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.101312] (-) TimerEvent: {}
+[0.202042] (-) TimerEvent: {}
+[0.303412] (-) TimerEvent: {}
+[0.403745] (-) TimerEvent: {}
+[0.504189] (-) TimerEvent: {}
+[0.604558] (-) TimerEvent: {}
+[0.705003] (-) TimerEvent: {}
+[0.791408] (yolov8_learn) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.805163] (-) TimerEvent: {}
+[0.905640] (-) TimerEvent: {}
+[1.007130] (-) TimerEvent: {}
+[1.113979] (-) TimerEvent: {}
+[1.215507] (-) TimerEvent: {}
+[1.317342] (-) TimerEvent: {}
+[1.417750] (-) TimerEvent: {}
+[1.427125] (yolov8_learn) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.517874] (-) TimerEvent: {}
+[1.600497] (yolov8_learn) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.618000] (-) TimerEvent: {}
+[1.718336] (-) TimerEvent: {}
+[1.819463] (-) TimerEvent: {}
+[1.920351] (-) TimerEvent: {}
+[1.980441] (yolov8_learn) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.991558] (yolov8_learn) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.993129] (yolov8_learn) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.021376] (-) TimerEvent: {}
+[2.037106] (yolov8_learn) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.063700] (yolov8_learn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.123394] (-) TimerEvent: {}
+[2.223732] (-) TimerEvent: {}
+[2.322836] (yolov8_learn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.323835] (-) TimerEvent: {}
+[2.339435] (yolov8_learn) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.339645] (yolov8_learn) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.339754] (yolov8_learn) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.425496] (-) TimerEvent: {}
+[2.474966] (yolov8_learn) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.551177] (-) TimerEvent: {}
+[2.655260] (-) TimerEvent: {}
+[2.761372] (-) TimerEvent: {}
+[2.862773] (-) TimerEvent: {}
+[2.965346] (-) TimerEvent: {}
+[3.065903] (-) TimerEvent: {}
+[3.166206] (-) TimerEvent: {}
+[3.266603] (-) TimerEvent: {}
+[3.367377] (-) TimerEvent: {}
+[3.467736] (-) TimerEvent: {}
+[3.568334] (-) TimerEvent: {}
+[3.670482] (-) TimerEvent: {}
+[3.770854] (-) TimerEvent: {}
+[3.871215] (-) TimerEvent: {}
+[3.971645] (-) TimerEvent: {}
+[4.072281] (-) TimerEvent: {}
+[4.177460] (-) TimerEvent: {}
+[4.280090] (-) TimerEvent: {}
+[4.383222] (-) TimerEvent: {}
+[4.485406] (-) TimerEvent: {}
+[4.586691] (-) TimerEvent: {}
+[4.697688] (-) TimerEvent: {}
+[4.798567] (-) TimerEvent: {}
+[4.899234] (-) TimerEvent: {}
+[5.001079] (-) TimerEvent: {}
+[5.101478] (-) TimerEvent: {}
+[5.201852] (-) TimerEvent: {}
+[5.213440] (yolov8_learn) StdoutLine: {'line': b'-- Found Python3: /home/ake/miniconda3/bin/python3 (found version "3.12.4") found components: Interpreter \n'}
+[5.302391] (-) TimerEvent: {}
+[5.404345] (-) TimerEvent: {}
+[5.505167] (-) TimerEvent: {}
+[5.605750] (-) TimerEvent: {}
+[5.706881] (-) TimerEvent: {}
+[5.804854] (yolov8_learn) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.806996] (-) TimerEvent: {}
+[5.907333] (-) TimerEvent: {}
+[6.008297] (-) TimerEvent: {}
+[6.109198] (-) TimerEvent: {}
+[6.210048] (-) TimerEvent: {}
+[6.288821] (yolov8_learn) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.310503] (-) TimerEvent: {}
+[6.323745] (yolov8_learn) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.423945] (-) TimerEvent: {}
+[6.432359] (yolov8_learn) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.524174] (-) TimerEvent: {}
+[6.598182] (yolov8_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.625466] (-) TimerEvent: {}
+[6.691774] (yolov8_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.725831] (-) TimerEvent: {}
+[6.827819] (-) TimerEvent: {}
+[6.930388] (-) TimerEvent: {}
+[7.031882] (-) TimerEvent: {}
+[7.064579] (yolov8_learn) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.084075] (yolov8_learn) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.132005] (-) TimerEvent: {}
+[7.233316] (-) TimerEvent: {}
+[7.334036] (-) TimerEvent: {}
+[7.435286] (-) TimerEvent: {}
+[7.536706] (-) TimerEvent: {}
+[7.637383] (-) TimerEvent: {}
+[7.722400] (yolov8_learn) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.737446] (-) TimerEvent: {}
+[7.804423] (yolov8_learn) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.838878] (-) TimerEvent: {}
+[7.874118] (yolov8_learn) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.939149] (-) TimerEvent: {}
+[7.991503] (yolov8_learn) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.039482] (-) TimerEvent: {}
+[8.142346] (-) TimerEvent: {}
+[8.191429] (yolov8_learn) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.191635] (yolov8_learn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.242469] (-) TimerEvent: {}
+[8.342869] (-) TimerEvent: {}
+[8.374259] (yolov8_learn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.378197] (yolov8_learn) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.443117] (-) TimerEvent: {}
+[8.552216] (-) TimerEvent: {}
+[8.652959] (-) TimerEvent: {}
+[8.753867] (-) TimerEvent: {}
+[8.843576] (yolov8_learn) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.10.0") \n'}
+[8.843808] (yolov8_learn) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):\n'}
+[8.843897] (yolov8_learn) StderrLine: {'line': b'  ament_target_dependencies() the first argument must be a valid target name\n'}
+[8.843947] (yolov8_learn) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.843994] (yolov8_learn) StderrLine: {'line': b'  CMakeLists.txt:14 (ament_target_dependencies)\n'}
+[8.844039] (yolov8_learn) StderrLine: {'line': b'\n'}
+[8.844084] (yolov8_learn) StderrLine: {'line': b'\x1b[0m\n'}
+[8.844378] (yolov8_learn) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[8.844442] (yolov8_learn) StdoutLine: {'line': b'See also "/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn/CMakeFiles/CMakeOutput.log".\n'}
+[8.851832] (yolov8_learn) CommandEnded: {'returncode': 1}
+[8.854370] (-) TimerEvent: {}
+[8.955314] (-) TimerEvent: {}
+[8.966349] (yolov8_learn) JobEnded: {'identifier': 'yolov8_learn', 'rc': 1}
+[8.980664] (-) EventReactorShutdown: {}

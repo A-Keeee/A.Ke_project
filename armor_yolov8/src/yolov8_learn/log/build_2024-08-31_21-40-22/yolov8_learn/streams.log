@@ -1,0 +1,49 @@
+[0.009s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn -- -j2 -l2
+[0.067s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.313s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.352s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.355s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.366s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.384s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.411s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.505s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.507s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.682s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.918s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.092s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.092s] -- Configured cppcheck include dirs: 
+[1.092s] -- Configured cppcheck exclude dirs and/or files: 
+[1.098s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.103s] -- Added test 'lint_cmake' to check CMake code style
+[1.109s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.135s] -- Added test 'uncrustify' to check C / C++ code style
+[1.136s] -- Configured uncrustify additional arguments: 
+[1.140s] -- Added test 'xmllint' to check XML markup files
+[1.141s] -- Configuring done
+[1.164s] -- Generating done
+[1.168s] -- Build files have been written to: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn
+[1.215s] [35m[1mConsolidate compiler generated dependencies of target yolov8_learn[0m
+[1.250s] [ 33%] [32mBuilding CXX object CMakeFiles/yolov8_learn.dir/src/inference.cpp.o[0m
+[4.529s] [ 66%] [32m[1mLinking CXX executable yolov8_learn[0m
+[4.862s] [100%] Built target yolov8_learn
+[4.907s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn -- -j2 -l2
+[5.060s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn
+[5.095s] -- Install configuration: ""
+[5.096s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/lib/yolov8_learn/yolov8_learn
+[5.096s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/lib/yolov8_learn/yolov8_learn" to ""
+[5.096s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/package_run_dependencies/yolov8_learn
+[5.097s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/parent_prefix_path/yolov8_learn
+[5.098s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/ament_prefix_path.sh
+[5.098s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/ament_prefix_path.dsv
+[5.098s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/path.sh
+[5.098s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/path.dsv
+[5.100s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.bash
+[5.101s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.sh
+[5.101s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.zsh
+[5.101s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.dsv
+[5.101s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/package.dsv
+[5.101s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/packages/yolov8_learn
+[5.101s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/cmake/yolov8_learnConfig.cmake
+[5.101s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/cmake/yolov8_learnConfig-version.cmake
+[5.101s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/package.xml
+[5.107s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn

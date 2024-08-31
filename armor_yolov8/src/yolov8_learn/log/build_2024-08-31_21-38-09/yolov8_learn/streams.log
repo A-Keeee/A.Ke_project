@@ -1,0 +1,46 @@
+[0.014s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn
+[0.062s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.289s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.342s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.347s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.357s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.382s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.400s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.487s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.488s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.659s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.822s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.176s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.176s] -- Configured cppcheck include dirs: 
+[1.176s] -- Configured cppcheck exclude dirs and/or files: 
+[1.181s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.186s] -- Added test 'lint_cmake' to check CMake code style
+[1.193s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.226s] -- Added test 'uncrustify' to check C / C++ code style
+[1.226s] -- Configured uncrustify additional arguments: 
+[1.229s] -- Added test 'xmllint' to check XML markup files
+[1.234s] -- Configuring done
+[1.272s] -- Generating done
+[1.276s] -- Build files have been written to: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn
+[1.289s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn
+[1.290s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn -- -j2 -l2
+[1.402s] [ 50%] [32mBuilding CXX object CMakeFiles/yolov8_learn.dir/src/yolov8_learn.cpp.o[0m
+[3.850s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.850s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:21:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.850s]    21 |     for (int i = 0; [01;35m[Ki < imageNames.size()[m[K; ++i)
+[3.850s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[3.858s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:8:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.858s]     8 | int main([01;35m[Kint argc[m[K, char **argv)
+[3.858s]       |          [01;35m[K~~~~^~~~[m[K
+[3.858s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.858s]     8 | int main(int argc, [01;35m[Kchar **argv[m[K)
+[3.858s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[4.694s] [100%] [32m[1mLinking CXX executable yolov8_learn[0m
+[5.081s] /usr/bin/ld: CMakeFiles/yolov8_learn.dir/src/yolov8_learn.cpp.o: in function `main':
+[5.081s] yolov8_learn.cpp:(.text+0xd4): undefined reference to `Inference::Inference(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::Size_<int> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool const&)'
+[5.081s] /usr/bin/ld: yolov8_learn.cpp:(.text+0x1e9): undefined reference to `Inference::runInference(cv::Mat const&)'
+[5.092s] collect2: error: ld returned 1 exit status
+[5.095s] gmake[2]: *** [CMakeFiles/yolov8_learn.dir/build.make:166：yolov8_learn] 错误 1
+[5.097s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/yolov8_learn.dir/all] 错误 2
+[5.098s] gmake: *** [Makefile:146：all] 错误 2
+[5.107s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn -- -j2 -l2

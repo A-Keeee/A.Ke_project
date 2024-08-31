@@ -1,0 +1,36 @@
+[0.029s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn -- -j2 -l2
+[0.181s] [35m[1mConsolidate compiler generated dependencies of target yolov8_learn[0m
+[0.216s] [ 33%] [32mBuilding CXX object CMakeFiles/yolov8_learn.dir/src/yolov8_learn.cpp.o[0m
+[2.359s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.360s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:21:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.360s]    21 |     for (int i = 0; [01;35m[Ki < imageNames.size()[m[K; ++i)
+[2.360s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[2.366s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:8:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.366s]     8 | int main([01;35m[Kint argc[m[K, char **argv)
+[2.366s]       |          [01;35m[K~~~~^~~~[m[K
+[2.388s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.388s]     8 | int main(int argc, [01;35m[Kchar **argv[m[K)
+[2.388s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[3.119s] [ 66%] [32m[1mLinking CXX executable yolov8_learn[0m
+[3.406s] [100%] Built target yolov8_learn
+[3.430s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn -- -j2 -l2
+[3.551s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn
+[3.574s] -- Install configuration: ""
+[3.579s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/lib/yolov8_learn/yolov8_learn
+[3.579s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/lib/yolov8_learn/yolov8_learn" to ""
+[3.580s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/package_run_dependencies/yolov8_learn
+[3.581s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/parent_prefix_path/yolov8_learn
+[3.581s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/ament_prefix_path.sh
+[3.582s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/ament_prefix_path.dsv
+[3.582s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/path.sh
+[3.583s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/path.dsv
+[3.583s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.bash
+[3.584s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.sh
+[3.586s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.zsh
+[3.586s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.dsv
+[3.586s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/package.dsv
+[3.586s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/packages/yolov8_learn
+[3.589s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/cmake/yolov8_learnConfig.cmake
+[3.589s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/cmake/yolov8_learnConfig-version.cmake
+[3.589s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/package.xml
+[3.596s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn

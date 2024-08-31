@@ -1,0 +1,42 @@
+-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/build/yolov8_learn
+[ 50%] [32mBuilding CXX object CMakeFiles/yolov8_learn.dir/src/yolov8_learn.cpp.o[0m
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:21:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   21 |     for (int i = 0; [01;35m[Ki < imageNames.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:8:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    8 | int main([01;35m[Kint argc[m[K, char **argv)
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    8 | int main(int argc, [01;35m[Kchar **argv[m[K)
+      |                    [01;35m[K~~~~~~~^~~~[m[K
+[100%] [32m[1mLinking CXX executable yolov8_learn[0m
+/usr/bin/ld: CMakeFiles/yolov8_learn.dir/src/yolov8_learn.cpp.o: in function `main':
+yolov8_learn.cpp:(.text+0xd4): undefined reference to `Inference::Inference(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::Size_<int> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool const&)'
+/usr/bin/ld: yolov8_learn.cpp:(.text+0x1e9): undefined reference to `Inference::runInference(cv::Mat const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/yolov8_learn.dir/build.make:166：yolov8_learn] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/yolov8_learn.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target yolov8_learn[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/yolov8_learn.dir/src/yolov8_learn.cpp.o[0m
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:21:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   21 |     for (int i = 0; [01;35m[Ki < imageNames.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:8:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    8 | int main([01;35m[Kint argc[m[K, char **argv)
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/src/yolov8_learn.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    8 | int main(int argc, [01;35m[Kchar **argv[m[K)
+      |                    [01;35m[K~~~~~~~^~~~[m[K
+[ 66%] [32m[1mLinking CXX executable yolov8_learn[0m
+[100%] Built target yolov8_learn
+-- Install configuration: ""
+-- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/lib/yolov8_learn/yolov8_learn
+-- Set runtime path of "/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/lib/yolov8_learn/yolov8_learn" to ""
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/package_run_dependencies/yolov8_learn
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/parent_prefix_path/yolov8_learn
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/path.sh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/environment/path.dsv
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.bash
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.sh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.zsh
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/local_setup.dsv
+-- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/package.dsv
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/ament_index/resource_index/packages/yolov8_learn
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/cmake/yolov8_learnConfig.cmake
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/cmake/yolov8_learnConfig-version.cmake
+-- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/yolov8_learn/install/yolov8_learn/share/yolov8_learn/package.xml
