@@ -1,0 +1,205 @@
+[0.000000] (-) TimerEvent: {}
+[0.001049] (camera_learn) JobQueued: {'identifier': 'camera_learn', 'dependencies': OrderedDict()}
+[0.002770] (camera_learn) JobStarted: {'identifier': 'camera_learn'}
+[0.100026] (-) TimerEvent: {}
+[0.104485] (camera_learn) JobProgress: {'identifier': 'camera_learn', 'progress': 'cmake'}
+[0.125108] (camera_learn) JobProgress: {'identifier': 'camera_learn', 'progress': 'build'}
+[0.125163] (camera_learn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1111'), ('SYSTEMD_EXEC_PID', '1289'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5405'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20446'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1262,unix/ake-virtual-machine:/tmp/.ICE-unix/1262'), ('INVOCATION_ID', '105999ebbc6c4a51b3abcb9375fe4635'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GTHBT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b1b70e719e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.200156] (-) TimerEvent: {}
+[0.300784] (-) TimerEvent: {}
+[0.401385] (-) TimerEvent: {}
+[0.502108] (-) TimerEvent: {}
+[0.602995] (-) TimerEvent: {}
+[0.703457] (-) TimerEvent: {}
+[0.803942] (-) TimerEvent: {}
+[0.904490] (-) TimerEvent: {}
+[0.998338] (camera_learn) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.006608] (-) TimerEvent: {}
+[1.106961] (-) TimerEvent: {}
+[1.208698] (-) TimerEvent: {}
+[1.313743] (-) TimerEvent: {}
+[1.414891] (-) TimerEvent: {}
+[1.515554] (-) TimerEvent: {}
+[1.562279] (camera_learn) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.615703] (-) TimerEvent: {}
+[1.716254] (-) TimerEvent: {}
+[1.816848] (-) TimerEvent: {}
+[1.826554] (camera_learn) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.849779] (camera_learn) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.863130] (camera_learn) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.917014] (-) TimerEvent: {}
+[1.923282] (camera_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.970360] (camera_learn) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.017134] (-) TimerEvent: {}
+[2.117875] (-) TimerEvent: {}
+[2.157916] (camera_learn) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.186485] (camera_learn) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.217973] (-) TimerEvent: {}
+[2.318962] (-) TimerEvent: {}
+[2.419397] (-) TimerEvent: {}
+[2.520134] (-) TimerEvent: {}
+[2.618202] (camera_learn) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.620271] (-) TimerEvent: {}
+[2.720708] (-) TimerEvent: {}
+[2.821361] (-) TimerEvent: {}
+[2.922075] (-) TimerEvent: {}
+[3.022995] (-) TimerEvent: {}
+[3.029902] (camera_learn) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.123309] (-) TimerEvent: {}
+[3.203483] (camera_learn) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.203791] (camera_learn) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.203865] (camera_learn) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.205731] (camera_learn) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.215531] (camera_learn) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.220761] (camera_learn) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.225535] (-) TimerEvent: {}
+[3.258814] (camera_learn) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.259788] (camera_learn) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.266242] (camera_learn) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.273599] (camera_learn) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.325645] (-) TimerEvent: {}
+[3.426139] (-) TimerEvent: {}
+[3.456573] (camera_learn) StdoutLine: {'line': b'-- Generating done\n'}
+[3.456900] (camera_learn) StdoutLine: {'line': b'-- Build files have been written to: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn\n'}
+[3.526244] (-) TimerEvent: {}
+[3.568664] (camera_learn) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera_learn\x1b[0m\n'}
+[3.626359] (-) TimerEvent: {}
+[3.727132] (-) TimerEvent: {}
+[3.745904] (camera_learn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_learn.dir/src/camera_learn.cpp.o\x1b[0m\n'}
+[3.827329] (-) TimerEvent: {}
+[3.928752] (-) TimerEvent: {}
+[4.030178] (-) TimerEvent: {}
+[4.130671] (-) TimerEvent: {}
+[4.231472] (-) TimerEvent: {}
+[4.332063] (-) TimerEvent: {}
+[4.432691] (-) TimerEvent: {}
+[4.533382] (-) TimerEvent: {}
+[4.633713] (-) TimerEvent: {}
+[4.734025] (-) TimerEvent: {}
+[4.834399] (-) TimerEvent: {}
+[4.935115] (-) TimerEvent: {}
+[5.035780] (-) TimerEvent: {}
+[5.136170] (-) TimerEvent: {}
+[5.236719] (-) TimerEvent: {}
+[5.337264] (-) TimerEvent: {}
+[5.438334] (-) TimerEvent: {}
+[5.538958] (-) TimerEvent: {}
+[5.639453] (-) TimerEvent: {}
+[5.739808] (-) TimerEvent: {}
+[6.027649] (-) TimerEvent: {}
+[6.128660] (-) TimerEvent: {}
+[6.229048] (-) TimerEvent: {}
+[6.329435] (-) TimerEvent: {}
+[6.429781] (-) TimerEvent: {}
+[6.530137] (-) TimerEvent: {}
+[6.630538] (-) TimerEvent: {}
+[6.730873] (-) TimerEvent: {}
+[6.831215] (-) TimerEvent: {}
+[6.931516] (-) TimerEvent: {}
+[7.031842] (-) TimerEvent: {}
+[7.132617] (-) TimerEvent: {}
+[7.234070] (-) TimerEvent: {}
+[7.334698] (-) TimerEvent: {}
+[7.435198] (-) TimerEvent: {}
+[7.535968] (-) TimerEvent: {}
+[7.636894] (-) TimerEvent: {}
+[7.737388] (-) TimerEvent: {}
+[7.837712] (-) TimerEvent: {}
+[7.938172] (-) TimerEvent: {}
+[8.039010] (-) TimerEvent: {}
+[8.139408] (-) TimerEvent: {}
+[8.240697] (-) TimerEvent: {}
+[8.341170] (-) TimerEvent: {}
+[8.444225] (-) TimerEvent: {}
+[8.545612] (-) TimerEvent: {}
+[8.648327] (-) TimerEvent: {}
+[8.749874] (-) TimerEvent: {}
+[8.851085] (-) TimerEvent: {}
+[8.952264] (-) TimerEvent: {}
+[9.053746] (-) TimerEvent: {}
+[9.154604] (-) TimerEvent: {}
+[9.256770] (-) TimerEvent: {}
+[9.357850] (-) TimerEvent: {}
+[9.461854] (-) TimerEvent: {}
+[9.571887] (-) TimerEvent: {}
+[9.718370] (-) TimerEvent: {}
+[9.818749] (-) TimerEvent: {}
+[9.922033] (-) TimerEvent: {}
+[10.023873] (-) TimerEvent: {}
+[10.126341] (-) TimerEvent: {}
+[10.227466] (-) TimerEvent: {}
+[10.327984] (-) TimerEvent: {}
+[10.429788] (-) TimerEvent: {}
+[10.533838] (-) TimerEvent: {}
+[10.634170] (-) TimerEvent: {}
+[10.741430] (-) TimerEvent: {}
+[10.842069] (-) TimerEvent: {}
+[10.942519] (-) TimerEvent: {}
+[11.043286] (-) TimerEvent: {}
+[11.145591] (-) TimerEvent: {}
+[11.251330] (-) TimerEvent: {}
+[11.352167] (-) TimerEvent: {}
+[11.452874] (-) TimerEvent: {}
+[11.557186] (-) TimerEvent: {}
+[11.657578] (-) TimerEvent: {}
+[11.759183] (-) TimerEvent: {}
+[11.861368] (-) TimerEvent: {}
+[11.968708] (-) TimerEvent: {}
+[12.071070] (-) TimerEvent: {}
+[12.171717] (-) TimerEvent: {}
+[12.278465] (-) TimerEvent: {}
+[12.379362] (-) TimerEvent: {}
+[12.480957] (-) TimerEvent: {}
+[12.585421] (-) TimerEvent: {}
+[12.686445] (-) TimerEvent: {}
+[12.786856] (-) TimerEvent: {}
+[12.887164] (-) TimerEvent: {}
+[12.987565] (-) TimerEvent: {}
+[13.088109] (-) TimerEvent: {}
+[13.188790] (-) TimerEvent: {}
+[13.289294] (-) TimerEvent: {}
+[13.389754] (-) TimerEvent: {}
+[13.434830] (camera_learn) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable camera_learn\x1b[0m\n'}
+[13.489920] (-) TimerEvent: {}
+[13.590279] (-) TimerEvent: {}
+[13.691842] (-) TimerEvent: {}
+[13.792687] (-) TimerEvent: {}
+[13.893426] (-) TimerEvent: {}
+[13.993833] (-) TimerEvent: {}
+[14.094127] (-) TimerEvent: {}
+[14.194627] (-) TimerEvent: {}
+[14.295017] (-) TimerEvent: {}
+[14.395437] (-) TimerEvent: {}
+[14.496475] (-) TimerEvent: {}
+[14.596899] (-) TimerEvent: {}
+[14.701219] (-) TimerEvent: {}
+[14.801682] (-) TimerEvent: {}
+[14.893321] (camera_learn) StdoutLine: {'line': b'[100%] Built target camera_learn\n'}
+[14.901782] (-) TimerEvent: {}
+[14.909645] (camera_learn) CommandEnded: {'returncode': 0}
+[14.978795] (camera_learn) JobProgress: {'identifier': 'camera_learn', 'progress': 'install'}
+[14.994961] (camera_learn) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn'], 'cwd': '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1111'), ('SYSTEMD_EXEC_PID', '1289'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5405'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20446'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1262,unix/ake-virtual-machine:/tmp/.ICE-unix/1262'), ('INVOCATION_ID', '105999ebbc6c4a51b3abcb9375fe4635'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GTHBT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b1b70e719e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.003591] (-) TimerEvent: {}
+[15.009427] (camera_learn) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.053707] (camera_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/camera_learn/camera_learn\n'}
+[15.057118] (camera_learn) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/camera_learn/camera_learn" to ""\n'}
+[15.057618] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/package_run_dependencies/camera_learn\n'}
+[15.057770] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/parent_prefix_path/camera_learn\n'}
+[15.058779] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/ament_prefix_path.sh\n'}
+[15.059053] (camera_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/ament_prefix_path.dsv\n'}
+[15.059357] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/path.sh\n'}
+[15.059556] (camera_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/environment/path.dsv\n'}
+[15.060062] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.bash\n'}
+[15.060373] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.sh\n'}
+[15.061050] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.zsh\n'}
+[15.061378] (camera_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/local_setup.dsv\n'}
+[15.062371] (camera_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.dsv\n'}
+[15.063292] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/ament_index/resource_index/packages/camera_learn\n'}
+[15.063756] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/cmake/camera_learnConfig.cmake\n'}
+[15.064391] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/cmake/camera_learnConfig-version.cmake\n'}
+[15.066719] (camera_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.xml\n'}
+[15.095603] (camera_learn) CommandEnded: {'returncode': 0}
+[15.103763] (-) TimerEvent: {}
+[15.209197] (-) TimerEvent: {}
+[15.305406] (camera_learn) JobEnded: {'identifier': 'camera_learn', 'rc': 0}
+[15.307443] (-) EventReactorShutdown: {}

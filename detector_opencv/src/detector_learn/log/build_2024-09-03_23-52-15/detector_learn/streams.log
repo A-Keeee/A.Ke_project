@@ -1,0 +1,23 @@
+[0.082s] Invoking command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn -- -j2 -l2
+[0.883s] [35m[1mConsolidate compiler generated dependencies of target detector_learn[0m
+[0.963s] [100%] Built target detector_learn
+[0.988s] Invoked command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn -- -j2 -l2
+[1.098s] Invoking command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn
+[1.103s] -- Install configuration: ""
+[1.105s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/lib/detector_learn/detector_learn
+[1.106s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/package_run_dependencies/detector_learn
+[1.106s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/parent_prefix_path/detector_learn
+[1.106s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/ament_prefix_path.sh
+[1.106s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/ament_prefix_path.dsv
+[1.106s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/path.sh
+[1.107s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/environment/path.dsv
+[1.107s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.bash
+[1.107s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.sh
+[1.107s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.zsh
+[1.107s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/local_setup.dsv
+[1.109s] -- Installing: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.dsv
+[1.109s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/ament_index/resource_index/packages/detector_learn
+[1.110s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/cmake/detector_learnConfig.cmake
+[1.110s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/cmake/detector_learnConfig-version.cmake
+[1.110s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/install/detector_learn/share/detector_learn/package.xml
+[1.110s] Invoked command in '/home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/detector_opencv/src/detector_learn/build/detector_learn

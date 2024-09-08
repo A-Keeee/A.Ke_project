@@ -1,0 +1,50 @@
+[0.072s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn -- -j2 -l2
+[0.131s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.349s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.384s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.390s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.403s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.433s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.433s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.487s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.489s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.635s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.701s] -- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)
+[0.721s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.823s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.994s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.994s] -- Configured cppcheck include dirs: 
+[0.994s] -- Configured cppcheck exclude dirs and/or files: 
+[1.000s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.007s] -- Added test 'lint_cmake' to check CMake code style
+[1.011s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.037s] -- Added test 'uncrustify' to check C / C++ code style
+[1.039s] -- Configured uncrustify additional arguments: 
+[1.040s] -- Added test 'xmllint' to check XML markup files
+[1.042s] -- Configuring done
+[1.067s] -- Generating done
+[1.072s] -- Build files have been written to: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn
+[1.129s] [35m[1mConsolidate compiler generated dependencies of target armor_pnp_learn[0m
+[1.163s] [ 33%] [32m[1mLinking CXX executable armor_pnp_learn[0m
+[1.912s] [100%] Built target armor_pnp_learn
+[1.939s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn -- -j2 -l2
+[2.056s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn
+[2.082s] -- Install configuration: ""
+[2.082s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/lib/armor_pnp_learn/armor_pnp_learn
+[2.082s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/lib/armor_pnp_learn/armor_pnp_learn" to ""
+[2.082s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/ament_index/resource_index/package_run_dependencies/armor_pnp_learn
+[2.083s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/ament_index/resource_index/parent_prefix_path/armor_pnp_learn
+[2.086s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/environment/ament_prefix_path.sh
+[2.086s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/environment/ament_prefix_path.dsv
+[2.086s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/environment/path.sh
+[2.086s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/environment/path.dsv
+[2.086s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/local_setup.bash
+[2.095s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/local_setup.sh
+[2.095s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/local_setup.zsh
+[2.095s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/local_setup.dsv
+[2.096s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/package.dsv
+[2.096s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/ament_index/resource_index/packages/armor_pnp_learn
+[2.096s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/cmake/armor_pnp_learnConfig.cmake
+[2.098s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/cmake/armor_pnp_learnConfig-version.cmake
+[2.099s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/package.xml
+[2.099s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn

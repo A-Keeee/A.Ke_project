@@ -1,0 +1,58 @@
+[0.048s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn
+[1.074s] -- The C compiler identification is GNU 11.4.0
+[1.689s] -- The CXX compiler identification is GNU 11.4.0
+[1.880s] -- Detecting C compiler ABI info
+[2.246s] -- Detecting C compiler ABI info - done
+[2.258s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.261s] -- Detecting C compile features
+[2.279s] -- Detecting C compile features - done
+[2.322s] -- Detecting CXX compiler ABI info
+[2.617s] -- Detecting CXX compiler ABI info - done
+[2.628s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.629s] -- Detecting CXX compile features
+[2.631s] -- Detecting CXX compile features - done
+[2.776s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.281s] -- Found Python3: /home/ake/miniconda3/bin/python3 (found version "3.12.4") found components: Interpreter 
+[5.783s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[6.416s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.492s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.513s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.663s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.781s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.150s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.188s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.940s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.066s] -- Found FastRTPS: /opt/ros/humble/include  
+[8.152s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.319s] -- Looking for pthread.h
+[8.604s] -- Looking for pthread.h - found
+[8.604s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.824s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.824s] -- Found Threads: TRUE  
+[9.296s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[9.375s] -- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)
+[9.535s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[10.068s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[10.755s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.756s] -- Configured cppcheck include dirs: 
+[10.756s] -- Configured cppcheck exclude dirs and/or files: 
+[10.769s] -- Added test 'lint_cmake' to check CMake code style
+[10.790s] -- Added test 'uncrustify' to check C / C++ code style
+[10.791s] -- Configured uncrustify additional arguments: 
+[10.796s] -- Added test 'xmllint' to check XML markup files
+[10.814s] -- Configuring done
+[10.821s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[10.822s]   Cannot find source file:
+[10.822s] 
+[10.822s]     src/yarmor_pnp_learn.cpp
+[10.822s] 
+[10.822s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[10.822s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[10.822s] 
+[10.822s] [0m
+[10.826s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[10.827s]   No SOURCES given to target: armor_pnp_learn
+[10.827s] 
+[10.827s] [0m
+[10.827s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[10.841s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn

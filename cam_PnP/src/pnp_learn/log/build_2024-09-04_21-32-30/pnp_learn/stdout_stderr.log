@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target pnp_learn[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o[0m
+[01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:[m[K In member function ‘[01m[Kvoid RobotPoseNode::calculatePose()[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:30:34:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<cv::Point_<float> > imagePoints[m[K’
+   30 | 
+      |                                  [01;31m[K^[m[K          
+[01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:24:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<cv::Point_<float> > imagePoints[m[K’ previously declared here
+   24 |             cv::Point2f(653, 530)[01;36m[K,  // 左上[m[K角
+      |                                  [01;36m[K^~~~~~~~~~[m[K

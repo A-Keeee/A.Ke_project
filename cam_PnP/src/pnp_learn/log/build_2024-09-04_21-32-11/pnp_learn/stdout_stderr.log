@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target pnp_learn[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o[0m
+[01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:[m[K In member function ‘[01m[Kvoid RobotPoseNode::calculatePose()[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:30:34:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<cv::Point_<float> > imagePoints[m[K’
+   30 |         std::vector<cv::Point2f> [01;31m[KimagePoints[m[K = {
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:24:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<cv::Point_<float> > imagePoints[m[K’ previously declared here
+   24 |         std::vector<cv::Point2f> [01;36m[KimagePoints[m[K = {
+      |                                  [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pnp_learn.dir/build.make:76：CMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pnp_learn.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

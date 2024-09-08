@@ -1,0 +1,16 @@
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/src/armor_pnp_learn.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/src/armor_pnp_learn.cpp:41:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   41 |     for (int i = 0; [01;35m[Ki < imageNames.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/src/armor_pnp_learn.cpp:15:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   15 | int main([01;35m[Kint argc[m[K, char **argv)
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/src/armor_pnp_learn.cpp:15:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   15 | int main(int argc, [01;35m[Kchar **argv[m[K)
+      |                    [01;35m[K~~~~~~~^~~~[m[K
+/usr/bin/ld: 找不到 -ltf2: 没有那个文件或目录
+/usr/bin/ld: 找不到 -ltf2_ros: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/armor_pnp_learn.dir/build.make:228：armor_pnp_learn] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/armor_pnp_learn.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

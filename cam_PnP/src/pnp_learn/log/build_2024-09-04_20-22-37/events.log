@@ -1,0 +1,111 @@
+[0.000000] (-) TimerEvent: {}
+[0.002224] (pnp_learn) JobQueued: {'identifier': 'pnp_learn', 'dependencies': OrderedDict()}
+[0.002310] (pnp_learn) JobStarted: {'identifier': 'pnp_learn'}
+[0.020053] (pnp_learn) JobProgress: {'identifier': 'pnp_learn', 'progress': 'cmake'}
+[0.038757] (pnp_learn) JobProgress: {'identifier': 'pnp_learn', 'progress': 'build'}
+[0.048875] (pnp_learn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1111'), ('SYSTEMD_EXEC_PID', '1289'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5405'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20446'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1262,unix/ake-virtual-machine:/tmp/.ICE-unix/1262'), ('INVOCATION_ID', '105999ebbc6c4a51b3abcb9375fe4635'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GTHBT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-68fb8b836f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100117] (-) TimerEvent: {}
+[0.115361] (pnp_learn) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pnp_learn\x1b[0m\n'}
+[0.177246] (pnp_learn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o\x1b[0m\n'}
+[0.200984] (-) TimerEvent: {}
+[0.301480] (-) TimerEvent: {}
+[0.401862] (-) TimerEvent: {}
+[0.502850] (-) TimerEvent: {}
+[0.605106] (-) TimerEvent: {}
+[0.706046] (-) TimerEvent: {}
+[0.806659] (-) TimerEvent: {}
+[0.907682] (-) TimerEvent: {}
+[1.010133] (-) TimerEvent: {}
+[1.110520] (-) TimerEvent: {}
+[1.210934] (-) TimerEvent: {}
+[1.311414] (-) TimerEvent: {}
+[1.411829] (-) TimerEvent: {}
+[1.512169] (-) TimerEvent: {}
+[1.614099] (-) TimerEvent: {}
+[1.714462] (-) TimerEvent: {}
+[1.814840] (-) TimerEvent: {}
+[1.915320] (-) TimerEvent: {}
+[2.016177] (-) TimerEvent: {}
+[2.116851] (-) TimerEvent: {}
+[2.219027] (-) TimerEvent: {}
+[2.319487] (-) TimerEvent: {}
+[2.420291] (-) TimerEvent: {}
+[2.523123] (-) TimerEvent: {}
+[2.623789] (-) TimerEvent: {}
+[2.725054] (-) TimerEvent: {}
+[2.826326] (-) TimerEvent: {}
+[2.931196] (-) TimerEvent: {}
+[3.034256] (-) TimerEvent: {}
+[3.135103] (-) TimerEvent: {}
+[3.235982] (-) TimerEvent: {}
+[3.336545] (-) TimerEvent: {}
+[3.438229] (-) TimerEvent: {}
+[3.538755] (-) TimerEvent: {}
+[3.639822] (-) TimerEvent: {}
+[3.742235] (-) TimerEvent: {}
+[3.843541] (-) TimerEvent: {}
+[3.945413] (-) TimerEvent: {}
+[4.046324] (-) TimerEvent: {}
+[4.147979] (-) TimerEvent: {}
+[4.254975] (-) TimerEvent: {}
+[4.355319] (-) TimerEvent: {}
+[4.456321] (-) TimerEvent: {}
+[4.556849] (-) TimerEvent: {}
+[4.657323] (-) TimerEvent: {}
+[4.760054] (-) TimerEvent: {}
+[4.860447] (-) TimerEvent: {}
+[4.960988] (-) TimerEvent: {}
+[5.061515] (-) TimerEvent: {}
+[5.162087] (-) TimerEvent: {}
+[5.262610] (-) TimerEvent: {}
+[5.363308] (-) TimerEvent: {}
+[5.465103] (-) TimerEvent: {}
+[5.565623] (-) TimerEvent: {}
+[5.666131] (-) TimerEvent: {}
+[5.766595] (-) TimerEvent: {}
+[5.868537] (-) TimerEvent: {}
+[5.969501] (-) TimerEvent: {}
+[6.070109] (-) TimerEvent: {}
+[6.171817] (-) TimerEvent: {}
+[6.272680] (-) TimerEvent: {}
+[6.379639] (-) TimerEvent: {}
+[6.481334] (-) TimerEvent: {}
+[6.599817] (-) TimerEvent: {}
+[6.700259] (-) TimerEvent: {}
+[6.801076] (-) TimerEvent: {}
+[6.902083] (-) TimerEvent: {}
+[7.002597] (-) TimerEvent: {}
+[7.103278] (-) TimerEvent: {}
+[7.203912] (-) TimerEvent: {}
+[7.213632] (pnp_learn) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pnp_learn\x1b[0m\n'}
+[7.304281] (-) TimerEvent: {}
+[7.405927] (-) TimerEvent: {}
+[7.410025] (pnp_learn) StdoutLine: {'line': b'[100%] Built target pnp_learn\n'}
+[7.440498] (pnp_learn) CommandEnded: {'returncode': 0}
+[7.506714] (-) TimerEvent: {}
+[7.527992] (pnp_learn) JobProgress: {'identifier': 'pnp_learn', 'progress': 'install'}
+[7.552006] (pnp_learn) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn'], 'cwd': '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1111'), ('SYSTEMD_EXEC_PID', '1289'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5405'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:20446'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1262,unix/ake-virtual-machine:/tmp/.ICE-unix/1262'), ('INVOCATION_ID', '105999ebbc6c4a51b3abcb9375fe4635'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GTHBT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-68fb8b836f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.590865] (pnp_learn) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.606841] (-) TimerEvent: {}
+[7.635391] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/pnp_learn/pnp_learn\n'}
+[7.635724] (pnp_learn) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/pnp_learn/pnp_learn" to ""\n'}
+[7.635849] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/ament_index/resource_index/package_run_dependencies/pnp_learn\n'}
+[7.636040] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/ament_index/resource_index/parent_prefix_path/pnp_learn\n'}
+[7.636148] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/ament_prefix_path.sh\n'}
+[7.636316] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/ament_prefix_path.dsv\n'}
+[7.636426] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/path.sh\n'}
+[7.636524] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/path.dsv\n'}
+[7.638741] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.bash\n'}
+[7.639026] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.sh\n'}
+[7.643732] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.zsh\n'}
+[7.643943] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.dsv\n'}
+[7.644062] (pnp_learn) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.dsv\n'}
+[7.696276] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/ament_index/resource_index/packages/pnp_learn\n'}
+[7.696637] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/cmake/pnp_learnConfig.cmake\n'}
+[7.696701] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/cmake/pnp_learnConfig-version.cmake\n'}
+[7.696754] (pnp_learn) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.xml\n'}
+[7.698092] (pnp_learn) CommandEnded: {'returncode': 0}
+[7.706934] (-) TimerEvent: {}
+[7.808300] (-) TimerEvent: {}
+[7.875996] (pnp_learn) JobEnded: {'identifier': 'pnp_learn', 'rc': 0}
+[7.877467] (-) EventReactorShutdown: {}

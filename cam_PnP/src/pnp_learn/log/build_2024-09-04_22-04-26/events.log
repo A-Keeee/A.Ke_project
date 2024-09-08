@@ -1,0 +1,107 @@
+[0.000000] (-) TimerEvent: {}
+[0.005938] (pnp_learn) JobQueued: {'identifier': 'pnp_learn', 'dependencies': OrderedDict()}
+[0.006033] (pnp_learn) JobStarted: {'identifier': 'pnp_learn'}
+[0.028436] (pnp_learn) JobProgress: {'identifier': 'pnp_learn', 'progress': 'cmake'}
+[0.029075] (pnp_learn) JobProgress: {'identifier': 'pnp_learn', 'progress': 'build'}
+[0.031483] (pnp_learn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1104'), ('SYSTEMD_EXEC_PID', '1317'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21205'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1296,unix/ake-virtual-machine:/tmp/.ICE-unix/1296'), ('INVOCATION_ID', '5a77f8d6cc3740798d2fb27d9e342b5e'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QTVTT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-68fb8b836f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn:/opt/ros/humble')]), 'shell': False}
+[0.101330] (-) TimerEvent: {}
+[0.167374] (pnp_learn) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pnp_learn\x1b[0m\n'}
+[0.198210] (pnp_learn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o\x1b[0m\n'}
+[0.202488] (-) TimerEvent: {}
+[0.304066] (-) TimerEvent: {}
+[0.404953] (-) TimerEvent: {}
+[0.508113] (-) TimerEvent: {}
+[0.608760] (-) TimerEvent: {}
+[0.711997] (-) TimerEvent: {}
+[0.812608] (-) TimerEvent: {}
+[0.914344] (-) TimerEvent: {}
+[1.021434] (-) TimerEvent: {}
+[1.121867] (-) TimerEvent: {}
+[1.222442] (-) TimerEvent: {}
+[1.323749] (-) TimerEvent: {}
+[1.431857] (-) TimerEvent: {}
+[1.532945] (-) TimerEvent: {}
+[1.634632] (-) TimerEvent: {}
+[1.735751] (-) TimerEvent: {}
+[1.836955] (-) TimerEvent: {}
+[1.938589] (-) TimerEvent: {}
+[2.039312] (-) TimerEvent: {}
+[2.139716] (-) TimerEvent: {}
+[2.241035] (-) TimerEvent: {}
+[2.342284] (-) TimerEvent: {}
+[2.443215] (-) TimerEvent: {}
+[2.545446] (-) TimerEvent: {}
+[2.649640] (-) TimerEvent: {}
+[2.749987] (-) TimerEvent: {}
+[2.851778] (-) TimerEvent: {}
+[2.952126] (-) TimerEvent: {}
+[3.053790] (-) TimerEvent: {}
+[3.155761] (-) TimerEvent: {}
+[3.256554] (-) TimerEvent: {}
+[3.357656] (-) TimerEvent: {}
+[3.458632] (-) TimerEvent: {}
+[3.560535] (-) TimerEvent: {}
+[3.660929] (-) TimerEvent: {}
+[3.762339] (-) TimerEvent: {}
+[3.873002] (-) TimerEvent: {}
+[3.973342] (-) TimerEvent: {}
+[4.075340] (-) TimerEvent: {}
+[4.177337] (-) TimerEvent: {}
+[4.277669] (-) TimerEvent: {}
+[4.378265] (-) TimerEvent: {}
+[4.480589] (-) TimerEvent: {}
+[4.581151] (-) TimerEvent: {}
+[4.682372] (-) TimerEvent: {}
+[4.787356] (-) TimerEvent: {}
+[4.830941] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RobotPoseNode::calculatePose()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.831175] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:17:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.831229] (pnp_learn) StderrLine: {'line': b'   17 |             cv::Point3f(-\x1b[01;31m\x1b[K4f\x1b[m\x1b[K, 4f, 0),  // \xe5\xb7\xa6\xe4\xb8\x8a\xe8\xa7\x92\n'}
+[4.831303] (pnp_learn) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.831354] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:17:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.831402] (pnp_learn) StderrLine: {'line': b'   17 |             cv::Point3f(-4f, \x1b[01;31m\x1b[K4f\x1b[m\x1b[K, 0),  // \xe5\xb7\xa6\xe4\xb8\x8a\xe8\xa7\x92\n'}
+[4.831447] (pnp_learn) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.831493] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:18:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.831540] (pnp_learn) StderrLine: {'line': b'   18 |             cv::Point3f(\x1b[01;31m\x1b[K4f\x1b[m\x1b[K, 4f, 0),   // \xe5\x8f\xb3\xe4\xb8\x8a\xe8\xa7\x92\n'}
+[4.831585] (pnp_learn) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.831667] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:18:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.831722] (pnp_learn) StderrLine: {'line': b'   18 |             cv::Point3f(4f, \x1b[01;31m\x1b[K4f\x1b[m\x1b[K, 0),   // \xe5\x8f\xb3\xe4\xb8\x8a\xe8\xa7\x92\n'}
+[4.831770] (pnp_learn) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.831818] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:19:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.831865] (pnp_learn) StderrLine: {'line': b'   19 |             cv::Point3f(-\x1b[01;31m\x1b[K4f\x1b[m\x1b[K, -4f, 0),    // \xe5\xb7\xa6\xe4\xb8\x8b\xe8\xa7\x92\n'}
+[4.831913] (pnp_learn) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.831962] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:19:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.832008] (pnp_learn) StderrLine: {'line': b'   19 |             cv::Point3f(-4f, -\x1b[01;31m\x1b[K4f\x1b[m\x1b[K, 0),    // \xe5\xb7\xa6\xe4\xb8\x8b\xe8\xa7\x92\n'}
+[4.832055] (pnp_learn) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.832102] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:20:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.832149] (pnp_learn) StderrLine: {'line': b'   20 |             cv::Point3f(\x1b[01;31m\x1b[K4f\x1b[m\x1b[K, -4f, 0)    // \xe5\x8f\xb3\xe4\xb8\x8b\xe8\xa7\x92\n'}
+[4.832194] (pnp_learn) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.832239] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:20:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.832292] (pnp_learn) StderrLine: {'line': b'   20 |             cv::Point3f(4f, -\x1b[01;31m\x1b[K4f\x1b[m\x1b[K, 0)    // \xe5\x8f\xb3\xe4\xb8\x8b\xe8\xa7\x92\n'}
+[4.832337] (pnp_learn) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.887913] (-) TimerEvent: {}
+[4.892292] (pnp_learn) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:21:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcould not convert \xe2\x80\x98\x1b[01m\x1b[K{<expression error>, <expression error>, <expression error>, <expression error>}\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<cv::Point3_<float> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.892504] (pnp_learn) StderrLine: {'line': b'   21 |         \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[4.892609] (pnp_learn) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.892900] (pnp_learn) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[4.893172] (pnp_learn) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\n'}
+[4.989294] (-) TimerEvent: {}
+[5.091475] (-) TimerEvent: {}
+[5.193563] (-) TimerEvent: {}
+[5.294597] (-) TimerEvent: {}
+[5.395823] (-) TimerEvent: {}
+[5.496524] (-) TimerEvent: {}
+[5.597287] (-) TimerEvent: {}
+[5.699803] (-) TimerEvent: {}
+[5.802527] (-) TimerEvent: {}
+[5.903566] (-) TimerEvent: {}
+[6.004475] (-) TimerEvent: {}
+[6.104855] (-) TimerEvent: {}
+[6.205341] (-) TimerEvent: {}
+[6.297173] (pnp_learn) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pnp_learn.dir/build.make:76\xef\xbc\x9aCMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[6.297960] (pnp_learn) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/pnp_learn.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.298178] (pnp_learn) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.311598] (pnp_learn) CommandEnded: {'returncode': 2}
+[6.312447] (-) TimerEvent: {}
+[6.414486] (pnp_learn) JobEnded: {'identifier': 'pnp_learn', 'rc': 2}
+[6.416022] (-) TimerEvent: {}
+[6.416219] (-) EventReactorShutdown: {}

@@ -1,6 +1,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <opencv2/opencv.hpp>
 #include <iostream>
+#include <cmath>
 
 class RobotPoseNode : public rclcpp::Node {
 public:
@@ -13,27 +14,40 @@ private:
     void calculatePose() {
         // 定义现实世界中的3D点（以厘米为单位）
         std::vector<cv::Point3f> objectPoints = {
-            cv::Point3f(0, 0, 0),
-            cv::Point3f(10, 0, 0),
-            cv::Point3f(10, 10, 0),
-            cv::Point3f(0, 10, 0)
+            cv::Point3f(-4, 4, 0),  // 左上角
+            cv::Point3f(4, 4, 0),   // 右上角
+            cv::Point3f(-4, -4, 0),    // 左下角
+            cv::Point3f(4, -4, 0)    // 右下角
         };
 
         // 定义图像中的2D点（像素坐标）
+
+
         std::vector<cv::Point2f> imagePoints = {
-            cv::Point2f(100, 150),
-            cv::Point2f(300, 150),
-            cv::Point2f(300, 300),
-            cv::Point2f(100, 300)
+            cv::Point2f(435,645),  // 左上角
+            cv::Point2f(1280, 645),  // 右上角
+            cv::Point2f(435, 1050),  // 左下角
+            cv::Point2f(1280, 1050)   // 右下角
         };
+        // std::vector<cv::Point2f> imagePoints = {
+        //     cv::Point2f(643, 433),  // 左上角
+        //     cv::Point2f(1045, 433),  // 右上角
+        //     cv::Point2f(643, 840),  // 左下角
+        //     cv::Point2f(1045, 840)   // 右下角
+        // };
+
 
         // 摄像机内参矩阵
-        cv::Mat cameraMatrix = (cv::Mat_<double>(3, 3) << 1462.3697, 0, 398.59394,
-                                                        0, 1469.68385, 110.68997,
-                                                        0, 0, 1);
+cv::Mat cameraMatrix = (cv::Mat_<double>(3, 3) << 2751.0, 0, 1512,
+                                                 0, 2755.3, 2016,
+                                                 0, 0, 1);
+
+
+
 
         // 畸变系数矩阵
-        cv::Mat distCoeffs = (cv::Mat_<double>(5, 1) << 0.003518, -0.311778, -0.016581, 0.023682, 0.0);
+cv::Mat distCoeffs = (cv::Mat_<double>(4, 1) << 0.2677, -0.3573, 0, 0);
+
 
         // 输出的旋转向量和平移向量
         cv::Mat rvec, tvec;
@@ -50,9 +64,33 @@ private:
             cv::Rodrigues(rvec, rotationMatrix);
             std::cout << "旋转矩阵: " << rotationMatrix << std::endl;
 
-            // 计算机器人距离摄像头的距离（单位：米）
-            double distance = cv::norm(tvec) / 100.0;  // 转换为米
-            std::cout << "机器人距离摄像头的距离: " << distance << " 米" << std::endl;
+            // 从旋转矩阵中提取欧拉角
+            double sy = std::sqrt(rotationMatrix.at<double>(0, 0) * rotationMatrix.at<double>(0, 0) + 
+                                  rotationMatrix.at<double>(1, 0) * rotationMatrix.at<double>(1, 0));
+            
+            bool singular = sy < 1e-6; // 如果接近零，认为是奇异解
+
+            double x, y, z;
+            if (!singular) {
+                x = std::atan2(rotationMatrix.at<double>(2, 1), rotationMatrix.at<double>(2, 2));
+                y = std::atan2(-rotationMatrix.at<double>(2, 0), sy);
+                z = std::atan2(rotationMatrix.at<double>(1, 0), rotationMatrix.at<double>(0, 0));
+            } else {
+                x = std::atan2(-rotationMatrix.at<double>(1, 2), rotationMatrix.at<double>(1, 1));
+                y = std::atan2(-rotationMatrix.at<double>(2, 0), sy);
+                z = 0;
+            }
+
+            // 将欧拉角转换为度数
+            x = x * 180.0 / CV_PI;
+            y = y * 180.0 / CV_PI;
+            z = z * 180.0 / CV_PI;
+
+            std::cout << "物体相对于相机的旋转角度 (X, Y, Z): " << x << "° " << y << "° " << z << "°" << std::endl;
+
+            // 计算机器人距离摄像头的距离（单位：厘米）
+            double distance = cv::norm(tvec);
+            std::cout << "机器人距离摄像头的距离: " << distance << " cm" << std::endl;
         } else {
             std::cout << "solvePnP 失败" << std::endl;
         }

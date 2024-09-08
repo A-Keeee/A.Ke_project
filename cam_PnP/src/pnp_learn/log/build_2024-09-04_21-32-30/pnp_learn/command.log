@@ -1,0 +1,1 @@
+Invoking command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn -- -j2 -l2

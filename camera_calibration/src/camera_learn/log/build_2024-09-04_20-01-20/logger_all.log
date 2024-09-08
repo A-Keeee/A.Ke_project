@@ -1,0 +1,103 @@
+[4.305s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[4.305s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x777cb3948850>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x777cb39482b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x777cb39482b0>>)
+[7.861s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[7.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[7.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[7.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[7.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[7.863s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[7.863s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn'
+[7.863s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[7.863s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[7.863s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[7.863s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[7.863s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[7.864s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[7.864s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[7.864s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[7.864s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[7.937s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'camera_learn'
+[7.937s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[7.937s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[7.937s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[7.937s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[7.937s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[8.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[8.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[8.267s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 313 installed packages in /opt/ros/humble
+[8.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[8.325s] Level 5:colcon.colcon_core.verb:set package 'camera_learn' build argument 'cmake_args' from command line to 'None'
+[8.325s] Level 5:colcon.colcon_core.verb:set package 'camera_learn' build argument 'cmake_target' from command line to 'None'
+[8.326s] Level 5:colcon.colcon_core.verb:set package 'camera_learn' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.326s] Level 5:colcon.colcon_core.verb:set package 'camera_learn' build argument 'cmake_clean_cache' from command line to 'False'
+[8.326s] Level 5:colcon.colcon_core.verb:set package 'camera_learn' build argument 'cmake_clean_first' from command line to 'False'
+[8.326s] Level 5:colcon.colcon_core.verb:set package 'camera_learn' build argument 'cmake_force_configure' from command line to 'False'
+[8.326s] Level 5:colcon.colcon_core.verb:set package 'camera_learn' build argument 'ament_cmake_args' from command line to 'None'
+[8.326s] Level 5:colcon.colcon_core.verb:set package 'camera_learn' build argument 'catkin_cmake_args' from command line to 'None'
+[8.326s] Level 5:colcon.colcon_core.verb:set package 'camera_learn' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.326s] DEBUG:colcon.colcon_core.verb:Building package 'camera_learn' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn', 'merge_install': False, 'path': '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn', 'symlink_install': False, 'test_result_base': None}
+[8.326s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[8.329s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[8.329s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn' with build type 'ament_cmake'
+[8.329s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn'
+[8.372s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[8.372s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.372s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn -- -j2 -l2
+[23.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn -- -j2 -l2
+[23.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn
+[23.421s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_learn)
+[23.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/build/camera_learn
+[23.464s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn' for CMake module files
+[23.465s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn' for CMake config files
+[23.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_learn', 'cmake_prefix_path')
+[23.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/hook/cmake_prefix_path.ps1'
+[23.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/hook/cmake_prefix_path.dsv'
+[23.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/hook/cmake_prefix_path.sh'
+[23.497s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib'
+[23.497s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/bin'
+[23.497s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/pkgconfig/camera_learn.pc'
+[23.497s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/python3.10/site-packages'
+[23.498s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/bin'
+[23.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.ps1'
+[23.499s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.dsv'
+[23.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.sh'
+[23.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.bash'
+[23.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.zsh'
+[23.528s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/colcon-core/packages/camera_learn)
+[23.620s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_learn)
+[23.621s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn' for CMake module files
+[23.621s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn' for CMake config files
+[23.622s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_learn', 'cmake_prefix_path')
+[23.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/hook/cmake_prefix_path.ps1'
+[23.623s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/hook/cmake_prefix_path.dsv'
+[23.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/hook/cmake_prefix_path.sh'
+[23.624s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib'
+[23.624s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/bin'
+[23.625s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/pkgconfig/camera_learn.pc'
+[23.625s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/lib/python3.10/site-packages'
+[23.625s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/bin'
+[23.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.ps1'
+[23.626s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.dsv'
+[23.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.sh'
+[23.628s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.bash'
+[23.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/camera_learn/package.zsh'
+[23.632s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/camera_learn/share/colcon-core/packages/camera_learn)
+[23.633s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[23.634s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[23.634s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[23.635s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[23.696s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[23.696s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[23.696s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[23.728s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[23.728s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/local_setup.ps1'
+[23.739s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/_local_setup_util_ps1.py'
+[23.767s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/setup.ps1'
+[23.768s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/local_setup.sh'
+[23.769s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/_local_setup_util_sh.py'
+[23.770s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/setup.sh'
+[23.771s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/local_setup.bash'
+[23.771s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/setup.bash'
+[23.772s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/local_setup.zsh'
+[23.783s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/camera_calibration/src/camera_learn/install/setup.zsh'

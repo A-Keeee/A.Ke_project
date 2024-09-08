@@ -1,0 +1,37 @@
+[0.077s] Invoking command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn -- -j2 -l2
+[0.161s] [35m[1mConsolidate compiler generated dependencies of target pnp_learn[0m
+[0.192s] [ 50%] [32mBuilding CXX object CMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o[0m
+[4.825s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:[m[K In member function ‘[01m[Kvoid RobotPoseNode::calculatePose()[m[K’:
+[4.825s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:17:26:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[4.825s]    17 |             cv::Point3f(-[01;31m[K4f[m[K, 4f, 0),  // 左上角
+[4.825s]       |                          [01;31m[K^~[m[K
+[4.825s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:17:30:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[4.825s]    17 |             cv::Point3f(-4f, [01;31m[K4f[m[K, 0),  // 左上角
+[4.825s]       |                              [01;31m[K^~[m[K
+[4.825s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:18:25:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[4.826s]    18 |             cv::Point3f([01;31m[K4f[m[K, 4f, 0),   // 右上角
+[4.826s]       |                         [01;31m[K^~[m[K
+[4.826s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:18:29:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[4.826s]    18 |             cv::Point3f(4f, [01;31m[K4f[m[K, 0),   // 右上角
+[4.826s]       |                             [01;31m[K^~[m[K
+[4.826s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:19:26:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[4.826s]    19 |             cv::Point3f(-[01;31m[K4f[m[K, -4f, 0),    // 左下角
+[4.826s]       |                          [01;31m[K^~[m[K
+[4.826s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:19:31:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[4.826s]    19 |             cv::Point3f(-4f, -[01;31m[K4f[m[K, 0),    // 左下角
+[4.826s]       |                               [01;31m[K^~[m[K
+[4.826s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:20:25:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[4.826s]    20 |             cv::Point3f([01;31m[K4f[m[K, -4f, 0)    // 右下角
+[4.826s]       |                         [01;31m[K^~[m[K
+[4.826s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:20:30:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[4.826s]    20 |             cv::Point3f(4f, -[01;31m[K4f[m[K, 0)    // 右下角
+[4.826s]       |                              [01;31m[K^~[m[K
+[4.886s] [01m[K/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/src/pnp_learn.cpp:21:9:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{<expression error>, <expression error>, <expression error>, <expression error>}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<cv::Point3_<float> >[m[K’
+[4.887s]    21 |         [01;31m[K}[m[K;
+[4.887s]       |         [01;31m[K^[m[K
+[4.887s]       |         [01;31m[K|[m[K
+[4.887s]       |         [01;31m[K<brace-enclosed initializer list>[m[K
+[6.291s] gmake[2]: *** [CMakeFiles/pnp_learn.dir/build.make:76：CMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o] 错误 1
+[6.292s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pnp_learn.dir/all] 错误 2
+[6.293s] gmake: *** [Makefile:146：all] 错误 2
+[6.306s] Invoked command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn -- -j2 -l2

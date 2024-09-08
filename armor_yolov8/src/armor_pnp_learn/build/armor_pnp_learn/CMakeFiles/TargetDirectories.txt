@@ -1,0 +1,10 @@
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/uninstall.dir
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/armor_pnp_learn_uninstall.dir
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/armor_pnp_learn.dir
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/test.dir
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/edit_cache.dir
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/rebuild_cache.dir
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/list_install_components.dir
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/install.dir
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/install/local.dir
+/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn/CMakeFiles/install/strip.dir

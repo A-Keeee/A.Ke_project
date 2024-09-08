@@ -1,0 +1,26 @@
+[0.029s] Invoking command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn -- -j2 -l2
+[0.161s] [35m[1mConsolidate compiler generated dependencies of target pnp_learn[0m
+[0.194s] [ 50%] [32mBuilding CXX object CMakeFiles/pnp_learn.dir/src/pnp_learn.cpp.o[0m
+[10.896s] [100%] [32m[1mLinking CXX executable pnp_learn[0m
+[11.341s] [100%] Built target pnp_learn
+[11.373s] Invoked command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn -- -j2 -l2
+[11.477s] Invoking command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn
+[11.498s] -- Install configuration: ""
+[11.499s] -- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/pnp_learn/pnp_learn
+[11.499s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/lib/pnp_learn/pnp_learn" to ""
+[11.499s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/ament_index/resource_index/package_run_dependencies/pnp_learn
+[11.499s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/ament_index/resource_index/parent_prefix_path/pnp_learn
+[11.499s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/ament_prefix_path.sh
+[11.499s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/ament_prefix_path.dsv
+[11.499s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/path.sh
+[11.499s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/environment/path.dsv
+[11.499s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.bash
+[11.499s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.sh
+[11.500s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.zsh
+[11.500s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/local_setup.dsv
+[11.500s] -- Installing: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.dsv
+[11.500s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/ament_index/resource_index/packages/pnp_learn
+[11.500s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/cmake/pnp_learnConfig.cmake
+[11.500s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/cmake/pnp_learnConfig-version.cmake
+[11.500s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/install/pnp_learn/share/pnp_learn/package.xml
+[11.505s] Invoked command in '/home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/cam_PnP/src/pnp_learn/build/pnp_learn

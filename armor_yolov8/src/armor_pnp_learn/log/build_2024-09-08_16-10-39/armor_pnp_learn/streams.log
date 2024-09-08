@@ -1,0 +1,35 @@
+[0.032s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn -- -j2 -l2
+[0.154s] [ 33%] [32mBuilding CXX object CMakeFiles/armor_pnp_learn.dir/src/armor_pnp_learn.cpp.o[0m
+[6.099s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/src/armor_pnp_learn.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[6.099s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/src/armor_pnp_learn.cpp:41:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[6.099s]    41 |     for (int i = 0; [01;35m[Ki < imageNames.size()[m[K; ++i)
+[6.100s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[6.104s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/src/armor_pnp_learn.cpp:15:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.105s]    15 | int main([01;35m[Kint argc[m[K, char **argv)
+[6.105s]       |          [01;35m[K~~~~^~~~[m[K
+[6.105s] [01m[K/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/src/armor_pnp_learn.cpp:15:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.105s]    15 | int main(int argc, [01;35m[Kchar **argv[m[K)
+[6.105s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[7.529s] [ 66%] [32m[1mLinking CXX executable armor_pnp_learn[0m
+[7.870s] [100%] Built target armor_pnp_learn
+[7.893s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn -- -j2 -l2
+[8.037s] Invoking command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn
+[8.057s] -- Install configuration: ""
+[8.057s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/lib/armor_pnp_learn/armor_pnp_learn
+[8.058s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/lib/armor_pnp_learn/armor_pnp_learn" to ""
+[8.058s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/ament_index/resource_index/package_run_dependencies/armor_pnp_learn
+[8.058s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/ament_index/resource_index/parent_prefix_path/armor_pnp_learn
+[8.058s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/environment/ament_prefix_path.sh
+[8.059s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/environment/ament_prefix_path.dsv
+[8.060s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/environment/path.sh
+[8.060s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/environment/path.dsv
+[8.061s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/local_setup.bash
+[8.061s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/local_setup.sh
+[8.061s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/local_setup.zsh
+[8.061s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/local_setup.dsv
+[8.061s] -- Installing: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/package.dsv
+[8.061s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/ament_index/resource_index/packages/armor_pnp_learn
+[8.061s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/cmake/armor_pnp_learnConfig.cmake
+[8.061s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/cmake/armor_pnp_learnConfig-version.cmake
+[8.061s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/install/armor_pnp_learn/share/armor_pnp_learn/package.xml
+[8.065s] Invoked command in '/home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/armor_yolov8/src/armor_pnp_learn/build/armor_pnp_learn
