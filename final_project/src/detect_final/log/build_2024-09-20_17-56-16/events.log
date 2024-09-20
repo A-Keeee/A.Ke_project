@@ -1,0 +1,420 @@
+[0.000000] (-) TimerEvent: {}
+[0.000547] (detect_final) JobQueued: {'identifier': 'detect_final', 'dependencies': OrderedDict()}
+[0.000605] (detect_final) JobStarted: {'identifier': 'detect_final'}
+[0.098517] (-) TimerEvent: {}
+[0.199161] (-) TimerEvent: {}
+[0.299684] (-) TimerEvent: {}
+[0.357780] (detect_final) JobProgress: {'identifier': 'detect_final', 'progress': 'cmake'}
+[0.399843] (-) TimerEvent: {}
+[0.504050] (detect_final) JobProgress: {'identifier': 'detect_final', 'progress': 'build'}
+[0.504101] (-) TimerEvent: {}
+[0.504187] (detect_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1235'), ('SYSTEMD_EXEC_PID', '1428'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3933'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21955'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1392,unix/ake-virtual-machine:/tmp/.ICE-unix/1392'), ('INVOCATION_ID', 'f88485fc18754415b7f718da9b924c2f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OH0DU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-16daf0cf23.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final:/opt/ros/humble')]), 'shell': False}
+[0.604414] (-) TimerEvent: {}
+[0.705283] (-) TimerEvent: {}
+[0.813517] (-) TimerEvent: {}
+[0.914063] (-) TimerEvent: {}
+[1.014716] (-) TimerEvent: {}
+[1.152616] (-) TimerEvent: {}
+[1.254316] (-) TimerEvent: {}
+[1.355003] (-) TimerEvent: {}
+[1.455383] (-) TimerEvent: {}
+[1.556152] (-) TimerEvent: {}
+[1.656769] (-) TimerEvent: {}
+[1.757502] (-) TimerEvent: {}
+[1.858003] (-) TimerEvent: {}
+[2.249856] (-) TimerEvent: {}
+[2.350431] (-) TimerEvent: {}
+[2.649887] (-) TimerEvent: {}
+[2.769243] (-) TimerEvent: {}
+[2.869608] (-) TimerEvent: {}
+[2.970312] (-) TimerEvent: {}
+[3.093876] (-) TimerEvent: {}
+[3.194281] (-) TimerEvent: {}
+[3.522559] (-) TimerEvent: {}
+[3.668245] (-) TimerEvent: {}
+[3.780646] (-) TimerEvent: {}
+[3.903119] (-) TimerEvent: {}
+[4.182084] (-) TimerEvent: {}
+[4.542568] (-) TimerEvent: {}
+[4.917244] (-) TimerEvent: {}
+[5.022169] (-) TimerEvent: {}
+[5.122579] (-) TimerEvent: {}
+[5.434191] (-) TimerEvent: {}
+[5.681321] (-) TimerEvent: {}
+[6.115711] (-) TimerEvent: {}
+[6.345205] (-) TimerEvent: {}
+[6.615157] (-) TimerEvent: {}
+[6.983099] (-) TimerEvent: {}
+[7.343593] (-) TimerEvent: {}
+[7.640581] (-) TimerEvent: {}
+[7.857866] (-) TimerEvent: {}
+[8.063989] (-) TimerEvent: {}
+[8.215932] (-) TimerEvent: {}
+[8.553548] (-) TimerEvent: {}
+[8.667491] (-) TimerEvent: {}
+[8.767828] (-) TimerEvent: {}
+[8.875975] (-) TimerEvent: {}
+[9.003489] (-) TimerEvent: {}
+[9.104021] (-) TimerEvent: {}
+[9.243495] (-) TimerEvent: {}
+[9.348948] (-) TimerEvent: {}
+[9.449331] (-) TimerEvent: {}
+[9.566643] (-) TimerEvent: {}
+[9.676323] (-) TimerEvent: {}
+[9.816076] (-) TimerEvent: {}
+[9.916541] (-) TimerEvent: {}
+[10.017422] (-) TimerEvent: {}
+[10.118067] (-) TimerEvent: {}
+[10.218752] (-) TimerEvent: {}
+[10.321525] (-) TimerEvent: {}
+[10.422670] (-) TimerEvent: {}
+[10.523451] (-) TimerEvent: {}
+[10.624343] (-) TimerEvent: {}
+[10.725208] (-) TimerEvent: {}
+[10.825977] (-) TimerEvent: {}
+[10.926767] (-) TimerEvent: {}
+[11.027652] (-) TimerEvent: {}
+[11.128077] (-) TimerEvent: {}
+[11.228743] (-) TimerEvent: {}
+[11.329400] (-) TimerEvent: {}
+[11.429797] (-) TimerEvent: {}
+[11.547178] (-) TimerEvent: {}
+[11.655295] (-) TimerEvent: {}
+[11.755753] (-) TimerEvent: {}
+[11.886010] (-) TimerEvent: {}
+[11.986311] (-) TimerEvent: {}
+[12.172165] (-) TimerEvent: {}
+[12.273450] (-) TimerEvent: {}
+[12.376892] (-) TimerEvent: {}
+[12.534329] (-) TimerEvent: {}
+[12.646550] (-) TimerEvent: {}
+[12.818067] (-) TimerEvent: {}
+[12.918412] (-) TimerEvent: {}
+[13.018972] (-) TimerEvent: {}
+[13.119463] (-) TimerEvent: {}
+[13.220175] (-) TimerEvent: {}
+[13.322319] (-) TimerEvent: {}
+[13.423326] (-) TimerEvent: {}
+[13.524170] (-) TimerEvent: {}
+[13.624468] (-) TimerEvent: {}
+[13.726183] (-) TimerEvent: {}
+[13.826728] (-) TimerEvent: {}
+[13.927399] (-) TimerEvent: {}
+[14.027895] (-) TimerEvent: {}
+[14.128230] (-) TimerEvent: {}
+[14.228815] (-) TimerEvent: {}
+[14.329164] (-) TimerEvent: {}
+[14.429458] (-) TimerEvent: {}
+[14.529834] (-) TimerEvent: {}
+[14.630345] (-) TimerEvent: {}
+[14.730934] (-) TimerEvent: {}
+[14.777986] (detect_final) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/detect_final.dir/src/detect_final.cpp.o\x1b[0m\n'}
+[14.831044] (-) TimerEvent: {}
+[14.931782] (-) TimerEvent: {}
+[15.032255] (-) TimerEvent: {}
+[15.133174] (-) TimerEvent: {}
+[15.233535] (-) TimerEvent: {}
+[15.334187] (-) TimerEvent: {}
+[15.460654] (-) TimerEvent: {}
+[15.565294] (-) TimerEvent: {}
+[15.666709] (-) TimerEvent: {}
+[15.767113] (-) TimerEvent: {}
+[15.867619] (-) TimerEvent: {}
+[15.968184] (-) TimerEvent: {}
+[16.069519] (-) TimerEvent: {}
+[16.173819] (-) TimerEvent: {}
+[16.274187] (-) TimerEvent: {}
+[16.376505] (-) TimerEvent: {}
+[16.477101] (-) TimerEvent: {}
+[16.577624] (-) TimerEvent: {}
+[16.677998] (-) TimerEvent: {}
+[16.778311] (-) TimerEvent: {}
+[16.878625] (-) TimerEvent: {}
+[16.979215] (-) TimerEvent: {}
+[17.083859] (-) TimerEvent: {}
+[17.191514] (-) TimerEvent: {}
+[17.319814] (-) TimerEvent: {}
+[17.421028] (-) TimerEvent: {}
+[17.523015] (-) TimerEvent: {}
+[17.644003] (-) TimerEvent: {}
+[17.771469] (-) TimerEvent: {}
+[17.901213] (-) TimerEvent: {}
+[18.005093] (-) TimerEvent: {}
+[18.105478] (-) TimerEvent: {}
+[18.206803] (-) TimerEvent: {}
+[18.307147] (-) TimerEvent: {}
+[18.408440] (-) TimerEvent: {}
+[18.511319] (-) TimerEvent: {}
+[18.611716] (-) TimerEvent: {}
+[18.712276] (-) TimerEvent: {}
+[18.813761] (-) TimerEvent: {}
+[18.914153] (-) TimerEvent: {}
+[19.016614] (-) TimerEvent: {}
+[19.117016] (-) TimerEvent: {}
+[19.219328] (-) TimerEvent: {}
+[19.319718] (-) TimerEvent: {}
+[19.420250] (-) TimerEvent: {}
+[19.521416] (-) TimerEvent: {}
+[19.621933] (-) TimerEvent: {}
+[19.722587] (-) TimerEvent: {}
+[19.823332] (-) TimerEvent: {}
+[19.925104] (-) TimerEvent: {}
+[20.026302] (-) TimerEvent: {}
+[20.126633] (-) TimerEvent: {}
+[20.227554] (-) TimerEvent: {}
+[20.330572] (-) TimerEvent: {}
+[20.431736] (-) TimerEvent: {}
+[20.532227] (-) TimerEvent: {}
+[20.633090] (-) TimerEvent: {}
+[20.735301] (-) TimerEvent: {}
+[20.837266] (-) TimerEvent: {}
+[20.937721] (-) TimerEvent: {}
+[21.038395] (-) TimerEvent: {}
+[21.139534] (-) TimerEvent: {}
+[21.240035] (-) TimerEvent: {}
+[21.341593] (-) TimerEvent: {}
+[21.444422] (-) TimerEvent: {}
+[21.544780] (-) TimerEvent: {}
+[21.647332] (-) TimerEvent: {}
+[21.747679] (-) TimerEvent: {}
+[21.849248] (-) TimerEvent: {}
+[21.949650] (-) TimerEvent: {}
+[22.054303] (-) TimerEvent: {}
+[22.154678] (-) TimerEvent: {}
+[22.255218] (-) TimerEvent: {}
+[22.357811] (-) TimerEvent: {}
+[22.458889] (-) TimerEvent: {}
+[22.560354] (-) TimerEvent: {}
+[22.660931] (-) TimerEvent: {}
+[22.762047] (-) TimerEvent: {}
+[22.869022] (-) TimerEvent: {}
+[22.971855] (-) TimerEvent: {}
+[23.083079] (-) TimerEvent: {}
+[23.187621] (-) TimerEvent: {}
+[23.288011] (-) TimerEvent: {}
+[23.390060] (-) TimerEvent: {}
+[23.517904] (-) TimerEvent: {}
+[23.618234] (-) TimerEvent: {}
+[23.721231] (-) TimerEvent: {}
+[23.824699] (-) TimerEvent: {}
+[23.927362] (-) TimerEvent: {}
+[24.028425] (-) TimerEvent: {}
+[24.129130] (-) TimerEvent: {}
+[24.229965] (-) TimerEvent: {}
+[24.331385] (-) TimerEvent: {}
+[24.433289] (-) TimerEvent: {}
+[24.534883] (-) TimerEvent: {}
+[24.636316] (-) TimerEvent: {}
+[24.737470] (-) TimerEvent: {}
+[24.844085] (-) TimerEvent: {}
+[24.946300] (-) TimerEvent: {}
+[25.046863] (-) TimerEvent: {}
+[25.147366] (-) TimerEvent: {}
+[25.249374] (-) TimerEvent: {}
+[25.352471] (-) TimerEvent: {}
+[25.452895] (-) TimerEvent: {}
+[25.558312] (-) TimerEvent: {}
+[25.658807] (-) TimerEvent: {}
+[25.761915] (-) TimerEvent: {}
+[25.864533] (-) TimerEvent: {}
+[25.966306] (-) TimerEvent: {}
+[26.066656] (-) TimerEvent: {}
+[26.168564] (-) TimerEvent: {}
+[26.296481] (-) TimerEvent: {}
+[26.397274] (-) TimerEvent: {}
+[26.498292] (-) TimerEvent: {}
+[26.600011] (-) TimerEvent: {}
+[26.700701] (-) TimerEvent: {}
+[26.939069] (-) TimerEvent: {}
+[27.040917] (-) TimerEvent: {}
+[27.142028] (-) TimerEvent: {}
+[27.247290] (-) TimerEvent: {}
+[27.349100] (-) TimerEvent: {}
+[27.458149] (-) TimerEvent: {}
+[27.558536] (-) TimerEvent: {}
+[27.733287] (-) TimerEvent: {}
+[27.834812] (-) TimerEvent: {}
+[27.941326] (-) TimerEvent: {}
+[28.072557] (-) TimerEvent: {}
+[28.185779] (-) TimerEvent: {}
+[28.442980] (-) TimerEvent: {}
+[28.586758] (-) TimerEvent: {}
+[28.687095] (-) TimerEvent: {}
+[28.787683] (-) TimerEvent: {}
+[28.888449] (-) TimerEvent: {}
+[29.046500] (-) TimerEvent: {}
+[29.161047] (-) TimerEvent: {}
+[29.290491] (-) TimerEvent: {}
+[29.390825] (-) TimerEvent: {}
+[29.491296] (-) TimerEvent: {}
+[29.592052] (-) TimerEvent: {}
+[29.693168] (-) TimerEvent: {}
+[29.795283] (-) TimerEvent: {}
+[29.896706] (-) TimerEvent: {}
+[29.997628] (-) TimerEvent: {}
+[30.098394] (-) TimerEvent: {}
+[30.199394] (-) TimerEvent: {}
+[30.303290] (-) TimerEvent: {}
+[30.428782] (-) TimerEvent: {}
+[30.529088] (-) TimerEvent: {}
+[30.631325] (-) TimerEvent: {}
+[30.731710] (-) TimerEvent: {}
+[30.834294] (-) TimerEvent: {}
+[30.934657] (-) TimerEvent: {}
+[31.042290] (-) TimerEvent: {}
+[31.182051] (-) TimerEvent: {}
+[31.286652] (-) TimerEvent: {}
+[31.474276] (-) TimerEvent: {}
+[31.579503] (-) TimerEvent: {}
+[31.758142] (-) TimerEvent: {}
+[31.887337] (-) TimerEvent: {}
+[32.040299] (-) TimerEvent: {}
+[32.140633] (-) TimerEvent: {}
+[32.242020] (-) TimerEvent: {}
+[32.342994] (-) TimerEvent: {}
+[32.444131] (-) TimerEvent: {}
+[33.016565] (-) TimerEvent: {}
+[33.118833] (-) TimerEvent: {}
+[33.219741] (-) TimerEvent: {}
+[33.320471] (-) TimerEvent: {}
+[33.421783] (-) TimerEvent: {}
+[33.523319] (-) TimerEvent: {}
+[33.525472] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[33.526871] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:252:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[KfindTarget\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.527428] (detect_final) StderrLine: {'line': b'  252 |         bool \x1b[01;35m\x1b[KfindTarget\x1b[m\x1b[K=0;\n'}
+[33.528792] (detect_final) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.528926] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:197:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kcc\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.529035] (detect_final) StderrLine: {'line': b'  197 |     Point2f \x1b[01;35m\x1b[Kcc\x1b[m\x1b[K=Point2f(0,0);\n'}
+[33.529137] (detect_final) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[33.530368] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:153:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.530497] (detect_final) StderrLine: {'line': b'  153 | int main(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K, char *argv[])\n'}
+[33.530597] (detect_final) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[33.530695] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:153:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.530913] (detect_final) StderrLine: {'line': b'  153 | int main(int argc, \x1b[01;35m\x1b[Kchar *argv[]\x1b[m\x1b[K)\n'}
+[33.531034] (detect_final) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[33.625310] (-) TimerEvent: {}
+[33.726088] (-) TimerEvent: {}
+[33.826927] (-) TimerEvent: {}
+[33.930016] (-) TimerEvent: {}
+[34.031294] (-) TimerEvent: {}
+[34.135354] (-) TimerEvent: {}
+[34.236015] (-) TimerEvent: {}
+[34.338773] (-) TimerEvent: {}
+[34.439115] (-) TimerEvent: {}
+[34.541378] (-) TimerEvent: {}
+[34.643431] (-) TimerEvent: {}
+[34.746294] (-) TimerEvent: {}
+[34.847535] (-) TimerEvent: {}
+[34.948122] (-) TimerEvent: {}
+[35.050381] (-) TimerEvent: {}
+[35.151852] (-) TimerEvent: {}
+[35.254181] (-) TimerEvent: {}
+[35.355990] (-) TimerEvent: {}
+[35.458524] (-) TimerEvent: {}
+[35.562717] (-) TimerEvent: {}
+[35.663607] (-) TimerEvent: {}
+[35.778142] (-) TimerEvent: {}
+[35.879292] (-) TimerEvent: {}
+[35.979635] (-) TimerEvent: {}
+[36.082403] (-) TimerEvent: {}
+[36.184477] (-) TimerEvent: {}
+[36.287572] (-) TimerEvent: {}
+[36.388108] (-) TimerEvent: {}
+[36.490288] (-) TimerEvent: {}
+[36.591274] (-) TimerEvent: {}
+[36.594452] (detect_final) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable detect_final\x1b[0m\n'}
+[36.692115] (-) TimerEvent: {}
+[36.794642] (-) TimerEvent: {}
+[36.896754] (-) TimerEvent: {}
+[36.997791] (-) TimerEvent: {}
+[37.098347] (-) TimerEvent: {}
+[37.201457] (-) TimerEvent: {}
+[37.302264] (-) TimerEvent: {}
+[37.403439] (-) TimerEvent: {}
+[37.505375] (-) TimerEvent: {}
+[37.611717] (-) TimerEvent: {}
+[37.717713] (-) TimerEvent: {}
+[37.818592] (-) TimerEvent: {}
+[37.922138] (-) TimerEvent: {}
+[38.022820] (-) TimerEvent: {}
+[38.130099] (-) TimerEvent: {}
+[38.230507] (-) TimerEvent: {}
+[38.332706] (-) TimerEvent: {}
+[38.436810] (-) TimerEvent: {}
+[38.537991] (-) TimerEvent: {}
+[38.640126] (-) TimerEvent: {}
+[38.740939] (-) TimerEvent: {}
+[38.841387] (-) TimerEvent: {}
+[38.942049] (-) TimerEvent: {}
+[39.045526] (-) TimerEvent: {}
+[39.145926] (-) TimerEvent: {}
+[39.249292] (-) TimerEvent: {}
+[39.351694] (-) TimerEvent: {}
+[39.452421] (-) TimerEvent: {}
+[39.552998] (-) TimerEvent: {}
+[39.662416] (-) TimerEvent: {}
+[39.764781] (-) TimerEvent: {}
+[39.895435] (-) TimerEvent: {}
+[39.996657] (-) TimerEvent: {}
+[40.097655] (-) TimerEvent: {}
+[40.198202] (-) TimerEvent: {}
+[40.298929] (-) TimerEvent: {}
+[40.400963] (-) TimerEvent: {}
+[40.501323] (-) TimerEvent: {}
+[40.627691] (-) TimerEvent: {}
+[40.728035] (-) TimerEvent: {}
+[40.828516] (-) TimerEvent: {}
+[40.930294] (-) TimerEvent: {}
+[41.030810] (-) TimerEvent: {}
+[41.131536] (-) TimerEvent: {}
+[41.235924] (-) TimerEvent: {}
+[41.339789] (-) TimerEvent: {}
+[41.442441] (-) TimerEvent: {}
+[41.545569] (-) TimerEvent: {}
+[41.650402] (-) TimerEvent: {}
+[41.751611] (-) TimerEvent: {}
+[41.854340] (-) TimerEvent: {}
+[41.958384] (-) TimerEvent: {}
+[42.060333] (-) TimerEvent: {}
+[42.160695] (-) TimerEvent: {}
+[42.262632] (-) TimerEvent: {}
+[42.363442] (-) TimerEvent: {}
+[42.465535] (-) TimerEvent: {}
+[42.565892] (-) TimerEvent: {}
+[42.670402] (-) TimerEvent: {}
+[42.772014] (-) TimerEvent: {}
+[42.873301] (-) TimerEvent: {}
+[42.971504] (detect_final) StdoutLine: {'line': b'[100%] Built target detect_final\n'}
+[42.973851] (-) TimerEvent: {}
+[43.001564] (detect_final) CommandEnded: {'returncode': 0}
+[43.074513] (-) TimerEvent: {}
+[43.125834] (detect_final) JobProgress: {'identifier': 'detect_final', 'progress': 'install'}
+[43.185938] (-) TimerEvent: {}
+[43.188814] (detect_final) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final'], 'cwd': '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1235'), ('SYSTEMD_EXEC_PID', '1428'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3933'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21955'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1392,unix/ake-virtual-machine:/tmp/.ICE-unix/1392'), ('INVOCATION_ID', 'f88485fc18754415b7f718da9b924c2f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OH0DU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-16daf0cf23.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final:/opt/ros/humble')]), 'shell': False}
+[43.254870] (detect_final) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[43.286063] (-) TimerEvent: {}
+[43.333191] (detect_final) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/lib/detect_final/detect_final\n'}
+[43.333986] (detect_final) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/lib/detect_final/detect_final" to ""\n'}
+[43.335037] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/ament_index/resource_index/package_run_dependencies/detect_final\n'}
+[43.335609] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/ament_index/resource_index/parent_prefix_path/detect_final\n'}
+[43.386179] (-) TimerEvent: {}
+[43.431870] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/ament_prefix_path.sh\n'}
+[43.433425] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/ament_prefix_path.dsv\n'}
+[43.433608] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/path.sh\n'}
+[43.433765] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/path.dsv\n'}
+[43.437260] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.bash\n'}
+[43.438328] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.sh\n'}
+[43.438469] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.zsh\n'}
+[43.438578] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.dsv\n'}
+[43.438681] (detect_final) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/package.dsv\n'}
+[43.462667] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/ament_index/resource_index/packages/detect_final\n'}
+[43.463132] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/cmake/detect_finalConfig.cmake\n'}
+[43.464969] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/cmake/detect_finalConfig-version.cmake\n'}
+[43.465094] (detect_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/package.xml\n'}
+[43.468121] (detect_final) CommandEnded: {'returncode': 0}
+[43.487290] (-) TimerEvent: {}
+[43.587627] (-) TimerEvent: {}
+[43.688453] (-) TimerEvent: {}
+[43.791782] (-) TimerEvent: {}
+[43.889146] (detect_final) JobEnded: {'identifier': 'detect_final', 'rc': 0}
+[43.890727] (-) EventReactorShutdown: {}

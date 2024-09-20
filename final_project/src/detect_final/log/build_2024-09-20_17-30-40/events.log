@@ -1,0 +1,283 @@
+[0.000000] (-) TimerEvent: {}
+[0.000125] (detect_final) JobQueued: {'identifier': 'detect_final', 'dependencies': OrderedDict()}
+[0.000640] (detect_final) JobStarted: {'identifier': 'detect_final'}
+[0.099620] (-) TimerEvent: {}
+[0.156398] (detect_final) JobProgress: {'identifier': 'detect_final', 'progress': 'cmake'}
+[0.157569] (detect_final) Command: {'cmd': ['/usr/bin/cmake', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final', '-DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final'], 'cwd': '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1235'), ('SYSTEMD_EXEC_PID', '1428'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3933'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21955'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1392,unix/ake-virtual-machine:/tmp/.ICE-unix/1392'), ('INVOCATION_ID', 'f88485fc18754415b7f718da9b924c2f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OH0DU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-16daf0cf23.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.205746] (-) TimerEvent: {}
+[0.309473] (-) TimerEvent: {}
+[0.409798] (-) TimerEvent: {}
+[0.511816] (-) TimerEvent: {}
+[0.612185] (-) TimerEvent: {}
+[0.712780] (-) TimerEvent: {}
+[0.813692] (-) TimerEvent: {}
+[0.914772] (-) TimerEvent: {}
+[1.015252] (-) TimerEvent: {}
+[1.116002] (-) TimerEvent: {}
+[1.217867] (-) TimerEvent: {}
+[1.318745] (-) TimerEvent: {}
+[1.419848] (-) TimerEvent: {}
+[1.520198] (-) TimerEvent: {}
+[1.620652] (-) TimerEvent: {}
+[1.721145] (-) TimerEvent: {}
+[1.731838] (detect_final) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.821432] (-) TimerEvent: {}
+[1.922102] (-) TimerEvent: {}
+[2.022404] (-) TimerEvent: {}
+[2.122845] (-) TimerEvent: {}
+[2.223570] (-) TimerEvent: {}
+[2.294869] (detect_final) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.323662] (-) TimerEvent: {}
+[2.425126] (-) TimerEvent: {}
+[2.526258] (-) TimerEvent: {}
+[2.626958] (-) TimerEvent: {}
+[2.644011] (detect_final) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.727242] (-) TimerEvent: {}
+[2.830018] (-) TimerEvent: {}
+[2.931990] (-) TimerEvent: {}
+[2.969080] (detect_final) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.978464] (detect_final) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.979694] (detect_final) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.018889] (detect_final) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.032480] (-) TimerEvent: {}
+[3.043361] (detect_final) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.132671] (-) TimerEvent: {}
+[3.234011] (-) TimerEvent: {}
+[3.250060] (detect_final) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.258111] (detect_final) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.258774] (detect_final) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.274990] (detect_final) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.335063] (-) TimerEvent: {}
+[3.437559] (-) TimerEvent: {}
+[3.438635] (detect_final) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.537778] (-) TimerEvent: {}
+[3.638330] (-) TimerEvent: {}
+[3.742364] (-) TimerEvent: {}
+[3.842865] (-) TimerEvent: {}
+[3.943894] (-) TimerEvent: {}
+[4.044262] (-) TimerEvent: {}
+[4.144542] (-) TimerEvent: {}
+[4.244816] (-) TimerEvent: {}
+[4.345440] (-) TimerEvent: {}
+[4.445734] (-) TimerEvent: {}
+[4.546002] (-) TimerEvent: {}
+[4.646265] (-) TimerEvent: {}
+[4.747666] (-) TimerEvent: {}
+[4.848009] (-) TimerEvent: {}
+[4.948549] (-) TimerEvent: {}
+[5.049114] (-) TimerEvent: {}
+[5.149593] (-) TimerEvent: {}
+[5.251009] (-) TimerEvent: {}
+[5.351345] (-) TimerEvent: {}
+[5.451653] (-) TimerEvent: {}
+[5.546071] (detect_final) StdoutLine: {'line': b'-- Found Python3: /home/ake/miniconda3/bin/python3 (found version "3.12.4") found components: Interpreter \n'}
+[5.551947] (-) TimerEvent: {}
+[5.653015] (-) TimerEvent: {}
+[5.753343] (-) TimerEvent: {}
+[5.854522] (-) TimerEvent: {}
+[5.954973] (-) TimerEvent: {}
+[5.990752] (detect_final) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.055139] (-) TimerEvent: {}
+[6.155807] (-) TimerEvent: {}
+[6.257247] (-) TimerEvent: {}
+[6.358003] (-) TimerEvent: {}
+[6.421755] (detect_final) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.453628] (detect_final) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.458198] (-) TimerEvent: {}
+[6.502189] (detect_final) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.558499] (-) TimerEvent: {}
+[6.559653] (detect_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.623924] (detect_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.658726] (-) TimerEvent: {}
+[6.759240] (-) TimerEvent: {}
+[6.859938] (-) TimerEvent: {}
+[6.922891] (detect_final) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.929467] (detect_final) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.960157] (-) TimerEvent: {}
+[7.060762] (-) TimerEvent: {}
+[7.161164] (-) TimerEvent: {}
+[7.261711] (-) TimerEvent: {}
+[7.362146] (-) TimerEvent: {}
+[7.408779] (detect_final) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.458171] (detect_final) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.462224] (-) TimerEvent: {}
+[7.533502] (detect_final) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.562343] (-) TimerEvent: {}
+[7.662679] (-) TimerEvent: {}
+[7.680987] (detect_final) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.763664] (-) TimerEvent: {}
+[7.869808] (-) TimerEvent: {}
+[7.984021] (-) TimerEvent: {}
+[8.038055] (detect_final) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.038264] (detect_final) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.090751] (-) TimerEvent: {}
+[8.191311] (-) TimerEvent: {}
+[8.239661] (detect_final) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.239882] (detect_final) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.291437] (-) TimerEvent: {}
+[8.393621] (-) TimerEvent: {}
+[8.496231] (-) TimerEvent: {}
+[8.600011] (-) TimerEvent: {}
+[8.701276] (-) TimerEvent: {}
+[8.767043] (detect_final) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.10.0") \n'}
+[8.801490] (-) TimerEvent: {}
+[8.803191] (detect_final) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[8.901860] (-) TimerEvent: {}
+[9.002259] (-) TimerEvent: {}
+[9.102802] (-) TimerEvent: {}
+[9.203314] (-) TimerEvent: {}
+[9.303967] (-) TimerEvent: {}
+[9.404713] (-) TimerEvent: {}
+[9.510706] (-) TimerEvent: {}
+[9.609813] (detect_final) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.610056] (detect_final) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[9.610159] (detect_final) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.611185] (-) TimerEvent: {}
+[9.646774] (detect_final) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.663800] (detect_final) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.663983] (detect_final) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.699288] (detect_final) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.711534] (-) TimerEvent: {}
+[9.714524] (detect_final) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.782204] (detect_final) StdoutLine: {'line': b'-- Generating done\n'}
+[9.785832] (detect_final) StdoutLine: {'line': b'-- Build files have been written to: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final\n'}
+[9.805483] (detect_final) CommandEnded: {'returncode': 0}
+[9.805882] (detect_final) JobProgress: {'identifier': 'detect_final', 'progress': 'build'}
+[9.805916] (detect_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1235'), ('SYSTEMD_EXEC_PID', '1428'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3933'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:21955'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1392,unix/ake-virtual-machine:/tmp/.ICE-unix/1392'), ('INVOCATION_ID', 'f88485fc18754415b7f718da9b924c2f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OH0DU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-16daf0cf23.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.812463] (-) TimerEvent: {}
+[9.906536] (detect_final) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/detect_final.dir/src/main.cpp.o\x1b[0m\n'}
+[9.913013] (-) TimerEvent: {}
+[10.013958] (-) TimerEvent: {}
+[10.114720] (-) TimerEvent: {}
+[10.215054] (-) TimerEvent: {}
+[10.315444] (-) TimerEvent: {}
+[10.417317] (-) TimerEvent: {}
+[10.518144] (-) TimerEvent: {}
+[10.618545] (-) TimerEvent: {}
+[10.718862] (-) TimerEvent: {}
+[10.819584] (-) TimerEvent: {}
+[10.920238] (-) TimerEvent: {}
+[11.023016] (-) TimerEvent: {}
+[11.123357] (-) TimerEvent: {}
+[11.223885] (-) TimerEvent: {}
+[11.324888] (-) TimerEvent: {}
+[11.425994] (-) TimerEvent: {}
+[11.527358] (-) TimerEvent: {}
+[11.628287] (-) TimerEvent: {}
+[11.728676] (-) TimerEvent: {}
+[11.829168] (-) TimerEvent: {}
+[11.929468] (-) TimerEvent: {}
+[12.030149] (-) TimerEvent: {}
+[12.130385] (-) TimerEvent: {}
+[12.230873] (-) TimerEvent: {}
+[12.331884] (-) TimerEvent: {}
+[12.432464] (-) TimerEvent: {}
+[12.537413] (-) TimerEvent: {}
+[12.638121] (-) TimerEvent: {}
+[12.738688] (-) TimerEvent: {}
+[12.839442] (-) TimerEvent: {}
+[12.942024] (-) TimerEvent: {}
+[13.043958] (-) TimerEvent: {}
+[13.144326] (-) TimerEvent: {}
+[13.244913] (-) TimerEvent: {}
+[13.345513] (-) TimerEvent: {}
+[13.450010] (-) TimerEvent: {}
+[13.550839] (-) TimerEvent: {}
+[13.652133] (-) TimerEvent: {}
+[13.752542] (-) TimerEvent: {}
+[13.854594] (-) TimerEvent: {}
+[13.955028] (-) TimerEvent: {}
+[14.064599] (-) TimerEvent: {}
+[14.167329] (-) TimerEvent: {}
+[14.275163] (-) TimerEvent: {}
+[14.376192] (-) TimerEvent: {}
+[14.478758] (-) TimerEvent: {}
+[14.595117] (-) TimerEvent: {}
+[14.696021] (-) TimerEvent: {}
+[14.796357] (-) TimerEvent: {}
+[14.934727] (-) TimerEvent: {}
+[15.035037] (-) TimerEvent: {}
+[15.135834] (-) TimerEvent: {}
+[15.236265] (-) TimerEvent: {}
+[15.381217] (-) TimerEvent: {}
+[15.491348] (-) TimerEvent: {}
+[15.606870] (-) TimerEvent: {}
+[15.709016] (-) TimerEvent: {}
+[15.813686] (-) TimerEvent: {}
+[16.058417] (-) TimerEvent: {}
+[16.197013] (-) TimerEvent: {}
+[16.299775] (-) TimerEvent: {}
+[16.400788] (-) TimerEvent: {}
+[16.501359] (-) TimerEvent: {}
+[16.606051] (-) TimerEvent: {}
+[16.706646] (-) TimerEvent: {}
+[16.807018] (-) TimerEvent: {}
+[16.916159] (-) TimerEvent: {}
+[17.041828] (-) TimerEvent: {}
+[17.150645] (-) TimerEvent: {}
+[17.251579] (-) TimerEvent: {}
+[17.352484] (-) TimerEvent: {}
+[17.457180] (-) TimerEvent: {}
+[17.557909] (-) TimerEvent: {}
+[17.658325] (-) TimerEvent: {}
+[17.759579] (-) TimerEvent: {}
+[17.860373] (-) TimerEvent: {}
+[17.961033] (-) TimerEvent: {}
+[18.061783] (-) TimerEvent: {}
+[18.163864] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<float> stander(cv::Mat)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.164161] (-) TimerEvent: {}
+[18.164292] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:28:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcvSize\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[18.164412] (detect_final) StderrLine: {'line': b'   28 |     HOGDescriptor hog(\x1b[01;31m\x1b[KcvSize\x1b[m\x1b[K(48,48),cvSize(16,16),cvSize(8,8),cvSize(8,8),9,1,-1,\n'}
+[18.164514] (detect_final) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[18.177320] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble TemplateMatch(cv::Mat, cv::Mat, cv::Point&, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.177495] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:130:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCV_TM_SQDIFF\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[18.177549] (detect_final) StderrLine: {'line': b'  130 |     case \x1b[01;31m\x1b[KCV_TM_SQDIFF\x1b[m\x1b[K:\n'}
+[18.177595] (detect_final) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.183771] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:131:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCV_TM_SQDIFF_NORMED\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[18.183915] (detect_final) StderrLine: {'line': b'  131 |     case \x1b[01;31m\x1b[KCV_TM_SQDIFF_NORMED\x1b[m\x1b[K:\n'}
+[18.183979] (detect_final) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.197194] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.197439] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:231:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCV_THRESH_BINARY\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[18.197556] (detect_final) StderrLine: {'line': b'  231 |         threshold(midImage2,midImage2,100,255,\x1b[01;31m\x1b[KCV_THRESH_BINARY\x1b[m\x1b[K);\n'}
+[18.197675] (detect_final) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.210814] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:249:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCV_RETR_TREE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[18.211040] (detect_final) StderrLine: {'line': b'  249 |         findContours(midImage2,contours2,hierarchy2,\x1b[01;31m\x1b[KCV_RETR_TREE\x1b[m\x1b[K,CHAIN_APPROX_SIMPLE);\n'}
+[18.211143] (detect_final) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.227234] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:340:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCV_TM_CCOEFF_NORMED\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[18.227472] (detect_final) StderrLine: {'line': b'  340 |                         value = TemplateMatch(tmp1, templ[j], matchLoc, \x1b[01;31m\x1b[KCV_TM_CCOEFF_NORMED\x1b[m\x1b[K);\n'}
+[18.227588] (detect_final) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.232703] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:345:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCV_TM_CCOEFF_NORMED\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[18.232896] (detect_final) StderrLine: {'line': b'  345 |                         value = TemplateMatch(tmp1, templ[j], matchLoc, \x1b[01;31m\x1b[KCV_TM_CCOEFF_NORMED\x1b[m\x1b[K);\n'}
+[18.233027] (detect_final) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.240730] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:428:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCircleInfo2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[18.240956] (detect_final) StderrLine: {'line': b'  428 |                                 \x1b[01;31m\x1b[KCircleInfo2\x1b[m\x1b[K(cirV,cc,R);\n'}
+[18.241064] (detect_final) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.264150] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:153:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.264370] (-) TimerEvent: {}
+[18.264497] (detect_final) StderrLine: {'line': b'  153 | int main(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K, char *argv[])\n'}
+[18.264599] (detect_final) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[18.264694] (detect_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:153:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.264790] (detect_final) StderrLine: {'line': b'  153 | int main(int argc, \x1b[01;35m\x1b[Kchar *argv[]\x1b[m\x1b[K)\n'}
+[18.264892] (detect_final) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[18.368664] (-) TimerEvent: {}
+[18.469393] (-) TimerEvent: {}
+[18.570440] (-) TimerEvent: {}
+[18.673524] (-) TimerEvent: {}
+[18.777278] (-) TimerEvent: {}
+[18.932018] (-) TimerEvent: {}
+[19.032353] (-) TimerEvent: {}
+[19.133897] (-) TimerEvent: {}
+[19.240136] (-) TimerEvent: {}
+[19.343660] (-) TimerEvent: {}
+[19.444877] (-) TimerEvent: {}
+[19.589620] (-) TimerEvent: {}
+[19.714776] (-) TimerEvent: {}
+[19.836348] (-) TimerEvent: {}
+[19.928630] (detect_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/detect_final.dir/build.make:76\xef\xbc\x9aCMakeFiles/detect_final.dir/src/main.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[19.928838] (detect_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/detect_final.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[19.928970] (detect_final) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[19.936475] (-) TimerEvent: {}
+[19.937862] (detect_final) CommandEnded: {'returncode': 2}
+[20.036644] (-) TimerEvent: {}
+[20.125359] (detect_final) JobEnded: {'identifier': 'detect_final', 'rc': 2}
+[20.137394] (-) EventReactorShutdown: {}

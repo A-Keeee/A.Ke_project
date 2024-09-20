@@ -1,0 +1,36 @@
+[0.013s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2
+[0.082s] [35m[1mConsolidate compiler generated dependencies of target detect_final[0m
+[0.136s] [ 50%] [32mBuilding CXX object CMakeFiles/detect_final.dir/src/main.cpp.o[0m
+[5.553s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:[m[K In function ‘[01m[Kdouble TemplateMatch(cv::Mat, cv::Mat, cv::Point&, int)[m[K’:
+[5.553s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:130:10:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_TM_SQDIFF[m[K’ was not declared in this scope
+[5.553s]   130 |     case [01;31m[KCV_TM_SQDIFF[m[K:
+[5.553s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[5.566s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:131:10:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_TM_SQDIFF_NORMED[m[K’ was not declared in this scope
+[5.566s]   131 |     case [01;31m[KCV_TM_SQDIFF_NORMED[m[K:
+[5.567s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.588s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.588s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:231:47:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_THRESH_BINARY[m[K’ was not declared in this scope
+[5.588s]   231 |         threshold(midImage2,midImage2,100,255,[01;31m[KCV_THRESH_BINARY[m[K);
+[5.588s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.601s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:249:53:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_RETR_TREE[m[K’ was not declared in this scope
+[5.602s]   249 |         findContours(midImage2,contours2,hierarchy2,[01;31m[KCV_RETR_TREE[m[K,CHAIN_APPROX_SIMPLE);
+[5.602s]       |                                                     [01;31m[K^~~~~~~~~~~~[m[K
+[5.619s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:340:73:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_TM_CCOEFF_NORMED[m[K’ was not declared in this scope
+[5.619s]   340 |                         value = TemplateMatch(tmp1, templ[j], matchLoc, [01;31m[KCV_TM_CCOEFF_NORMED[m[K);
+[5.620s]       |                                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.629s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:345:73:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_TM_CCOEFF_NORMED[m[K’ was not declared in this scope
+[5.630s]   345 |                         value = TemplateMatch(tmp1, templ[j], matchLoc, [01;31m[KCV_TM_CCOEFF_NORMED[m[K);
+[5.630s]       |                                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.638s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:428:33:[m[K [01;31m[Kerror: [m[K‘[01m[KCircleInfo2[m[K’ was not declared in this scope
+[5.638s]   428 |                                 [01;31m[KCircleInfo2[m[K(cirV,cc,R);
+[5.641s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[5.643s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:153:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.644s]   153 | int main([01;35m[Kint argc[m[K, char *argv[])
+[5.644s]       |          [01;35m[K~~~~^~~~[m[K
+[5.644s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:153:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.644s]   153 | int main(int argc, [01;35m[Kchar *argv[][m[K)
+[5.644s]       |                    [01;35m[K~~~~~~^~~~~~[m[K
+[6.913s] gmake[2]: *** [CMakeFiles/detect_final.dir/build.make:76：CMakeFiles/detect_final.dir/src/main.cpp.o] 错误 1
+[6.913s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/detect_final.dir/all] 错误 2
+[6.917s] gmake: *** [Makefile:146：all] 错误 2
+[6.924s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2

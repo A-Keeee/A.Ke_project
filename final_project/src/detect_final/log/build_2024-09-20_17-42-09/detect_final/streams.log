@@ -1,0 +1,39 @@
+[0.023s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target detect_final[0m
+[0.130s] [ 50%] [32mBuilding CXX object CMakeFiles/detect_final.dir/src/main.cpp.o[0m
+[4.918s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.918s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:252:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KfindTarget[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.918s]   252 |         bool [01;35m[KfindTarget[m[K=0;
+[4.919s]       |              [01;35m[K^~~~~~~~~~[m[K
+[4.920s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:197:13:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcc[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.920s]   197 |     Point2f [01;35m[Kcc[m[K=Point2f(0,0);
+[4.920s]       |             [01;35m[K^~[m[K
+[4.920s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:153:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.920s]   153 | int main([01;35m[Kint argc[m[K, char *argv[])
+[4.920s]       |          [01;35m[K~~~~^~~~[m[K
+[4.921s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/main.cpp:153:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.921s]   153 | int main(int argc, [01;35m[Kchar *argv[][m[K)
+[4.921s]       |                    [01;35m[K~~~~~~^~~~~~[m[K
+[6.669s] [100%] [32m[1mLinking CXX executable detect_final[0m
+[10.439s] [100%] Built target detect_final
+[10.448s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2
+[10.493s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final
+[10.511s] -- Install configuration: ""
+[10.511s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/lib/detect_final/detect_final
+[10.513s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/lib/detect_final/detect_final" to ""
+[10.514s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/ament_index/resource_index/package_run_dependencies/detect_final
+[10.515s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/ament_index/resource_index/parent_prefix_path/detect_final
+[10.516s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/ament_prefix_path.sh
+[10.518s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/ament_prefix_path.dsv
+[10.518s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/path.sh
+[10.520s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/path.dsv
+[10.521s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.bash
+[10.523s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.sh
+[10.525s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.zsh
+[10.527s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.dsv
+[10.529s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/package.dsv
+[10.532s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/ament_index/resource_index/packages/detect_final
+[10.532s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/cmake/detect_finalConfig.cmake
+[10.532s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/cmake/detect_finalConfig-version.cmake
+[10.534s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/package.xml
+[10.537s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final

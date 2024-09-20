@@ -1,0 +1,13 @@
+[01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:502:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KfindTarget[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  502 |         bool [01;35m[KfindTarget[m[K = false;
+      |              [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:451:13:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcc[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  451 |     Point2f [01;35m[Kcc[m[K = Point2f(0, 0);
+      |             [01;35m[K^~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:435:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  435 | int main([01;35m[Kint argc[m[K, char *argv[])
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp:435:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  435 | int main(int argc, [01;35m[Kchar *argv[][m[K)
+      |                    [01;35m[K~~~~~~^~~~~~[m[K
