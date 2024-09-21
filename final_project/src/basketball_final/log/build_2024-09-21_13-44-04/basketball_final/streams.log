@@ -1,0 +1,33 @@
+[0.031s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final -- -j2 -l2
+[0.127s] [35m[1mConsolidate compiler generated dependencies of target basketball_final[0m
+[0.203s] [ 33%] [32mBuilding CXX object CMakeFiles/basketball_final.dir/src/basketball_final.cpp.o[0m
+[2.560s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/src/basketball_final.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.561s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/src/basketball_final.cpp:8:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.561s]     8 | int main([01;35m[Kint argc[m[K, char **argv)
+[2.561s]       |          [01;35m[K~~~~^~~~[m[K
+[2.561s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/src/basketball_final.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.561s]     8 | int main(int argc, [01;35m[Kchar **argv[m[K)
+[2.561s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[3.289s] [ 66%] [32m[1mLinking CXX executable basketball_final[0m
+[3.812s] [100%] Built target basketball_final
+[3.838s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final -- -j2 -l2
+[3.971s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final
+[3.989s] -- Install configuration: ""
+[3.989s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/lib/basketball_final/basketball_final
+[3.989s] -- Set runtime path of "/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/lib/basketball_final/basketball_final" to ""
+[3.989s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/ament_index/resource_index/package_run_dependencies/basketball_final
+[3.989s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/ament_index/resource_index/parent_prefix_path/basketball_final
+[3.989s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/environment/ament_prefix_path.sh
+[3.989s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/environment/ament_prefix_path.dsv
+[3.990s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/environment/path.sh
+[3.990s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/environment/path.dsv
+[3.990s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/local_setup.bash
+[3.990s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/local_setup.sh
+[3.990s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/local_setup.zsh
+[3.995s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/local_setup.dsv
+[3.995s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/package.dsv
+[3.996s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/ament_index/resource_index/packages/basketball_final
+[3.996s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/cmake/basketball_finalConfig.cmake
+[3.996s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/cmake/basketball_finalConfig-version.cmake
+[3.996s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/package.xml
+[3.996s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final

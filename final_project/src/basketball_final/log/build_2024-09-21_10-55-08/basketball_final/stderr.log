@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:17 (install):
+  install TARGETS given target "pnp_learn" which does not exist.
+
+[0m

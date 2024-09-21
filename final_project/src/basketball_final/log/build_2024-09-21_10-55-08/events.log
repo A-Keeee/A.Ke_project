@@ -1,0 +1,129 @@
+[0.000000] (-) TimerEvent: {}
+[0.000549] (basketball_final) JobQueued: {'identifier': 'basketball_final', 'dependencies': OrderedDict()}
+[0.001212] (basketball_final) JobStarted: {'identifier': 'basketball_final'}
+[0.079063] (basketball_final) JobProgress: {'identifier': 'basketball_final', 'progress': 'cmake'}
+[0.079185] (basketball_final) Command: {'cmd': ['/usr/bin/cmake', '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final', '-DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final'], 'cwd': '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1142'), ('SYSTEMD_EXEC_PID', '1402'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3745'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:22071'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/.local/bin:/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1376,unix/ake-virtual-machine:/tmp/.ICE-unix/1376'), ('INVOCATION_ID', 'c19fe3b1bd90452097ee0e363ca02147'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BC04T2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45adb35e8a.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100092] (-) TimerEvent: {}
+[0.200396] (-) TimerEvent: {}
+[0.300976] (-) TimerEvent: {}
+[0.401317] (-) TimerEvent: {}
+[0.501722] (-) TimerEvent: {}
+[0.602103] (-) TimerEvent: {}
+[0.702562] (-) TimerEvent: {}
+[0.803095] (-) TimerEvent: {}
+[0.903762] (-) TimerEvent: {}
+[1.004329] (-) TimerEvent: {}
+[1.069258] (basketball_final) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.104499] (-) TimerEvent: {}
+[1.205225] (-) TimerEvent: {}
+[1.305807] (-) TimerEvent: {}
+[1.406173] (-) TimerEvent: {}
+[1.437561] (basketball_final) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.506625] (-) TimerEvent: {}
+[1.607251] (-) TimerEvent: {}
+[1.708103] (-) TimerEvent: {}
+[1.714092] (basketball_final) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.808485] (-) TimerEvent: {}
+[1.909497] (-) TimerEvent: {}
+[1.930603] (basketball_final) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.936065] (basketball_final) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.937057] (basketball_final) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.968410] (basketball_final) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.007725] (basketball_final) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.010468] (-) TimerEvent: {}
+[2.110695] (-) TimerEvent: {}
+[2.144254] (basketball_final) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.149518] (basketball_final) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.150060] (basketball_final) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.152462] (basketball_final) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.210800] (-) TimerEvent: {}
+[2.252183] (basketball_final) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.310917] (-) TimerEvent: {}
+[2.411498] (-) TimerEvent: {}
+[2.511854] (-) TimerEvent: {}
+[2.612604] (-) TimerEvent: {}
+[2.713418] (-) TimerEvent: {}
+[2.814838] (-) TimerEvent: {}
+[2.915341] (-) TimerEvent: {}
+[3.015910] (-) TimerEvent: {}
+[3.116519] (-) TimerEvent: {}
+[3.217106] (-) TimerEvent: {}
+[3.317769] (-) TimerEvent: {}
+[3.418187] (-) TimerEvent: {}
+[3.518782] (-) TimerEvent: {}
+[3.619438] (-) TimerEvent: {}
+[3.720150] (-) TimerEvent: {}
+[3.821830] (-) TimerEvent: {}
+[3.922509] (-) TimerEvent: {}
+[4.023271] (-) TimerEvent: {}
+[4.123828] (-) TimerEvent: {}
+[4.224531] (-) TimerEvent: {}
+[4.325304] (-) TimerEvent: {}
+[4.426506] (-) TimerEvent: {}
+[4.516795] (basketball_final) StdoutLine: {'line': b'-- Found Python3: /home/ake/miniconda3/bin/python3 (found version "3.12.4") found components: Interpreter \n'}
+[4.526641] (-) TimerEvent: {}
+[4.626992] (-) TimerEvent: {}
+[4.727755] (-) TimerEvent: {}
+[4.828454] (-) TimerEvent: {}
+[4.929164] (-) TimerEvent: {}
+[4.951893] (basketball_final) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.029267] (-) TimerEvent: {}
+[5.130605] (-) TimerEvent: {}
+[5.231140] (-) TimerEvent: {}
+[5.274663] (basketball_final) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.316422] (basketball_final) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.331265] (-) TimerEvent: {}
+[5.359932] (basketball_final) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.431523] (-) TimerEvent: {}
+[5.455913] (basketball_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.519781] (basketball_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.531690] (-) TimerEvent: {}
+[5.632042] (-) TimerEvent: {}
+[5.732646] (-) TimerEvent: {}
+[5.787300] (basketball_final) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.814457] (basketball_final) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.832807] (-) TimerEvent: {}
+[5.933628] (-) TimerEvent: {}
+[6.034209] (-) TimerEvent: {}
+[6.134684] (-) TimerEvent: {}
+[6.235197] (-) TimerEvent: {}
+[6.288860] (basketball_final) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.335929] (-) TimerEvent: {}
+[6.355075] (basketball_final) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.400764] (basketball_final) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.436169] (-) TimerEvent: {}
+[6.506637] (basketball_final) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.536458] (-) TimerEvent: {}
+[6.620587] (basketball_final) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.620743] (basketball_final) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.636664] (-) TimerEvent: {}
+[6.720569] (basketball_final) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.720901] (basketball_final) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.736985] (-) TimerEvent: {}
+[6.837254] (-) TimerEvent: {}
+[6.937632] (-) TimerEvent: {}
+[6.973682] (basketball_final) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.10.0") \n'}
+[6.975030] (basketball_final) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:17 (install):\n'}
+[6.975169] (basketball_final) StderrLine: {'line': b'  install TARGETS given target "pnp_learn" which does not exist.\n'}
+[6.975224] (basketball_final) StderrLine: {'line': b'\n'}
+[6.975274] (basketball_final) StderrLine: {'line': b'\x1b[0m\n'}
+[7.011646] (basketball_final) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.037893] (-) TimerEvent: {}
+[7.140277] (-) TimerEvent: {}
+[7.240674] (-) TimerEvent: {}
+[7.341275] (-) TimerEvent: {}
+[7.442362] (-) TimerEvent: {}
+[7.519060] (basketball_final) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.519757] (basketball_final) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[7.519879] (basketball_final) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.522008] (basketball_final) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.528567] (basketball_final) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.528704] (basketball_final) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.529594] (basketball_final) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.534700] (basketball_final) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[7.534799] (basketball_final) StdoutLine: {'line': b'See also "/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final/CMakeFiles/CMakeOutput.log".\n'}
+[7.541232] (basketball_final) CommandEnded: {'returncode': 1}
+[7.544463] (-) TimerEvent: {}
+[7.644640] (-) TimerEvent: {}
+[7.658230] (basketball_final) JobEnded: {'identifier': 'basketball_final', 'rc': 1}
+[7.671477] (-) EventReactorShutdown: {}

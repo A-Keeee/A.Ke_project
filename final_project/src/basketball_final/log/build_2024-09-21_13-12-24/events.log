@@ -1,0 +1,228 @@
+[0.000000] (-) TimerEvent: {}
+[0.003168] (basketball_final) JobQueued: {'identifier': 'basketball_final', 'dependencies': OrderedDict()}
+[0.003257] (basketball_final) JobStarted: {'identifier': 'basketball_final'}
+[0.052893] (basketball_final) JobProgress: {'identifier': 'basketball_final', 'progress': 'cmake'}
+[0.084388] (basketball_final) JobProgress: {'identifier': 'basketball_final', 'progress': 'build'}
+[0.084470] (basketball_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final', '--', '-j2', '-l2'], 'cwd': '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1152'), ('SYSTEMD_EXEC_PID', '1406'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3204'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:22062'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1379,unix/ake-virtual-machine:/tmp/.ICE-unix/1379'), ('INVOCATION_ID', '2fd08c0136154263aea8406fa7b297ca'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UWEWT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45adb35e8a.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100147] (-) TimerEvent: {}
+[0.200956] (-) TimerEvent: {}
+[0.301613] (-) TimerEvent: {}
+[0.401933] (-) TimerEvent: {}
+[0.502369] (-) TimerEvent: {}
+[0.602843] (-) TimerEvent: {}
+[0.703190] (-) TimerEvent: {}
+[0.803505] (-) TimerEvent: {}
+[0.903056] (basketball_final) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.903577] (-) TimerEvent: {}
+[1.008691] (-) TimerEvent: {}
+[1.109045] (-) TimerEvent: {}
+[1.211707] (-) TimerEvent: {}
+[1.312060] (-) TimerEvent: {}
+[1.412458] (-) TimerEvent: {}
+[1.512852] (-) TimerEvent: {}
+[1.615705] (-) TimerEvent: {}
+[1.716039] (-) TimerEvent: {}
+[1.819933] (-) TimerEvent: {}
+[1.920312] (-) TimerEvent: {}
+[2.020731] (-) TimerEvent: {}
+[2.123163] (-) TimerEvent: {}
+[2.176088] (basketball_final) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.223314] (-) TimerEvent: {}
+[2.324017] (-) TimerEvent: {}
+[2.425569] (-) TimerEvent: {}
+[2.464109] (basketball_final) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.495120] (basketball_final) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.513386] (basketball_final) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.525854] (-) TimerEvent: {}
+[2.546004] (basketball_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.570747] (basketball_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.626030] (-) TimerEvent: {}
+[2.718219] (basketball_final) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.726186] (-) TimerEvent: {}
+[2.738226] (basketball_final) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.826568] (-) TimerEvent: {}
+[2.927071] (-) TimerEvent: {}
+[3.027909] (-) TimerEvent: {}
+[3.053109] (basketball_final) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.128183] (-) TimerEvent: {}
+[3.228703] (-) TimerEvent: {}
+[3.329126] (-) TimerEvent: {}
+[3.393260] (basketball_final) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.429232] (-) TimerEvent: {}
+[3.531983] (-) TimerEvent: {}
+[3.632384] (-) TimerEvent: {}
+[3.732893] (-) TimerEvent: {}
+[3.833272] (-) TimerEvent: {}
+[3.908996] (basketball_final) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.909449] (basketball_final) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.909550] (basketball_final) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.911319] (basketball_final) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.921382] (basketball_final) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.926920] (basketball_final) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.934313] (-) TimerEvent: {}
+[3.972265] (basketball_final) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.973902] (basketball_final) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.981111] (basketball_final) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.986724] (basketball_final) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.034484] (-) TimerEvent: {}
+[4.125831] (basketball_final) StdoutLine: {'line': b'-- Generating done\n'}
+[4.128068] (basketball_final) StdoutLine: {'line': b'-- Build files have been written to: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final\n'}
+[4.134598] (-) TimerEvent: {}
+[4.209906] (basketball_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target basketball_final\x1b[0m\n'}
+[4.234719] (-) TimerEvent: {}
+[4.236983] (basketball_final) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/basketball_final.dir/src/basketball_final.cpp.o\x1b[0m\n'}
+[4.334950] (-) TimerEvent: {}
+[4.435707] (-) TimerEvent: {}
+[4.537468] (-) TimerEvent: {}
+[4.637915] (-) TimerEvent: {}
+[4.738302] (-) TimerEvent: {}
+[4.839950] (-) TimerEvent: {}
+[4.942478] (-) TimerEvent: {}
+[5.043710] (-) TimerEvent: {}
+[5.144921] (-) TimerEvent: {}
+[5.245436] (-) TimerEvent: {}
+[5.348807] (-) TimerEvent: {}
+[5.449439] (-) TimerEvent: {}
+[5.553470] (-) TimerEvent: {}
+[5.655452] (-) TimerEvent: {}
+[5.756357] (-) TimerEvent: {}
+[5.858426] (-) TimerEvent: {}
+[5.958831] (-) TimerEvent: {}
+[6.060708] (-) TimerEvent: {}
+[6.161160] (-) TimerEvent: {}
+[6.261738] (-) TimerEvent: {}
+[6.365166] (-) TimerEvent: {}
+[6.466050] (-) TimerEvent: {}
+[6.567703] (-) TimerEvent: {}
+[6.668041] (-) TimerEvent: {}
+[6.768556] (-) TimerEvent: {}
+[6.869985] (-) TimerEvent: {}
+[6.971539] (-) TimerEvent: {}
+[7.072102] (-) TimerEvent: {}
+[7.172573] (-) TimerEvent: {}
+[7.280074] (-) TimerEvent: {}
+[7.381734] (-) TimerEvent: {}
+[7.482089] (-) TimerEvent: {}
+[7.586354] (-) TimerEvent: {}
+[7.687728] (-) TimerEvent: {}
+[7.788507] (-) TimerEvent: {}
+[7.890704] (-) TimerEvent: {}
+[7.991049] (-) TimerEvent: {}
+[8.091390] (-) TimerEvent: {}
+[8.194587] (-) TimerEvent: {}
+[8.286679] (basketball_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/src/basketball_final.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.286948] (basketball_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/src/basketball_final.cpp:8:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.287061] (basketball_final) StderrLine: {'line': b'    8 | int main(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K, char **argv)\n'}
+[8.287162] (basketball_final) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[8.287265] (basketball_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/src/basketball_final.cpp:8:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.287366] (basketball_final) StderrLine: {'line': b'    8 | int main(int argc, \x1b[01;35m\x1b[Kchar **argv\x1b[m\x1b[K)\n'}
+[8.287463] (basketball_final) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[8.294709] (-) TimerEvent: {}
+[8.395053] (-) TimerEvent: {}
+[8.495883] (-) TimerEvent: {}
+[8.598511] (-) TimerEvent: {}
+[8.701933] (-) TimerEvent: {}
+[8.803437] (-) TimerEvent: {}
+[8.904714] (-) TimerEvent: {}
+[9.005748] (-) TimerEvent: {}
+[9.106325] (-) TimerEvent: {}
+[9.210260] (-) TimerEvent: {}
+[9.290687] (basketball_final) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/basketball_final.dir/src/inference.cpp.o\x1b[0m\n'}
+[9.310887] (-) TimerEvent: {}
+[9.412023] (-) TimerEvent: {}
+[9.513643] (-) TimerEvent: {}
+[9.615607] (-) TimerEvent: {}
+[9.720719] (-) TimerEvent: {}
+[9.821051] (-) TimerEvent: {}
+[9.921856] (-) TimerEvent: {}
+[10.022262] (-) TimerEvent: {}
+[10.124997] (-) TimerEvent: {}
+[10.225511] (-) TimerEvent: {}
+[10.326288] (-) TimerEvent: {}
+[10.427223] (-) TimerEvent: {}
+[10.528186] (-) TimerEvent: {}
+[10.628677] (-) TimerEvent: {}
+[10.729615] (-) TimerEvent: {}
+[10.831353] (-) TimerEvent: {}
+[10.932285] (-) TimerEvent: {}
+[11.035448] (-) TimerEvent: {}
+[11.135862] (-) TimerEvent: {}
+[11.237428] (-) TimerEvent: {}
+[11.337827] (-) TimerEvent: {}
+[11.438394] (-) TimerEvent: {}
+[11.540392] (-) TimerEvent: {}
+[11.641133] (-) TimerEvent: {}
+[11.743059] (-) TimerEvent: {}
+[11.843995] (-) TimerEvent: {}
+[11.944858] (-) TimerEvent: {}
+[12.046198] (-) TimerEvent: {}
+[12.146959] (-) TimerEvent: {}
+[12.248766] (-) TimerEvent: {}
+[12.349462] (-) TimerEvent: {}
+[12.452838] (-) TimerEvent: {}
+[12.553970] (-) TimerEvent: {}
+[12.654812] (-) TimerEvent: {}
+[12.705861] (basketball_final) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable basketball_final\x1b[0m\n'}
+[12.755052] (-) TimerEvent: {}
+[12.855732] (-) TimerEvent: {}
+[12.956711] (-) TimerEvent: {}
+[13.057038] (-) TimerEvent: {}
+[13.157456] (-) TimerEvent: {}
+[13.257950] (-) TimerEvent: {}
+[13.358435] (-) TimerEvent: {}
+[13.458819] (-) TimerEvent: {}
+[13.559250] (-) TimerEvent: {}
+[13.665047] (-) TimerEvent: {}
+[13.765744] (-) TimerEvent: {}
+[13.866853] (-) TimerEvent: {}
+[13.968181] (-) TimerEvent: {}
+[14.068597] (-) TimerEvent: {}
+[14.169759] (-) TimerEvent: {}
+[14.271099] (-) TimerEvent: {}
+[14.371603] (-) TimerEvent: {}
+[14.474158] (-) TimerEvent: {}
+[14.574665] (-) TimerEvent: {}
+[14.675324] (-) TimerEvent: {}
+[14.775977] (-) TimerEvent: {}
+[14.876588] (-) TimerEvent: {}
+[14.977179] (-) TimerEvent: {}
+[15.077617] (-) TimerEvent: {}
+[15.178133] (-) TimerEvent: {}
+[15.278525] (-) TimerEvent: {}
+[15.378938] (-) TimerEvent: {}
+[15.479378] (-) TimerEvent: {}
+[15.581049] (-) TimerEvent: {}
+[15.681612] (-) TimerEvent: {}
+[15.783651] (-) TimerEvent: {}
+[15.883958] (-) TimerEvent: {}
+[15.948682] (basketball_final) StdoutLine: {'line': b'[100%] Built target basketball_final\n'}
+[15.977471] (basketball_final) CommandEnded: {'returncode': 0}
+[15.984037] (-) TimerEvent: {}
+[16.078545] (basketball_final) JobProgress: {'identifier': 'basketball_final', 'progress': 'install'}
+[16.084834] (-) TimerEvent: {}
+[16.102346] (basketball_final) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final'], 'cwd': '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ake'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-amd64/lib/:/usr/lib/jvm/java-11-openjdk-amd64/lib/server/'), ('HOME', '/home/ake'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1152'), ('SYSTEMD_EXEC_PID', '1406'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3204'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ake'), ('JOURNAL_STREAM', '8:22062'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ake'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ake/miniconda3/bin:/home/ake/miniconda3/condabin:/opt/ros/humble/bin:/home/ake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ake-virtual-machine:@/tmp/.ICE-unix/1379,unix/ake-virtual-machine:/tmp/.ICE-unix/1379'), ('INVOCATION_ID', '2fd08c0136154263aea8406fa7b297ca'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UWEWT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45adb35e8a.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ake/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/build/basketball_final'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ake/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/ake/miniconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[16.128144] (basketball_final) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.184944] (-) TimerEvent: {}
+[16.237377] (basketball_final) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/lib/basketball_final/basketball_final\n'}
+[16.237862] (basketball_final) StdoutLine: {'line': b'-- Set runtime path of "/home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/lib/basketball_final/basketball_final" to ""\n'}
+[16.237992] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/ament_index/resource_index/package_run_dependencies/basketball_final\n'}
+[16.238102] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/ament_index/resource_index/parent_prefix_path/basketball_final\n'}
+[16.238211] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/environment/ament_prefix_path.sh\n'}
+[16.239351] (basketball_final) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/environment/ament_prefix_path.dsv\n'}
+[16.239525] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/environment/path.sh\n'}
+[16.239675] (basketball_final) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/environment/path.dsv\n'}
+[16.239839] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/local_setup.bash\n'}
+[16.239940] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/local_setup.sh\n'}
+[16.240039] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/local_setup.zsh\n'}
+[16.240138] (basketball_final) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/local_setup.dsv\n'}
+[16.240237] (basketball_final) StdoutLine: {'line': b'-- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/package.dsv\n'}
+[16.241517] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/ament_index/resource_index/packages/basketball_final\n'}
+[16.241693] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/cmake/basketball_finalConfig.cmake\n'}
+[16.241807] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/cmake/basketball_finalConfig-version.cmake\n'}
+[16.241917] (basketball_final) StdoutLine: {'line': b'-- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/basketball_final/install/basketball_final/share/basketball_final/package.xml\n'}
+[16.246166] (basketball_final) CommandEnded: {'returncode': 0}
+[16.285048] (-) TimerEvent: {}
+[16.388274] (-) TimerEvent: {}
+[16.488676] (-) TimerEvent: {}
+[16.547322] (basketball_final) JobEnded: {'identifier': 'basketball_final', 'rc': 0}
+[16.549481] (-) EventReactorShutdown: {}
