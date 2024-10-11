@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp" "CMakeFiles/detect_final.dir/src/detect_final.cpp.o" "gcc" "CMakeFiles/detect_final.dir/src/detect_final.cpp.o.d"
+  "/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/inference.cpp" "CMakeFiles/detect_final.dir/src/inference.cpp.o" "gcc" "CMakeFiles/detect_final.dir/src/inference.cpp.o.d"
+  "/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp" "CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o" "gcc" "CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o.d"
   )
 
 # Targets to which this target links.

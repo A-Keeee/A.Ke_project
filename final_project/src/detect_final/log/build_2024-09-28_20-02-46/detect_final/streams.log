@@ -1,0 +1,24 @@
+[0.017s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target detect_final[0m
+[0.135s] [ 25%] [32mBuilding CXX object CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o[0m
+[0.147s] [ 50%] [32mBuilding CXX object CMakeFiles/detect_final.dir/src/inference.cpp.o[0m
+[4.782s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.782s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:40:32:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kdetections[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[4.782s]    40 |         {
+[4.782s]       |                                [01;31m[K^[m[K   
+[4.782s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:42:37:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+[4.782s]    42 |             cv::Rect box = detection[01;31m[K.[m[Kbox;
+[4.782s]       |                                     [01;31m[K^[m[K
+[4.782s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:8:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.782s]     8 | int main([01;35m[Kint argc[m[K, char **argv)
+[4.782s]       |          [01;35m[K~~~~^~~~[m[K
+[4.784s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.784s]     8 | int main(int argc, [01;35m[Kchar **argv[m[K)
+[4.784s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[4.864s] gmake[2]: *** [CMakeFiles/detect_final.dir/build.make:104: CMakeFiles/detect_final.dir/src/inference.cpp.o] 中断
+[4.864s] gmake[2]: *** wait: 没有子进程。 停止。
+[4.864s] gmake[2]: *** 正在等待未完成的任务....
+[4.864s] gmake[2]: *** wait: 没有子进程。 停止。
+[4.864s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/detect_final.dir/all] 错误 2
+[4.864s] gmake: *** [Makefile:146: all] 中断
+[4.866s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2

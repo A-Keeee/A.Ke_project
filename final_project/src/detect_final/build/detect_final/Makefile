@@ -210,29 +210,53 @@ detect_final/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/build
 .PHONY : detect_final/fast
 
-src/detect_final.o: src/detect_final.cpp.o
-.PHONY : src/detect_final.o
+src/inference.o: src/inference.cpp.o
+.PHONY : src/inference.o
 
 # target to build an object file
-src/detect_final.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/src/detect_final.cpp.o
-.PHONY : src/detect_final.cpp.o
+src/inference.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/src/inference.cpp.o
+.PHONY : src/inference.cpp.o
 
-src/detect_final.i: src/detect_final.cpp.i
-.PHONY : src/detect_final.i
+src/inference.i: src/inference.cpp.i
+.PHONY : src/inference.i
 
 # target to preprocess a source file
-src/detect_final.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/src/detect_final.cpp.i
-.PHONY : src/detect_final.cpp.i
+src/inference.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/src/inference.cpp.i
+.PHONY : src/inference.cpp.i
 
-src/detect_final.s: src/detect_final.cpp.s
-.PHONY : src/detect_final.s
+src/inference.s: src/inference.cpp.s
+.PHONY : src/inference.s
 
 # target to generate assembly for a file
-src/detect_final.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/src/detect_final.cpp.s
-.PHONY : src/detect_final.cpp.s
+src/inference.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/src/inference.cpp.s
+.PHONY : src/inference.cpp.s
+
+src/yolo_pose_video.o: src/yolo_pose_video.cpp.o
+.PHONY : src/yolo_pose_video.o
+
+# target to build an object file
+src/yolo_pose_video.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o
+.PHONY : src/yolo_pose_video.cpp.o
+
+src/yolo_pose_video.i: src/yolo_pose_video.cpp.i
+.PHONY : src/yolo_pose_video.i
+
+# target to preprocess a source file
+src/yolo_pose_video.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.i
+.PHONY : src/yolo_pose_video.cpp.i
+
+src/yolo_pose_video.s: src/yolo_pose_video.cpp.s
+.PHONY : src/yolo_pose_video.s
+
+# target to generate assembly for a file
+src/yolo_pose_video.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_final.dir/build.make CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.s
+.PHONY : src/yolo_pose_video.cpp.s
 
 # Help Target
 help:
@@ -250,9 +274,12 @@ help:
 	@echo "... detect_final_uninstall"
 	@echo "... uninstall"
 	@echo "... detect_final"
-	@echo "... src/detect_final.o"
-	@echo "... src/detect_final.i"
-	@echo "... src/detect_final.s"
+	@echo "... src/inference.o"
+	@echo "... src/inference.i"
+	@echo "... src/inference.s"
+	@echo "... src/yolo_pose_video.o"
+	@echo "... src/yolo_pose_video.i"
+	@echo "... src/yolo_pose_video.s"
 .PHONY : help
 
 

@@ -1,0 +1,42 @@
+[0.170s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2
+[1.254s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.426s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[2.770s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.802s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.826s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.919s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.939s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.092s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.111s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.437s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.771s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.379s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.379s] -- Configured cppcheck include dirs: 
+[4.379s] -- Configured cppcheck exclude dirs and/or files: 
+[4.381s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.388s] -- Added test 'lint_cmake' to check CMake code style
+[4.391s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.417s] -- Added test 'uncrustify' to check C / C++ code style
+[4.417s] -- Configured uncrustify additional arguments: 
+[4.421s] -- Added test 'xmllint' to check XML markup files
+[4.430s] -- Configuring done
+[4.638s] -- Generating done
+[4.638s] -- Build files have been written to: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final
+[4.697s] [35m[1mConsolidate compiler generated dependencies of target detect_final[0m
+[4.933s] [ 25%] [32mBuilding CXX object CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o[0m
+[4.934s] [ 50%] [32mBuilding CXX object CMakeFiles/detect_final.dir/src/inference.cpp.o[0m
+[8.970s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[8.971s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:56:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Detection[m[K’ has no member named ‘[01m[Kkeypoints[m[K’
+[8.972s]    56 |             for (const Point &kp : detection.[01;31m[Kkeypoints[m[K) {
+[8.972s]       |                                              [01;31m[K^~~~~~~~~[m[K
+[8.992s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:8:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.993s]     8 | int main([01;35m[Kint argc[m[K, char **argv)
+[8.993s]       |          [01;35m[K~~~~^~~~[m[K
+[8.993s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.993s]     8 | int main(int argc, [01;35m[Kchar **argv[m[K)
+[8.993s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[9.711s] gmake[2]: *** [CMakeFiles/detect_final.dir/build.make:90：CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o] 错误 1
+[9.711s] gmake[2]: *** 正在等待未完成的任务....
+[10.133s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/detect_final.dir/all] 错误 2
+[10.135s] gmake: *** [Makefile:146：all] 错误 2
+[10.145s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2

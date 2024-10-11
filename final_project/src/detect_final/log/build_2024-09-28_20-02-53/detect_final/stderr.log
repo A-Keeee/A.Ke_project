@@ -1,0 +1,13 @@
+[01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:8:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    8 | int main([01;35m[Kint argc[m[K, char **argv)
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    8 | int main(int argc, [01;35m[Kchar **argv[m[K)
+      |                    [01;35m[K~~~~~~~^~~~[m[K
+/usr/bin/ld: CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o: in function `main':
+yolo_pose_video.cpp:(.text+0x0): multiple definition of `main'; CMakeFiles/detect_final.dir/src/detect_final.cpp.o:detect_final.cpp:(.text+0xa9a): first defined here
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/detect_final.dir/build.make:198：detect_final] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/detect_final.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

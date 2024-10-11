@@ -1,0 +1,49 @@
+[0.152s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/final_project -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/final_project/install/final_project
+[1.806s] -- The C compiler identification is GNU 11.4.0
+[2.294s] -- The CXX compiler identification is GNU 11.4.0
+[2.469s] -- Detecting C compiler ABI info
+[2.818s] -- Detecting C compiler ABI info - done
+[2.824s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.835s] -- Detecting C compile features
+[2.855s] -- Detecting C compile features - done
+[2.905s] -- Detecting CXX compiler ABI info
+[3.099s] -- Detecting CXX compiler ABI info - done
+[3.109s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.109s] -- Detecting CXX compile features
+[3.110s] -- Detecting CXX compile features - done
+[3.250s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.139s] -- Found Python3: /home/ake/miniconda3/bin/python3 (found version "3.12.4") found components: Interpreter 
+[6.593s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.423s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.423s] -- Configured cppcheck include dirs: 
+[7.423s] -- Configured cppcheck exclude dirs and/or files: 
+[7.438s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.499s] -- Added test 'lint_cmake' to check CMake code style
+[7.516s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.633s] -- Added test 'uncrustify' to check C / C++ code style
+[7.633s] -- Configured uncrustify additional arguments: 
+[7.651s] -- Added test 'xmllint' to check XML markup files
+[7.698s] -- Configuring done
+[7.741s] -- Generating done
+[7.741s] -- Build files have been written to: /home/ake/A.Ke/A.Ke_project/final_project/build/final_project
+[7.751s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/final_project -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/final_project/install/final_project
+[7.758s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/build/final_project -- -j2 -l2
+[7.905s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/build/final_project -- -j2 -l2
+[8.051s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/build/final_project
+[8.081s] -- Install configuration: ""
+[8.087s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/ament_index/resource_index/package_run_dependencies/final_project
+[8.088s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/ament_index/resource_index/parent_prefix_path/final_project
+[8.089s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/environment/ament_prefix_path.sh
+[8.089s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/environment/ament_prefix_path.dsv
+[8.090s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/environment/path.sh
+[8.090s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/environment/path.dsv
+[8.090s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/local_setup.bash
+[8.090s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/local_setup.sh
+[8.091s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/local_setup.zsh
+[8.091s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/local_setup.dsv
+[8.091s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.dsv
+[8.091s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/ament_index/resource_index/packages/final_project
+[8.091s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/cmake/final_projectConfig.cmake
+[8.091s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/cmake/final_projectConfig-version.cmake
+[8.091s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.xml
+[8.096s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/build/final_project

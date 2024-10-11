@@ -5,40 +5,40 @@
 using namespace std;
 using namespace cv;
 
-// 最小二乘法拟合抛物线
-void fitParabola(const vector<Point>& points, double& a, double& b, double& c) {
-    int n = points.size();
-    if (n < 3) return;  // 至少需要3个点
+// // 最小二乘法拟合抛物线
+// void fitParabola(const vector<Point>& points, double& a, double& b, double& c) {
+//     int n = points.size();
+//     if (n < 3) return;  // 至少需要3个点
 
-    Mat A(n, 3, CV_64F);
-    Mat B(n, 1, CV_64F);
+//     Mat A(n, 3, CV_64F);
+//     Mat B(n, 1, CV_64F);
     
-    for (int i = 0; i < n; i++) {
-        double x = points[i].x;
-        double y = points[i].y;
-        A.at<double>(i, 0) = x * x;
-        A.at<double>(i, 1) = x;
-        A.at<double>(i, 2) = 1;
-        B.at<double>(i, 0) = y;
-    }
+//     for (int i = 0; i < n; i++) {
+//         double x = points[i].x;
+//         double y = points[i].y;
+//         A.at<double>(i, 0) = x * x;
+//         A.at<double>(i, 1) = x;
+//         A.at<double>(i, 2) = 1;
+//         B.at<double>(i, 0) = y;
+//     }
     
-    Mat coeffs;
-    solve(A, B, coeffs, DECOMP_SVD);
+//     Mat coeffs;
+//     solve(A, B, coeffs, DECOMP_SVD);
     
-    a = coeffs.at<double>(0, 0);
-    b = coeffs.at<double>(1, 0);
-    c = coeffs.at<double>(2, 0);
-}
+//     a = coeffs.at<double>(0, 0);
+//     b = coeffs.at<double>(1, 0);
+//     c = coeffs.at<double>(2, 0);
+// }
 
 int main(int argc, char **argv)
 {
     bool runOnGPU = false;
 
     // 1. 设置你的ONNX模型（替换为你的篮球检测模型）
-    Inference inf("src/basketball.onnx", cv::Size(640, 480), "classes.txt", runOnGPU);
+    Inference inf("src/rm_buff_pose.onnx", cv::Size(640, 480), "classes.txt", runOnGPU);
 
     // 2. 设置输入视频
-    VideoCapture cap("src/basketball.mp4");
+    VideoCapture cap("src/red.avi");
     if (!cap.isOpened()) {
         cout << "无法打开视频文件" << endl;
         return -1;
@@ -77,18 +77,18 @@ int main(int argc, char **argv)
             cv::circle(frame, center, 5, Scalar(255, 0, 0), -1);  // 用蓝色圆点标记中心
         }
 
-        // 5. 每当有足够多的点时，拟合抛物线
-        if (basketballCenters.size() >= 3) {
-            fitParabola(basketballCenters, a, b, c);
+        // // 5. 每当有足够多的点时，拟合抛物线
+        // if (basketballCenters.size() >= 3) {
+        //     fitParabola(basketballCenters, a, b, c);
 
-            // 在图像上绘制拟合的抛物线
-            for (int x = 0; x < frame.cols; x++) {
-                int y = a * x * x + b * x + c;
-                if (y >= 0 && y < frame.rows) {
-                    circle(frame, Point(x, y), 2, Scalar(0, 0, 255), -1);  // 用红色点绘制预测轨迹
-                }
-            }
-        }
+        //     // 在图像上绘制拟合的抛物线
+        //     for (int x = 0; x < frame.cols; x++) {
+        //         int y = a * x * x + b * x + c;
+        //         if (y >= 0 && y < frame.rows) {
+        //             circle(frame, Point(x, y), 2, Scalar(0, 0, 255), -1);  // 用红色点绘制预测轨迹
+        //         }
+        //     }
+        // }
 
         // 6. 显示结果
         cv::imshow("Basketball Detection and Trajectory", frame);

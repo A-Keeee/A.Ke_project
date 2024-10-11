@@ -1,0 +1,23 @@
+[0.050s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2
+[0.111s] [35m[1mConsolidate compiler generated dependencies of target detect_final[0m
+[0.149s] [100%] Built target detect_final
+[0.160s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2
+[0.241s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final
+[0.261s] -- Install configuration: ""
+[0.261s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/lib/detect_final/detect_final
+[0.261s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/ament_index/resource_index/package_run_dependencies/detect_final
+[0.261s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/ament_index/resource_index/parent_prefix_path/detect_final
+[0.261s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/ament_prefix_path.sh
+[0.261s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/ament_prefix_path.dsv
+[0.261s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/path.sh
+[0.261s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/environment/path.dsv
+[0.262s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.bash
+[0.262s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.sh
+[0.262s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.zsh
+[0.262s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/local_setup.dsv
+[0.262s] -- Installing: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/package.dsv
+[0.262s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/ament_index/resource_index/packages/detect_final
+[0.262s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/cmake/detect_finalConfig.cmake
+[0.262s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/cmake/detect_finalConfig-version.cmake
+[0.262s] -- Up-to-date: /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/install/detect_final/share/detect_final/package.xml
+[0.270s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final

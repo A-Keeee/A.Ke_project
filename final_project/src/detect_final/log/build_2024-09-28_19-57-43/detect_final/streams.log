@@ -1,0 +1,20 @@
+[0.025s] Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2
+[0.153s] [35m[1mConsolidate compiler generated dependencies of target detect_final[0m
+[0.220s] [ 25%] [32mBuilding CXX object CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o[0m
+[2.465s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.468s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:40:32:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kdetections[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.468s]    40 | for (int i = 0; i < detections.[01;31m[Ksize[m[K(); ++i)
+[2.468s]       |                                [01;31m[K^~~~[m[K
+[2.468s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:42:37:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+[2.469s]    42 |     Detection detection = detections[01;31m[K[[m[Ki];
+[2.469s]       |                                     [01;31m[K^[m[K
+[2.469s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:8:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.469s]     8 | int main([01;35m[Kint argc[m[K, char **argv)
+[2.469s]       |          [01;35m[K~~~~^~~~[m[K
+[2.469s] [01m[K/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp:8:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.469s]     8 | int main(int argc, [01;35m[Kchar **argv[m[K)
+[2.469s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[3.089s] gmake[2]: *** [CMakeFiles/detect_final.dir/build.make:90：CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o] 错误 1
+[3.090s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/detect_final.dir/all] 错误 2
+[3.090s] gmake: *** [Makefile:146：all] 错误 2
+[3.096s] Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2

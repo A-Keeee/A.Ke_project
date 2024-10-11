@@ -1,0 +1,2 @@
+Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2
+Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final -- -j2 -l2

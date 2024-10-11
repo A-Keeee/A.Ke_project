@@ -1,0 +1,103 @@
+[10.845s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[10.845s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73e8cd63ca30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73e8cd63c520>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73e8cd63c520>>)
+[20.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[20.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[20.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[20.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[20.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[20.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[20.183s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ake/A.Ke/A.Ke_project/final_project'
+[20.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[20.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[20.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[20.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[20.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[20.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[20.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[20.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[20.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[20.258s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'final_project'
+[20.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[20.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[20.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[20.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[20.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[20.655s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[20.655s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[20.710s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 313 installed packages in /opt/ros/humble
+[20.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[20.829s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_args' from command line to 'None'
+[20.829s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_target' from command line to 'None'
+[20.829s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[20.829s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_clean_cache' from command line to 'False'
+[20.829s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_clean_first' from command line to 'False'
+[20.829s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_force_configure' from command line to 'False'
+[20.829s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'ament_cmake_args' from command line to 'None'
+[20.829s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'catkin_cmake_args' from command line to 'None'
+[20.829s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'catkin_skip_building_tests' from command line to 'False'
+[20.829s] DEBUG:colcon.colcon_core.verb:Building package 'final_project' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project', 'merge_install': False, 'path': '/home/ake/A.Ke/A.Ke_project/final_project', 'symlink_install': False, 'test_result_base': None}
+[20.830s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[20.831s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[20.832s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ake/A.Ke/A.Ke_project/final_project' with build type 'ament_cmake'
+[20.832s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ake/A.Ke/A.Ke_project/final_project'
+[20.860s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[20.860s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[20.861s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[20.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/final_project -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/final_project/install/final_project
+[28.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/final_project -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/final_project/install/final_project
+[28.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/build/final_project -- -j2 -l2
+[28.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/final_project/build/final_project -- -j2 -l2
+[28.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/build/final_project
+[28.927s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(final_project)
+[28.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ake/A.Ke/A.Ke_project/final_project/build/final_project' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/final_project/build/final_project
+[28.993s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project' for CMake module files
+[28.994s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project' for CMake config files
+[28.994s] Level 1:colcon.colcon_core.shell:create_environment_hook('final_project', 'cmake_prefix_path')
+[28.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/hook/cmake_prefix_path.ps1'
+[29.015s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/hook/cmake_prefix_path.dsv'
+[29.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/hook/cmake_prefix_path.sh'
+[29.028s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/bin'
+[29.028s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/lib/pkgconfig/final_project.pc'
+[29.028s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/lib/python3.10/site-packages'
+[29.029s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/bin'
+[29.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.ps1'
+[29.032s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.dsv'
+[29.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.sh'
+[29.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.bash'
+[29.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.zsh'
+[29.055s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/colcon-core/packages/final_project)
+[29.150s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(final_project)
+[29.152s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project' for CMake module files
+[29.153s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project' for CMake config files
+[29.153s] Level 1:colcon.colcon_core.shell:create_environment_hook('final_project', 'cmake_prefix_path')
+[29.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/hook/cmake_prefix_path.ps1'
+[29.154s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/hook/cmake_prefix_path.dsv'
+[29.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/hook/cmake_prefix_path.sh'
+[29.156s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/bin'
+[29.156s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/lib/pkgconfig/final_project.pc'
+[29.157s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/lib/python3.10/site-packages'
+[29.158s] Level 1:colcon.colcon_core.environment:checking '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/bin'
+[29.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.ps1'
+[29.160s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.dsv'
+[29.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.sh'
+[29.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.bash'
+[29.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/final_project/package.zsh'
+[29.164s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ake/A.Ke/A.Ke_project/final_project/install/final_project/share/colcon-core/packages/final_project)
+[29.165s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[29.169s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[29.169s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[29.169s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[29.220s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[29.220s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[29.220s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[29.364s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[29.365s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/final_project/install/local_setup.ps1'
+[29.388s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ake/A.Ke/A.Ke_project/final_project/install/_local_setup_util_ps1.py'
+[29.401s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/final_project/install/setup.ps1'
+[29.403s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/final_project/install/local_setup.sh'
+[29.403s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ake/A.Ke/A.Ke_project/final_project/install/_local_setup_util_sh.py'
+[29.404s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/final_project/install/setup.sh'
+[29.405s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/final_project/install/local_setup.bash'
+[29.406s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/final_project/install/setup.bash'
+[29.406s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ake/A.Ke/A.Ke_project/final_project/install/local_setup.zsh'
+[29.417s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ake/A.Ke/A.Ke_project/final_project/install/setup.zsh'

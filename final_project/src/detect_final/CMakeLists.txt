@@ -12,7 +12,7 @@ find_package(OpenCV REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
-add_executable(detect_final src/detect_final.cpp)
+add_executable(detect_final src/yolo_pose_video.cpp src/inference.cpp)
 ament_target_dependencies(detect_final rclcpp)
 target_link_libraries(detect_final ${OpenCV_LIBRARIES})
 

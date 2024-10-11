@@ -69,28 +69,44 @@ include CMakeFiles/detect_final.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/detect_final.dir/flags.make
 
-CMakeFiles/detect_final.dir/src/detect_final.cpp.o: CMakeFiles/detect_final.dir/flags.make
-CMakeFiles/detect_final.dir/src/detect_final.cpp.o: ../../src/detect_final.cpp
-CMakeFiles/detect_final.dir/src/detect_final.cpp.o: CMakeFiles/detect_final.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detect_final.dir/src/detect_final.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detect_final.dir/src/detect_final.cpp.o -MF CMakeFiles/detect_final.dir/src/detect_final.cpp.o.d -o CMakeFiles/detect_final.dir/src/detect_final.cpp.o -c /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp
+CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o: CMakeFiles/detect_final.dir/flags.make
+CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o: ../../src/yolo_pose_video.cpp
+CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o: CMakeFiles/detect_final.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o -MF CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o.d -o CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o -c /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp
 
-CMakeFiles/detect_final.dir/src/detect_final.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detect_final.dir/src/detect_final.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp > CMakeFiles/detect_final.dir/src/detect_final.cpp.i
+CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp > CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.i
 
-CMakeFiles/detect_final.dir/src/detect_final.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detect_final.dir/src/detect_final.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/detect_final.cpp -o CMakeFiles/detect_final.dir/src/detect_final.cpp.s
+CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/yolo_pose_video.cpp -o CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.s
+
+CMakeFiles/detect_final.dir/src/inference.cpp.o: CMakeFiles/detect_final.dir/flags.make
+CMakeFiles/detect_final.dir/src/inference.cpp.o: ../../src/inference.cpp
+CMakeFiles/detect_final.dir/src/inference.cpp.o: CMakeFiles/detect_final.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/detect_final.dir/src/inference.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detect_final.dir/src/inference.cpp.o -MF CMakeFiles/detect_final.dir/src/inference.cpp.o.d -o CMakeFiles/detect_final.dir/src/inference.cpp.o -c /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/inference.cpp
+
+CMakeFiles/detect_final.dir/src/inference.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detect_final.dir/src/inference.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/inference.cpp > CMakeFiles/detect_final.dir/src/inference.cpp.i
+
+CMakeFiles/detect_final.dir/src/inference.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detect_final.dir/src/inference.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/src/inference.cpp -o CMakeFiles/detect_final.dir/src/inference.cpp.s
 
 # Object files for target detect_final
 detect_final_OBJECTS = \
-"CMakeFiles/detect_final.dir/src/detect_final.cpp.o"
+"CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o" \
+"CMakeFiles/detect_final.dir/src/inference.cpp.o"
 
 # External object files for target detect_final
 detect_final_EXTERNAL_OBJECTS =
 
-detect_final: CMakeFiles/detect_final.dir/src/detect_final.cpp.o
+detect_final: CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o
+detect_final: CMakeFiles/detect_final.dir/src/inference.cpp.o
 detect_final: CMakeFiles/detect_final.dir/build.make
 detect_final: /opt/ros/humble/lib/librclcpp.so
 detect_final: /usr/local/lib/libopencv_gapi.so.4.10.0
@@ -162,7 +178,7 @@ detect_final: /usr/local/lib/libopencv_flann.so.4.10.0
 detect_final: /usr/local/lib/libopencv_imgproc.so.4.10.0
 detect_final: /usr/local/lib/libopencv_core.so.4.10.0
 detect_final: CMakeFiles/detect_final.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable detect_final"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ake/A.Ke/A.Ke_project/final_project/src/detect_final/build/detect_final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable detect_final"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/detect_final.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

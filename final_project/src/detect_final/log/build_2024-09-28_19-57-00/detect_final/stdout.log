@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target detect_final[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/detect_final.dir/src/yolo_pose_video.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/detect_final.dir/src/inference.cpp.o[0m
