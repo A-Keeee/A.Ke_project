@@ -5,6 +5,7 @@
 #include "utils.h"
 #include <onnxruntime_cxx_api.h>
 #include <numeric>
+#include <fstream>
  
 class Yolov8Onnx{
 private:
@@ -25,7 +26,7 @@ private:
     int _batchSize = 1; //if multi-batch,set this
     bool _isDynamicShape = false;//onnx support dynamic shape
  
-    int _anchorLength=18;// pose一个框的信息16个数
+    int _anchorLength=20;// pose一个框的信息18个数
  
     float _classThreshold = 0.25;
     float _nmsThrehold= 0.45;

@@ -83,7 +83,7 @@ int main(){
  
  
     VideoCapture capture;
-    capture.open("src/test.mp4");
+    capture.open("test/test.MP4");
     if (capture.isOpened())
         cout << "read video ok!\n";
     else
@@ -96,7 +96,7 @@ int main(){
     int frame_all = capture.get(CAP_PROP_FRAME_COUNT);
  
     VideoWriter writer;
-    writer.open("src/test_result.mp4", VideoWriter::fourcc('m', 'p', '4', 'v'),
+    writer.open("test/test_result.mp4", VideoWriter::fourcc('m', 'p', '4', 'v'),
                 delay,size1);
  
     Mat frame;

@@ -78,7 +78,39 @@ void LetterBox(const cv::Mat& image, cv::Mat& outImage,
     params[3] = top; //垂直方向两边的padding像素数
     cv::copyMakeBorder(outImage, outImage, top, bottom, left, right, cv::BORDER_CONSTANT, color);
 }
- 
+
+void DrawPred(cv::Mat& img, std::vector<OutputPose>& results) {
+    const int num_point = 5;
+    for (auto &result : results) {
+        int left, top, width, height;
+        left = result.box.x;
+        top = result.box.y;
+        width = result.box.width;
+        height = result.box.height;
+
+        // 框出目标
+        rectangle(img, result.box, Scalar(0, 0, 255), 2, 8);
+
+        // 在目标框左上角标识目标类别以及概率
+        string label = to_string(result.confidence);
+        int baseLine;
+        Size labelSize = getTextSize(label, FONT_HERSHEY_SIMPLEX, 0.5, 1, &baseLine);
+        top = max(top, labelSize.height);
+        putText(img, label, Point(left, top), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(0, 0, 255), 2);
+
+        // 关键点绘制
+        auto &kps = result.kps;
+        for (int k = 0; k < num_point; k++) {
+            int kps_x = std::round(kps[k * 3]);
+            int kps_y = std::round(kps[k * 3 + 1]);
+            float kps_s = kps[k * 3 + 2];
+
+            cv::Scalar kps_color = cv::Scalar(0, 0, 255);  // 红色 (B, G, R)
+            cv::circle(img, {kps_x, kps_y}, 5, kps_color, -1);
+        }
+    }
+}
+
 // void DrawPred(cv::Mat& img, std::vector<OutputPose>& results,
 //               const std::vector<std::vector<unsigned int>> &SKELLTON,
 //               const std::vector<std::vector<unsigned int>> &KPS_COLORS,
@@ -200,45 +232,4 @@ void LetterBox(const cv::Mat& image, cv::Mat& outImage,
 //         }
 //     }
 // }
-
-
-
-
-
-
-
-void DrawPred(cv::Mat& img, std::vector<OutputPose>& results) {
-    const int num_point = 5;
-    for (auto &result : results) {
-        int left, top, width, height;
-        left = result.box.x;
-        top = result.box.y;
-        width = result.box.width;
-        height = result.box.height;
-
-        // 框出目标
-        rectangle(img, result.box, Scalar(0, 0, 255), 2, 8);
-
-        // 在目标框左上角标识目标类别以及概率
-        string label = to_string(result.confidence);
-        int baseLine;
-        Size labelSize = getTextSize(label, FONT_HERSHEY_SIMPLEX, 0.5, 1, &baseLine);
-        top = max(top, labelSize.height);
-        putText(img, label, Point(left, top), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(0, 0, 255), 2);
-
-        // 关键点绘制
-        auto &kps = result.kps;
-        for (int k = 0; k < num_point; k++) {
-            int kps_x = std::round(kps[k * 3]);
-            int kps_y = std::round(kps[k * 3 + 1]);
-            float kps_s = kps[k * 3 + 2];
-
-            if (kps_s > 0.0f) {
-                cv::Scalar kps_color = cv::Scalar(0, 0, 255);  // 红色 (B, G, R)
-                cv::circle(img, {kps_x, kps_y}, 5, kps_color, -1);
-            }
-        }
-    }
-}
-
 

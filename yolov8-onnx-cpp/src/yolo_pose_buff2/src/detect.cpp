@@ -3,6 +3,7 @@ using namespace std;
 using namespace cv;
 using namespace cv::dnn;
 using namespace Ort;
+#include <fstream> // 添加头文件以支持文件操作
  
 bool Yolov8Onnx::ReadModel(const std::string &modelPath, bool isCuda, int cudaId, bool warmUp){
     if (_batchSize < 1) _batchSize =1;
@@ -166,6 +167,8 @@ int Yolov8Onnx::Preprocessing(const std::vector<cv::Mat> &SrcImgs,
     return 0;
 }
  
+
+
 bool Yolov8Onnx::OnnxBatchDetect(std::vector<cv::Mat> &srcImgs, std::vector<std::vector<OutputPose>> &output)
 {
     vector<Vec4d> params;
@@ -208,6 +211,7 @@ bool Yolov8Onnx::OnnxBatchDetect(std::vector<cv::Mat> &srcImgs, std::vector<std:
  
         float* pdata = (float*)output0.data; // [classid,x,y,w,h,x,y,...21个点]
         int rows = output0.rows; // 预测框的数量 8400
+
  
         // 一张图片的预测框
  
@@ -217,13 +221,13 @@ bool Yolov8Onnx::OnnxBatchDetect(std::vector<cv::Mat> &srcImgs, std::vector<std:
         vector<vector<float>> kpss;
         for (int r=0; r<rows; ++r){
  
-            // 得到人类别概率
+            
             auto kps_ptr = pdata + 5;
  
  
             // 预测框坐标映射到原图上
             float score = pdata[4];
-            if (score > _classThreshold ){//&& score < 1
+            if (score > _classThreshold){
  
                 // rect [x,y,w,h]
                 float x = (pdata[0] - params[img_index][2]) / params[img_index][0]; //x
@@ -235,7 +239,7 @@ bool Yolov8Onnx::OnnxBatchDetect(std::vector<cv::Mat> &srcImgs, std::vector<std:
                 int top = MAX(int(y - 0.5*h + 0.5), 0);
  
                 std::vector<float> kps;
-                for (int k=0; k< 17; k++){
+                for (int k=0; k< 5; k++){
                     float kps_x = (*(kps_ptr + 3*k)   - params[img_index][2]) / params[img_index][0];
                     float kps_y = (*(kps_ptr + 3*k + 1)  - params[img_index][3]) / params[img_index][1];
                     float kps_s = *(kps_ptr + 3*k +2);
@@ -254,11 +258,17 @@ bool Yolov8Onnx::OnnxBatchDetect(std::vector<cv::Mat> &srcImgs, std::vector<std:
                 kpss.push_back(kps);
                 boxes.push_back(Rect(left, top, int(w + 0.5), int(h + 0.5)));
             }
-            // 打印当前预测框的所有数据
-for (int i = 0; i < _anchorLength; ++i) {
-    std::cout << "pdata[" << i << "]: " << pdata[i] << " ";
-}
-std::cout << std::endl;
+
+
+
+// for (int i = 0; i < _anchorLength; ++i) {
+//     std::cout << "pdata[" << i << "]: " << pdata[i] << " ";
+// }
+// std::cout << std::endl;
+
+
+
+
             pdata += _anchorLength; //下一个预测框
         }
  
@@ -287,7 +297,7 @@ std::cout << std::endl;
         return false;
  
 }
- 
+
  
 bool Yolov8Onnx::OnnxDetect(cv::Mat &srcImg, std::vector<OutputPose> &output){
     vector<Mat> input_data = {srcImg};
