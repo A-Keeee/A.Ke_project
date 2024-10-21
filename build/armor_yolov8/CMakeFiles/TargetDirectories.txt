@@ -1,0 +1,9 @@
+/home/ake/A.Ke/A.Ke_project/build/armor_yolov8/CMakeFiles/uninstall.dir
+/home/ake/A.Ke/A.Ke_project/build/armor_yolov8/CMakeFiles/armor_yolov8_uninstall.dir
+/home/ake/A.Ke/A.Ke_project/build/armor_yolov8/CMakeFiles/test.dir
+/home/ake/A.Ke/A.Ke_project/build/armor_yolov8/CMakeFiles/edit_cache.dir
+/home/ake/A.Ke/A.Ke_project/build/armor_yolov8/CMakeFiles/rebuild_cache.dir
+/home/ake/A.Ke/A.Ke_project/build/armor_yolov8/CMakeFiles/list_install_components.dir
+/home/ake/A.Ke/A.Ke_project/build/armor_yolov8/CMakeFiles/install.dir
+/home/ake/A.Ke/A.Ke_project/build/armor_yolov8/CMakeFiles/install/local.dir
+/home/ake/A.Ke/A.Ke_project/build/armor_yolov8/CMakeFiles/install/strip.dir

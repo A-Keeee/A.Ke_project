@@ -1,0 +1,29 @@
+[0.040s] Invoking command in '/home/ake/A.Ke/A.Ke_project/build/camera_calibration': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/camera_calibration -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/install/camera_calibration
+[0.270s] -- The C compiler identification is GNU 11.4.0
+[0.401s] -- The CXX compiler identification is GNU 11.4.0
+[0.412s] -- Detecting C compiler ABI info
+[0.542s] -- Detecting C compiler ABI info - done
+[0.551s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.551s] -- Detecting C compile features
+[0.551s] -- Detecting C compile features - done
+[0.558s] -- Detecting CXX compiler ABI info
+[0.690s] -- Detecting CXX compiler ABI info - done
+[0.697s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.697s] -- Detecting CXX compile features
+[0.698s] -- Detecting CXX compile features - done
+[0.700s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.223s] -- Found Python3: /home/ake/miniconda3/bin/python3 (found version "3.12.4") found components: Interpreter 
+[1.379s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.568s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.568s] -- Configured cppcheck include dirs: 
+[1.568s] -- Configured cppcheck exclude dirs and/or files: 
+[1.569s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.574s] -- Added test 'lint_cmake' to check CMake code style
+[1.577s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.592s] -- Added test 'uncrustify' to check C / C++ code style
+[1.592s] -- Configured uncrustify additional arguments: 
+[1.596s] -- Added test 'xmllint' to check XML markup files
+[1.596s] -- Configuring done
+[1.606s] -- Generating done
+[1.608s] -- Build files have been written to: /home/ake/A.Ke/A.Ke_project/build/camera_calibration
+[1.615s] Invoked command in '/home/ake/A.Ke/A.Ke_project/build/camera_calibration' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/camera_calibration -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/install/camera_calibration

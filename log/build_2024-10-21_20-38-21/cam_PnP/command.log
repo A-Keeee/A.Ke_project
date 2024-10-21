@@ -1,0 +1,6 @@
+Invoking command in '/home/ake/A.Ke/A.Ke_project/build/cam_PnP': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/cam_PnP -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/install/cam_PnP
+Invoked command in '/home/ake/A.Ke/A.Ke_project/build/cam_PnP' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/cam_PnP -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/install/cam_PnP
+Invoking command in '/home/ake/A.Ke/A.Ke_project/build/cam_PnP': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/build/cam_PnP -- -j2 -l2
+Invoked command in '/home/ake/A.Ke/A.Ke_project/build/cam_PnP' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ake/A.Ke/A.Ke_project/build/cam_PnP -- -j2 -l2
+Invoking command in '/home/ake/A.Ke/A.Ke_project/build/cam_PnP': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/build/cam_PnP
+Invoked command in '/home/ake/A.Ke/A.Ke_project/build/cam_PnP' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ake/A.Ke/A.Ke_project/build/cam_PnP

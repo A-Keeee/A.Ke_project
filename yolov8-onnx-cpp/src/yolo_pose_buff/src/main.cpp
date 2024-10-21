@@ -126,19 +126,19 @@ void plot_keypoints(cv::Mat& image, const std::vector<YoloResults>& results, con
 
     for (const auto& res: results) {
         auto keypoint = res.keypoints;
-        bool isPose = keypoint.size() == 15;  // numKeypoints == 17 && keypoints[0].size() == 3;
+        bool isPose = keypoint.size() == 15;  // 关键点个数
         drawLines &= isPose;
 
         // draw points
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) { //i为关键点个数
             int idx = i * 3;
             int x_coord = static_cast<int>(keypoint[idx]);
             int y_coord = static_cast<int>(keypoint[idx + 1]);
 
             if (x_coord % shape.width != 0 && y_coord % shape.height != 0) {
                 if (keypoint.size() == 3) {
-                    float conf = keypoint[2];
-                    if (conf < 0.5) {
+                    float conf = keypoint[2];//关键点置信度
+                    if (conf < 0.3) {
                         continue;
                     }
                 }
@@ -245,7 +245,7 @@ void plot_results(cv::Mat img, std::vector<YoloResults>& results,
         // Check if keypoints are available
         if (!res.keypoints.empty()) {
             auto keypoint = res.keypoints;
-            bool isPose = keypoint.size() == 15;  // numKeypoints == 17 && keypoints[0].size() == 3;
+            bool isPose = keypoint.size() == 15;  // 关键点个数
             drawLines &= isPose;
 
             // draw points
@@ -285,7 +285,7 @@ void plot_results(cv::Mat img, std::vector<YoloResults>& results,
                     float conf2 = keypoint[idx2_x_pos + 2];
 
                     // Check confidence thresholds
-                    if (conf1 < 0.5 || conf2 < 0.5) {
+                    if (conf1 < 0.3 || conf2 < 0.3) {
                         continue;
                     }
 
@@ -318,8 +318,8 @@ int main()
 {   
     int flag = 0;
     if(flag == 1){
-    std::string img_path = "src/test1.jpg";
-    const std::string& modelPath = "src/rm_buff_pose.onnx"; // pose
+    std::string img_path = "test/test1.jpg";
+    const std::string& modelPath = "model/rm_buff_test.onnx"; // pose
     fs::path imageFilePath(img_path);
     fs::path newFilePath = imageFilePath.stem();
     newFilePath += "-kpt-cpp";
@@ -360,8 +360,8 @@ int main()
 
 else if(flag == 0){
     // video_detect
-    std::string video_path = "src/test.mp4";
-    const std::string& modelPath = "src/rm_buff_pose.onnx"; // pose
+    std::string video_path = "test/blue.MP4";//"test/red.MP4"
+    const std::string& modelPath = "model/rm_buff_test.onnx"; // pose
     cv::VideoCapture cap(video_path);
     if (!cap.isOpened()) {
         std::cerr << "Error: Unable to open video file" << std::endl;
@@ -369,9 +369,9 @@ else if(flag == 0){
     }
     const std::string& onnx_provider = OnnxProviders::CPU;
     const std::string& onnx_logid = "yolov8_inference2";
-    float mask_threshold = 0.5f;
+    float mask_threshold = 0.30f;
     float conf_threshold = 0.30f;
-    float iou_threshold = 0.45f;
+    float iou_threshold = 0.30f;
     int conversion_code = cv::COLOR_BGR2RGB;
 
     // 初始化模型

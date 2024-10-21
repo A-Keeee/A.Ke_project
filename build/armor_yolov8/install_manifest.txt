@@ -1,0 +1,15 @@
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/ament_index/resource_index/package_run_dependencies/armor_yolov8
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/ament_index/resource_index/parent_prefix_path/armor_yolov8
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/environment/ament_prefix_path.sh
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/environment/ament_prefix_path.dsv
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/environment/path.sh
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/environment/path.dsv
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/local_setup.bash
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/local_setup.sh
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/local_setup.zsh
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/local_setup.dsv
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/package.dsv
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/ament_index/resource_index/packages/armor_yolov8
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/cmake/armor_yolov8Config.cmake
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/cmake/armor_yolov8Config-version.cmake
+/home/ake/A.Ke/A.Ke_project/install/armor_yolov8/share/armor_yolov8/package.xml

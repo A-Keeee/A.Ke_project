@@ -1,0 +1,2 @@
+Invoking command in '/home/ake/A.Ke/A.Ke_project/build/camera_calibration': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/camera_calibration -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/install/camera_calibration
+Invoked command in '/home/ake/A.Ke/A.Ke_project/build/camera_calibration' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/camera_calibration -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/install/camera_calibration
