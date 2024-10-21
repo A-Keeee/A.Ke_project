@@ -239,7 +239,7 @@ bool Yolov8Onnx::OnnxBatchDetect(std::vector<cv::Mat> &srcImgs, std::vector<std:
                 int top = MAX(int(y - 0.5*h + 0.5), 0);
  
                 std::vector<float> kps;
-                for (int k=0; k< 5; k++){
+                for (int k=0; k< num_points; k++){
                     float kps_x = (*(kps_ptr + 3*k)   - params[img_index][2]) / params[img_index][0];
                     float kps_y = (*(kps_ptr + 3*k + 1)  - params[img_index][3]) / params[img_index][1];
                     float kps_s = *(kps_ptr + 3*k +2);

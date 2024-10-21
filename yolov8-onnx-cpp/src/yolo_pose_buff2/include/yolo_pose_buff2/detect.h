@@ -30,6 +30,8 @@ private:
  
     float _classThreshold = 0.25;
     float _nmsThrehold= 0.45;
+
+    int num_points=5;
  
  
  
