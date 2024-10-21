@@ -1,6 +1,6 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
-#include "detect.h"
+#include "yolo_pose_buff2/detect.h"
 #include <sys/time.h>
  
 #include <vector>
@@ -8,71 +8,12 @@
 using namespace std;
 using namespace cv;
 using namespace cv::dnn;
- 
-// const std::vector<std::vector<unsigned int>> KPS_COLORS =
-//         {{0,   255, 0},
-//          {0,   255, 0},
-//          {0,   255, 0},
-//          {0,   255, 0},
-//          {0,   255, 0},
-//          {255, 128, 0},
-//          {255, 128, 0},
-//          {255, 128, 0},
-//          {255, 128, 0},
-//          {255, 128, 0},
-//          {255, 128, 0},
-//          {51,  153, 255},
-//          {51,  153, 255},
-//          {51,  153, 255},
-//          {51,  153, 255},
-//          {51,  153, 255},
-//          {51,  153, 255}};
- 
-// const std::vector<std::vector<unsigned int>> SKELETON = {{16, 14},
-//                                                          {14, 12},
-//                                                          {17, 15},
-//                                                          {15, 13},
-//                                                          {12, 13},
-//                                                          {6,  12},
-//                                                          {7,  13},
-//                                                          {6,  7},
-//                                                          {6,  8},
-//                                                          {7,  9},
-//                                                          {8,  10},
-//                                                          {9,  11},
-//                                                          {2,  3},
-//                                                          {1,  2},
-//                                                          {1,  3},
-//                                                          {2,  4},
-//                                                          {3,  5},
-//                                                          {4,  6},
-//                                                          {5,  7}};
- 
-// const std::vector<std::vector<unsigned int>> LIMB_COLORS = {{51,  153, 255},
-//                                                             {51,  153, 255},
-//                                                             {51,  153, 255},
-//                                                             {51,  153, 255},
-//                                                             {255, 51,  255},
-//                                                             {255, 51,  255},
-//                                                             {255, 51,  255},
-//                                                             {255, 128, 0},
-//                                                             {255, 128, 0},
-//                                                             {255, 128, 0},
-//                                                             {255, 128, 0},
-//                                                             {255, 128, 0},
-//                                                             {0,   255, 0},
-//                                                             {0,   255, 0},
-//                                                             {0,   255, 0},
-//                                                             {0,   255, 0},
-//                                                             {0,   255, 0},
-//                                                             {0,   255, 0},
-//                                                             {0,   255, 0}};
- 
+
  
 int main(){
  
     //  读取模型
-    string detect_model_path = "src/rm_buff_pose.onnx";
+    string detect_model_path = "model/rm_buff_pose.onnx";
     Yolov8Onnx yolov8;
     if (yolov8.ReadModel(detect_model_path))
         cout << "read Net ok!\n";

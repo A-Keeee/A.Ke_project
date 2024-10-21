@@ -1,8 +1,9 @@
 # 忽略编译生成的文件夹
 build/
 install/
-
 # 忽略日志文件夹
 log/
 # 忽略测试数据
 test/
+# 忽略模型文件
+model/
