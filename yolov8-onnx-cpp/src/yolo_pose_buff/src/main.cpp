@@ -316,7 +316,7 @@ void plot_results(cv::Mat img, std::vector<YoloResults>& results,
 
 int main()
 {   
-    int flag = 0;
+    int flag = 1;
     if(flag == 1){
     std::string img_path = "test/test1.jpg";
     const std::string& modelPath = "model/rm_buff_test.onnx"; // pose
