@@ -1,9 +1,0 @@
-/home/ake/A.Ke/A.Ke_project/build/camera_calibration/CMakeFiles/uninstall.dir
-/home/ake/A.Ke/A.Ke_project/build/camera_calibration/CMakeFiles/camera_calibration_uninstall.dir
-/home/ake/A.Ke/A.Ke_project/build/camera_calibration/CMakeFiles/test.dir
-/home/ake/A.Ke/A.Ke_project/build/camera_calibration/CMakeFiles/edit_cache.dir
-/home/ake/A.Ke/A.Ke_project/build/camera_calibration/CMakeFiles/rebuild_cache.dir
-/home/ake/A.Ke/A.Ke_project/build/camera_calibration/CMakeFiles/list_install_components.dir
-/home/ake/A.Ke/A.Ke_project/build/camera_calibration/CMakeFiles/install.dir
-/home/ake/A.Ke/A.Ke_project/build/camera_calibration/CMakeFiles/install/local.dir
-/home/ake/A.Ke/A.Ke_project/build/camera_calibration/CMakeFiles/install/strip.dir

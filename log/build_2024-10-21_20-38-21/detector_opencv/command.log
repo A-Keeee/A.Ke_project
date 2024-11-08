@@ -1,2 +1,0 @@
-Invoking command in '/home/ake/A.Ke/A.Ke_project/build/detector_opencv': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/detector_opencv -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/install/detector_opencv
-Invoked command in '/home/ake/A.Ke/A.Ke_project/build/detector_opencv' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ake/A.Ke/A.Ke_project/detector_opencv -DCMAKE_INSTALL_PREFIX=/home/ake/A.Ke/A.Ke_project/install/detector_opencv
