@@ -3,5 +3,6 @@ build/
 install/
 # 忽略日志文件夹
 log/
-/rm_buff_25/src/rm_rune/test/red.MP4
-/rm_buff_25/src/rm_rune/test/blue.MP4
+
+test/
+
