@@ -65,6 +65,9 @@ namespace qianli_rm_rune
             return;
         }
 
+        //改用神经网络识别
+        //需要条用detect中的函数进行神经网络识别
+
         cv::Mat rune_gray_image;
         // 将BGR图像转换为灰度图
         rune_gray_image = image_processer_.to_gray(rune_image, cfg_.kernel_size);
@@ -102,10 +105,13 @@ namespace qianli_rm_rune
         // 使用Blade类对象对检测到的轮廓信息进行处理
         Blade blade(contours_info_[0],cfg_);
         
-        // 更新预测器并进行预测
+
+        //以下部分进行保留
+        // 更新预测器并进行预测，这里改为传入pnp解算过后的目标板中心和buff圆心之间的平移矩阵
         predictor.update(blade.vector);//计算目标与中心之间的向量，用于表示目标与中心的相对方向和距离
-        auto radian = predictor.predict();
-        auto predicted_vector = power_rune_.predict(blade.vector, radian);
+
+        auto radian = predictor.predict();//返回预测的角度
+        auto predicted_vector = power_rune_.predict(blade.vector, radian);//返回预测的x，y坐标
 
         // 如果没有相机信息，无法计算3D点位，输出错误信息
         if (cam_info_->k.empty()) {

@@ -11,10 +11,23 @@
 #include "rm_rune/augment.h"
 #include "rm_rune/constants.h"
 #include "rm_rune/common.h"
-#include "rm_rune/detect.h"
+#include "rm_rune/detect.hpp"
 
 
 namespace fs = std::filesystem;
+
+ContorInfo::ContourInfo()
+{
+    // 空的构造函数，用于创建一个空对象
+}
+
+ContourInfo::ContourInfo()
+{
+    // 初始化轮廓信息
+    this->center = center;
+    this->circle_center = circle_center;
+}
+
 
 
 // Define the skeleton and color mappings
@@ -59,7 +72,7 @@ std::vector<cv::Scalar> generateRandomColors(int class_names_num, int numChannel
     return colors;
 }
 
-void plot_masks(cv::Mat img, std::vector<YoloResults>& result, std::vector<cv::Scalar> color,
+void ContourInfo::plot_masks(cv::Mat img, std::vector<YoloResults>& result, std::vector<cv::Scalar> color,
     std::unordered_map<int, std::string>& names)
 {
     cv::Mat mask = img.clone();
@@ -107,7 +120,7 @@ void plot_masks(cv::Mat img, std::vector<YoloResults>& result, std::vector<cv::S
 
 
 //void plot_keypoints(cv::Mat& image, const std::vector<std::vector<float>>& keypoints, const cv::Size& shape) {
-void plot_keypoints(cv::Mat& image, const std::vector<YoloResults>& results, const cv::Size& shape) {
+void ContourInfo::plot_keypoints(cv::Mat& image, const std::vector<YoloResults>& results, const cv::Size& shape) {
 
     int radius = 5;
     bool drawLines = true;
@@ -187,7 +200,7 @@ void plot_keypoints(cv::Mat& image, const std::vector<YoloResults>& results, con
     }
 }
 
-void plot_results(cv::Mat img, std::vector<YoloResults>& results,
+void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
                   std::vector<cv::Scalar> color, std::unordered_map<int, std::string>& names,
                   const cv::Size& shape
                   ) {
@@ -250,6 +263,8 @@ void plot_results(cv::Mat img, std::vector<YoloResults>& results,
             auto keypoint = res.keypoints;
             bool isPose = keypoint.size() == 15;  // 关键点个数
             drawLines &= isPose;
+            int x_average = 0;
+            int y_average = 0;
 
             // draw points
             for (int i = 0; i < 5; i++) {
@@ -267,6 +282,30 @@ void plot_results(cv::Mat img, std::vector<YoloResults>& results,
                     cv::Scalar color_k = isPose ? kptColorPalette[i] : cv::Scalar(0, 0,
                                                                                   255);  // Default to red if not in pose mode
                     cv::circle(img, cv::Point(x_coord, y_coord), radius, color_k, -1, cv::LINE_AA);
+                }
+                if(i==4){    
+                    if (x_coord % raw_image_shape.width != 0 && y_coord % raw_image_shape.height != 0) {
+                        if (keypoint.size() == 3) {
+                            float conf = keypoint[2];
+                            if (conf < 0.5) {
+                                continue;
+                            }
+                        }
+                        this->circle_center = (x_coord, y_coord);//获取圆心坐标
+                        this->center = (x_average/4, y_average/4);//获取目标中心坐标
+                    }
+                }
+                if(i<4){
+                    if (x_coord % raw_image_shape.width != 0 && y_coord % raw_image_shape.height != 0) {
+                        if (keypoint.size() == 3) {
+                            float conf = keypoint[2];
+                            if (conf < 0.5) {
+                                continue;
+                            }
+                        }
+                        x_average += x_coord;
+                        y_average += y_coord;
+                    }
                 }
             }
             // draw lines
@@ -307,116 +346,10 @@ void plot_results(cv::Mat img, std::vector<YoloResults>& results,
     }
 
     // Combine the image and mask
-    addWeighted(img, 0.6, mask, 0.4, 0, img);
+    cv::addWeighted(img, 0.6, mask, 0.4, 0, img);
 //    resize(img, img, img.size());
 //    resize(img, img, shape);
 //    // Show the image
 //    imshow("img", img);
 //    cv::waitKey();
-}
-
-
-//调用视频/图片测试模型识别效果
-int main()
-{   
-    int flag = 0;
-    if(flag == 1){
-        std::string img_path = "test/test1.jpg";
-        const std::string& modelPath = "model/rm_buff_test.onnx"; // pose
-        fs::path imageFilePath(img_path);
-        fs::path newFilePath = imageFilePath.stem();
-        newFilePath += "-kpt-cpp";
-        newFilePath += imageFilePath.extension();
-        assert(newFilePath != imageFilePath);
-        std::cout << "newFilePath: " << newFilePath << std::endl;
-
-        const std::string& onnx_provider = OnnxProviders::CPU; // "cpu";
-        const std::string& onnx_logid = "yolov8_inference2";
-        float mask_threshold = 0.5f;  // in python it's 0.5 and you can see that at ultralytics/utils/ops.process_mask line 705 (ultralytics.__version__ == .160)
-        float conf_threshold = 0.30f;
-        float iou_threshold = 0.45f;  //  0.70f;
-        int conversion_code = cv::COLOR_BGR2RGB;
-        cv::Mat img = cv::imread(img_path, cv::IMREAD_UNCHANGED);
-        if (img.empty()) {
-            std::cerr << "Error: Unable to load image" << std::endl;
-            return 1;
-        }
-        AutoBackendOnnx model(modelPath.c_str(), onnx_logid.c_str(), onnx_provider.c_str());
-        std::vector<YoloResults> objs = model.predict_once(img, conf_threshold, iou_threshold, mask_threshold, conversion_code);
-        std::vector<cv::Scalar> colors = generateRandomColors(model.getNc(), model.getCh());
-        std::unordered_map<int, std::string> names = model.getNames();
-
-        std::vector<std::vector<float>> keypointsVector;
-        for (const YoloResults& result : objs) {
-            keypointsVector.push_back(result.keypoints);
-        }
-
-        cv::cvtColor(img, img, cv::COLOR_RGB2BGR);
-        cv::Size show_shape = img.size();  // cv::Size(1280, 720); // img.size()
-        plot_results(img, objs, colors, names, show_shape);
-        //    plot_masks(img, objs, colors, names);
-        cv::imshow("img", img);
-        cv::waitKey();
-        return -1;
-    }
-        
-
-    else if(flag == 0){
-        // video_detect
-        std::string video_path = "test/blue.MP4";//"test/red.MP4"
-        const std::string& modelPath = "model/rm_buff.onnx"; // pose
-        cv::VideoCapture cap(video_path);
-        if (!cap.isOpened()) {
-            std::cerr << "Error: Unable to open video file" << std::endl;
-            return 1;
-        }
-        const std::string& onnx_provider = OnnxProviders::CPU;
-        const std::string& onnx_logid = "yolov8_inference2";
-        float mask_threshold = 0.30f;
-        float conf_threshold = 0.30f;
-        float iou_threshold = 0.30f;
-        int conversion_code = cv::COLOR_BGR2RGB;
-
-        // 初始化模型
-        AutoBackendOnnx model(modelPath.c_str(), onnx_logid.c_str(), onnx_provider.c_str());
-
-        std::vector<cv::Scalar> colors = generateRandomColors(model.getNc(), model.getCh());
-        std::unordered_map<int, std::string> names = model.getNames();
-
-        cv::Mat frame;
-        while (true) {
-            // 读取每一帧
-            cap >> frame;
-            if (frame.empty()) {
-                std::cout << "Video processing finished!" << std::endl;
-                break;  // 视频处理完成
-            }
-
-            // 转换颜色空间
-            cv::cvtColor(frame, frame, conversion_code);
-
-            // 进行推理
-            std::vector<YoloResults> objs = model.predict_once(frame, conf_threshold, iou_threshold, mask_threshold, conversion_code);
-
-            // 绘制结果
-            cv::cvtColor(frame, frame, cv::COLOR_RGB2BGR);  // 转换回 BGR 以便显示
-            cv::Size show_shape = frame.size();  // 显示尺寸
-            plot_results(frame, objs, colors, names, show_shape);
-
-            // 显示结果
-            cv::imshow("Video Detection", frame);
-
-            // 如果按下 'q' 键，退出视频处理循环
-            if (cv::waitKey(30) == 'q') {
-                break;
-            }
-        }
-
-        cap.release();  // 释放视频资源
-        cv::destroyAllWindows();  // 销毁所有窗口
-
-        return 0;
-    }
-
-    
 }

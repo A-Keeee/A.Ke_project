@@ -34,11 +34,11 @@ Blade::Blade(ContourInfo& contour, Configuration& cfg)
     this->contour = contour;
     
     // 计算目标点位置，相对于质心的位置，由 cfg 配置中的比例决定
-    this->target = centroid + trait * cfg.target_relative_position;
+    this->target = centroid + trait * cfg.target_relative_position;//需击打目标中心
     
     // 计算中心点位置，相对于质心的位置，由 cfg 配置中的比例决定
-    this->center = centroid + trait * cfg.center_relative_position;//可能是buff圆心
+    this->center = centroid + trait * cfg.center_relative_position;//buff圆心
     
     // 计算目标与中心之间的向量，用于表示目标与中心的相对方向和距离
-    this->vector = this->target - this->center;
+    this->vector = this->target - this->center;//目标与中心之间的平移向量
 }

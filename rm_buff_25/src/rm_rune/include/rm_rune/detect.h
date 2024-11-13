@@ -1,21 +1,30 @@
 #ifndef DETECT_H
 #define DETECT_H
 
-#include <random>
-#include <filesystem>
-#include <opencv2/opencv.hpp>
+#pragma once
+
+// 标准库包含
+#include <iostream>
 #include <vector>
 #include <unordered_map>
 #include <string>
 #include <sstream>
 #include <iomanip>
+#include <random>
+#include <filesystem>
 
+// OpenCV库包含
+#include "opencv2/opencv.hpp"
+#include "cv_bridge/cv_bridge.h"
+
+// rm_rune项目包含
 #include "rm_rune/onnx_model_base.h"
 #include "rm_rune/autobackend.h"
 #include "rm_rune/augment.h"
 #include "rm_rune/constants.h"
 #include "rm_rune/common.h"
 
+// 命名空间别名
 namespace fs = std::filesystem;
 
 // 定义骨架和颜色映射
@@ -24,27 +33,48 @@ extern std::vector<cv::Scalar> posePalette;
 extern std::vector<int> limbColorIndices;
 extern std::vector<int> kptColorIndices;
 
-// 函数声明
+// ContourInfo类声明
+class ContourInfo
+{
+public:
+    ContourInfo();
+    ContourInfo(const std::vector<cv::Point>& contour);
+    void setContour(const std::vector<cv::Point>& contour);
 
-// 生成随机颜色，指定通道数
+    // 计算面积
+    double getArea();
+    // 计算质心
+    cv::Point2f getCentroid();
+    // 获取主特征方向和特征值
+    std::pair<cv::Vec2f, double> getEigenMax();
+    // 获取偏度
+    cv::Vec2f getSkewness();
+    // 计算Hu矩的偏差
+    float hu_moments_deviation(cv::Mat hu_moments, cv::Mat reference);
+
+    // 绘制检测到的掩膜
+    void plot_masks(cv::Mat img, std::vector<YoloResults>& result, std::vector<cv::Scalar> color,
+                    std::unordered_map<int, std::string>& names);
+
+    // 绘制检测到的关键点
+    void plot_keypoints(cv::Mat& image, const std::vector<YoloResults>& results, const cv::Size& shape);
+
+    // 绘制检测结果，包括边界框、关键点和掩膜
+    void plot_results(cv::Mat img, std::vector<YoloResults>& results,
+                      std::vector<cv::Scalar> color, std::unordered_map<int, std::string>& names,
+                      const cv::Size& shape);
+
+    // 成员变量
+    std::vector<cv::Point> contour;
+    cv::Moments moments;
+    cv::Mat huMoments;
+    cv::Mat center;       // 用于存储中心点的二维数组
+    cv::Mat circle_center; // 用于存储圆心的二维数组
+
+};
+
+// 函数声明（若需要可以移除，如果函数已内嵌到类中）
 cv::Scalar generateRandomColor(int numChannels);
-
-// 为给定类别数量生成随机颜色
 std::vector<cv::Scalar> generateRandomColors(int class_names_num, int numChannels);
-
-// 在图像上绘制检测到的掩膜
-void plot_masks(cv::Mat img, std::vector<YoloResults>& result, std::vector<cv::Scalar> color,
-                std::unordered_map<int, std::string>& names);
-
-// 绘制检测到的关键点
-void plot_keypoints(cv::Mat& image, const std::vector<YoloResults>& results, const cv::Size& shape);
-
-// 绘制检测结果，包括边界框、关键点和掩膜
-void plot_results(cv::Mat img, std::vector<YoloResults>& results,
-                  std::vector<cv::Scalar> color, std::unordered_map<int, std::string>& names,
-                  const cv::Size& shape);
-
-// 主函数，处理图像或视频检测
-int main();
 
 #endif // DETECT_H
