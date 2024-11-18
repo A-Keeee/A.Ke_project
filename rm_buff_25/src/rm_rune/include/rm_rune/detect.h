@@ -68,8 +68,8 @@ public:
     std::vector<cv::Point> contour;
     cv::Moments moments;
     cv::Mat huMoments;
-    cv::Mat center;       // 用于存储中心点的二维数组
-    cv::Mat circle_center; // 用于存储圆心的二维数组
+    cv::Point center[1]; // 用于存储中心的数组
+    cv::Point circle_center[1]; //存储圆心的数组
 
 };
 

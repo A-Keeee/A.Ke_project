@@ -21,13 +21,28 @@ ContorInfo::ContourInfo()
     // 空的构造函数，用于创建一个空对象
 }
 
-ContourInfo::ContourInfo()
+ContourInfo::ContourInfo(const std::vector<cv::Point>& contour)//contour改为存储五个关键点
 {
-    // 初始化轮廓信息
-    this->center = center;
-    this->circle_center = circle_center;
+    // 分别累加 x 和 y 坐标
+    int sum_x = contour[0].x + contour[1].x + contour[2].x + contour[3].x;
+    int sum_y = contour[0].y + contour[1].y + contour[2].y + contour[3].y;
+
+    // 计算平均值
+    this->center = cv::Point(sum_x / 4, sum_y / 4);  // 使用 cv::Point 初始化中心点
+    this->circle_center = cv::Point(contour[4].x, contour[4].y);  // 使用 cv::Point 初始化圆心
 }
 
+// 设置轮廓并更新轮廓相关信息
+void ContourInfo::setContour(const std::vector<cv::Point>& contour)
+{
+    // 分别累加 x 和 y 坐标
+    int sum_x = contour[0].x + contour[1].x + contour[2].x + contour[3].x;
+    int sum_y = contour[0].y + contour[1].y + contour[2].y + contour[3].y;
+
+    // 计算平均值
+    this->center = cv::Point(sum_x / 4, sum_y / 4);  // 使用 cv::Point 更新中心点
+    this->circle_center = cv::Point(contour[4].x, contour[4].y);  // 使用 cv::Point 更新圆心
+}
 
 
 // Define the skeleton and color mappings
