@@ -8,6 +8,7 @@
 #include <opencv2/opencv.hpp>
 #include <vector>
 
+#include "rm_rune/contour_info.hpp"
 #include "rm_rune/augment.h"
 #include "rm_rune/constants.h"
 #include "rm_rune/common.h"
@@ -217,7 +218,7 @@ void ContourInfo::plot_keypoints(cv::Mat& image, const std::vector<YoloResults>&
 
 void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
                   std::vector<cv::Scalar> color, std::unordered_map<int, std::string>& names,
-                  const cv::Size& shape
+                  const cv::Size& shape ,std::vector<std::vector<cv::Point>>& contours
                   ) {
 
     cv::Mat mask = img.clone();
@@ -236,8 +237,10 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
     for (int index : kptColorIndices) {
         kptColorPalette.push_back(posePalette[index]);
     }
+    
 
     for (const auto& res : results) {
+        contours.emplace_back();
         float left = res.bbox.x;
         float top = res.bbox.y;
         int color_num = res.class_idx;
@@ -281,50 +284,54 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
             int x_average = 0;
             int y_average = 0;
 
-            // draw points
+            
+            bool allPointsValid = true; // 用于记录五个点的置信度是否都满足条件
+
+            // 先遍历五个点，检查它们的置信度
             for (int i = 0; i < 5; i++) {
                 int idx = i * 3;
-                int x_coord = static_cast<int>(keypoint[idx]);
-                int y_coord = static_cast<int>(keypoint[idx + 1]);
 
-                if (x_coord % raw_image_shape.width != 0 && y_coord % raw_image_shape.height != 0) {
-                    if (keypoint.size() == 3) {
-                        float conf = keypoint[2];
-                        if (conf < 0.5) {
-                            continue;
-                        }
+                // 如果 keypoint 包含置信度信息
+                if (keypoint.size() == 3) {
+                    float conf = keypoint[idx + 2]; // 获取当前点的置信度
+                    if (conf < 0.5) {
+                        allPointsValid = false; // 有任意一个点不满足条件
+
+                    // 删除 contours 的当前空组
+                    if (!contours.empty()) {
+                        contours.pop_back(); // 删除最后一个空组
                     }
-                    cv::Scalar color_k = isPose ? kptColorPalette[i] : cv::Scalar(0, 0,
-                                                                                  255);  // Default to red if not in pose mode
-                    cv::circle(img, cv::Point(x_coord, y_coord), radius, color_k, -1, cv::LINE_AA);
-                }
-                if(i==4){    
-                    if (x_coord % raw_image_shape.width != 0 && y_coord % raw_image_shape.height != 0) {
-                        if (keypoint.size() == 3) {
-                            float conf = keypoint[2];
-                            if (conf < 0.5) {
-                                continue;
-                            }
-                        }
-                        this->circle_center = (x_coord, y_coord);//获取圆心坐标
-                        this->center = (x_average/4, y_average/4);//获取目标中心坐标
-                    }
-                }
-                if(i<4){
-                    if (x_coord % raw_image_shape.width != 0 && y_coord % raw_image_shape.height != 0) {
-                        if (keypoint.size() == 3) {
-                            float conf = keypoint[2];
-                            if (conf < 0.5) {
-                                continue;
-                            }
-                        }
-                        x_average += x_coord;
-                        y_average += y_coord;
+
+                    break; // 直接退出循环
+                    
                     }
                 }
             }
+            
+            // draw points
+            // 如果所有点都满足条件，则处理这些点
+            if (allPointsValid) {
+                for (int i = 0; i < 5; i++) {
+                    int idx = i * 3;
+                    int x_coord = static_cast<int>(keypoint[idx]);
+                    int y_coord = static_cast<int>(keypoint[idx + 1]);
+
+                    // 检查坐标有效性
+                    if (x_coord % raw_image_shape.width != 0 && y_coord % raw_image_shape.height != 0) {
+                        // 将关键点坐标存入 contours
+                        contours.back().push_back(cv::Point(x_coord, y_coord));
+
+                        // 绘制关键点
+                        cv::Scalar color_k = isPose ? kptColorPalette[i] : cv::Scalar(0, 0, 255); 
+                        cv::circle(img, cv::Point(x_coord, y_coord), radius, color_k, -1, cv::LINE_AA);
+                    }
+                }
+            }
+
+
+
             // draw lines
-            if (drawLines) {
+            if (drawLines && allPointsValid) {
                 for (int i = 0; i < skeleton.size(); i++) {
                     const std::vector<int> &sk = skeleton[i];
                     int idx1 = sk[0] - 1;
@@ -368,3 +375,4 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
 //    imshow("img", img);
 //    cv::waitKey();
 }
+

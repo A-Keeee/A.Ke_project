@@ -68,17 +68,19 @@ namespace qianli_rm_rune
         //改用神经网络识别
         //需要条用detect中的函数进行神经网络识别
 
-        cv::Mat rune_gray_image;
-        // 将BGR图像转换为灰度图
-        rune_gray_image = image_processer_.to_gray(rune_image, cfg_.kernel_size);
+        // cv::Mat rune_gray_image;
+        // // 将BGR图像转换为灰度图
+        // rune_gray_image = image_processer_.to_gray(rune_image, cfg_.kernel_size);
 
-        cv::Mat rune_binary_image;
-        // 将灰度图像转换为二值图
-        rune_binary_image = image_processer_.to_binary(rune_gray_image, cfg_.binary_threshold);
+        // cv::Mat rune_binary_image;
+        // // 将灰度图像转换为二值图
+        // rune_binary_image = image_processer_.to_binary(rune_gray_image, cfg_.binary_threshold);
 
-        // 查找图像中的轮廓
-        std::vector<std::vector<cv::Point>> contours;
-        cv::findContours(rune_binary_image, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+        // // 查找图像中的轮廓
+        // std::vector<std::vector<cv::Point>> contours;
+        // cv::findContours(rune_binary_image, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+
+        ContourInfo::plot_results(rune_image, results, posePalette, names, rune_image.size(), contours);
 
         // 计算每个轮廓的相关信息，并存入contours_info_向量
         for(auto &contour : contours)
