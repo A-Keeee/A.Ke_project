@@ -80,7 +80,7 @@ namespace qianli_rm_rune
         // std::vector<std::vector<cv::Point>> contours;
         // cv::findContours(rune_binary_image, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-        ContourInfo::plot_results(rune_image, results, posePalette, names, rune_image.size(), contours);
+        ContourInfo::plot_results(rune_image, results, posePalette, names, rune_image.size(), contours);//需要对头文件进行修改
 
         // 计算每个轮廓的相关信息，并存入contours_info_向量
         for(auto &contour : contours)
