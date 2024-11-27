@@ -116,3 +116,14 @@ cv::Point2f PowerRune::predict(const cv::Point2f& vector, float radian) {
     // 返回旋转后的向量
     return rotatedVector;
 }
+
+std::vector<ContourInfo> PowerRune::sortByconf(std::vector<ContourInfo>& contours)
+{
+    // 对 contours 按照 conf 字段进行从大到小排序
+    std::sort(contours.begin(), contours.end(), [](const ContourInfo& a, const ContourInfo& b) {
+        return a.conf > b.conf;  // 从大到小排序
+    });
+
+    // 直接返回排序后的 contours 向量
+    return contours;
+}

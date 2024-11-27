@@ -18,5 +18,6 @@ public:
     bool areaCondition(ContourInfo& contour, const float& min_area);
     std::vector<ContourInfo> filterByArea(std::vector<ContourInfo>& contours, float minArea);
     std::vector<ContourInfo> filterByHu(std::vector<ContourInfo>& contours, const cv::Mat& refHu, float huDevThreshold);
+    std::vector<ContourInfo> sortByconf(std::vector<ContourInfo>& contours)
     cv::Point2f predict(const cv::Point2f& vector, float radian);
 };

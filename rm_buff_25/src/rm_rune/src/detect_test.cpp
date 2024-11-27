@@ -22,27 +22,31 @@ ContorInfo::ContourInfo()
     // 空的构造函数，用于创建一个空对象
 }
 
-ContourInfo::ContourInfo(const std::vector<cv::Point>& contour)//contour改为存储五个关键点
+ContourInfo::ContourInfo(const std::vector<cv::Point>& contour)//contour改为存储标签置信度+五个关键点
 {
     // 分别累加 x 和 y 坐标
-    int sum_x = contour[0].x + contour[1].x + contour[2].x + contour[3].x;
-    int sum_y = contour[0].y + contour[1].y + contour[2].y + contour[3].y;
+    int sum_x = contour[1].x + contour[2].x + contour[3].x + contour[4].x;
+    int sum_y = contour[1].y + contour[2].y + contour[3].y + contour[4].y;
 
     // 计算平均值
     this->center = cv::Point(sum_x / 4, sum_y / 4);  // 使用 cv::Point 初始化中心点
-    this->circle_center = cv::Point(contour[4].x, contour[4].y);  // 使用 cv::Point 初始化圆心
+    this->circle_center = cv::Point(contour[5].x, contour[5].y);  // 使用 cv::Point 初始化圆心
+    this->index = contour[0].x;  // 初始化索引
+    this->conf = contour[0].y;  // 初始化置信度
 }
 
 // 设置轮廓并更新轮廓相关信息
 void ContourInfo::setContour(const std::vector<cv::Point>& contour)
 {
     // 分别累加 x 和 y 坐标
-    int sum_x = contour[0].x + contour[1].x + contour[2].x + contour[3].x;
-    int sum_y = contour[0].y + contour[1].y + contour[2].y + contour[3].y;
+    int sum_x = contour[1].x + contour[2].x + contour[3].x + contour[4].x;
+    int sum_y = contour[1].y + contour[2].y + contour[3].y + contour[4].y;
 
     // 计算平均值
     this->center = cv::Point(sum_x / 4, sum_y / 4);  // 使用 cv::Point 更新中心点
-    this->circle_center = cv::Point(contour[4].x, contour[4].y);  // 使用 cv::Point 更新圆心
+    this->circle_center = cv::Point(contour[5].x, contour[5].y);  // 使用 cv::Point 更新圆心
+    this->index = contour[0].x;  // 更新索引
+    this->conf = contour[0].y;  // 更新置信度
 }
 
 
@@ -240,7 +244,7 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
     
 
     for (const auto& res : results) {
-        contours.emplace_back();
+        contours.emplace_back(); // 在 contours 中添加一个新的空的轮廓
         float left = res.bbox.x;
         float top = res.bbox.y;
         int color_num = res.class_idx;
@@ -267,7 +271,7 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
 
         // Create label
         std::stringstream labelStream;
-        labelStream << class_name << " " << std::fixed << std::setprecision(2) << res.conf;
+        labelStream << class_name << " " << std::fixed << std::setprecision(2) << res.conf;//创建标签标注目标对象的类别和置信度
         std::string label = labelStream.str();
 
         cv::Size text_size = cv::getTextSize(label, cv::FONT_HERSHEY_SIMPLEX, 0.6, 2, nullptr);
@@ -294,7 +298,7 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
                 // 如果 keypoint 包含置信度信息
                 if (keypoint.size() == 3) {
                     float conf = keypoint[idx + 2]; // 获取当前点的置信度
-                    if (conf < 0.5) {
+                    if (conf < 0.3) {
                         allPointsValid = false; // 有任意一个点不满足条件
 
                     // 删除 contours 的当前空组
@@ -311,6 +315,13 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
             // draw points
             // 如果所有点都满足条件，则处理这些点
             if (allPointsValid) {
+                
+                // 将 conf 保留两位小数，乘以 100
+                int conf = static_cast<int>(res.conf * 100);
+                // 将 label 转换为整数
+                int label = std::stoi(label);  // 或者 std::stoll，如果数字很大
+                contours.back().push_back(cv::Point(label, conf));//将目标对象的类别和置信度存入contours
+
                 for (int i = 0; i < 5; i++) {
                     int idx = i * 3;
                     int x_coord = static_cast<int>(keypoint[idx]);

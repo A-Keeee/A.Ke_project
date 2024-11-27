@@ -80,6 +80,7 @@ namespace qianli_rm_rune
         // std::vector<std::vector<cv::Point>> contours;
         // cv::findContours(rune_binary_image, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
+        std::vector<std::vector<cv::Point>> contours;
         ContourInfo::plot_results(rune_image, results, posePalette, names, rune_image.size(), contours);//需要对头文件进行修改
 
         // 计算每个轮廓的相关信息，并存入contours_info_向量
@@ -89,9 +90,11 @@ namespace qianli_rm_rune
             contours_info_.push_back(contour_info_);
         }
 
-        // 根据面积和Hu矩过滤轮廓信息
-        contours_info_ = power_rune_.filterByArea(contours_info_, cfg_.min_area);
-        contours_info_ = power_rune_.filterByHu(contours_info_, cfg_.ref_hu, cfg_.hu_dev_threshold);
+        // // 根据面积和Hu矩过滤轮廓信息  修改为通过阈值进行过滤
+        // contours_info_ = power_rune_.filterByArea(contours_info_, cfg_.min_area);
+        // contours_info_ = power_rune_.filterByHu(contours_info_, cfg_.ref_hu, cfg_.hu_dev_threshold);
+        contours_info_ = power_rune_.sortByconf(contours_info_);//根据置信度进行排序
+        
         
         // 如果没有检测到合适的能量机关，输出调试信息
         if (contours_info_.empty()) {
@@ -99,11 +102,13 @@ namespace qianli_rm_rune
             return;
         }
         
-        // 如果检测到多个能量机关，输出警告并只处理形状最接近的一个
+        // 如果检测到多个能量机关，输出警告并只处理置信度最高的一个
         if (contours_info_.size() > 1) {
             RCLCPP_WARN(get_logger(), "检测到 %ld 个能量机关，仅使用最形状接近的一个", contours_info_.size());
         }
 
+
+        //11/27
         // 使用Blade类对象对检测到的轮廓信息进行处理
         Blade blade(contours_info_[0],cfg_);
         

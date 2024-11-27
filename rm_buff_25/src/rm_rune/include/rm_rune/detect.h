@@ -71,7 +71,8 @@ public:
     cv::Mat huMoments;
     cv::Point center[1]; // 用于存储中心的数组
     cv::Point circle_center[1]; //存储圆心的数组
-
+    cv::Point index[1]; // 用于存储索引的数组
+    cv::Point conf[1]; //存储置信度的数组
 };
 
 // 函数声明（若需要可以移除，如果函数已内嵌到类中）
