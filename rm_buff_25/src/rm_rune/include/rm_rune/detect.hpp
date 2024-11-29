@@ -69,10 +69,11 @@ public:
     std::vector<cv::Point> contour;
     cv::Moments moments;
     cv::Mat huMoments;
-    cv::Point center[1]; // 用于存储中心的数组
-    cv::Point circle_center[1]; //存储圆心的数组
-    cv::Point index[1]; // 用于存储索引的数组
-    cv::Point conf[1]; //存储置信度的数组
+    cv::Point center;        // 正确的单一 Point 类型
+    cv::Point circle_center; // 正确的单一 Point 类型
+    int index;               // 正确的单一 int 类型
+    int conf;                // 正确的单一 int 类型
+
 };
 
 // 函数声明（若需要可以移除，如果函数已内嵌到类中）

@@ -10,7 +10,8 @@
 //   contour - 传递的轮廓信息对象，包含几何信息（如质心、主轴等）
 //   cfg - 配置信息，用于控制相对目标和中心的计算
 Blade::Blade(ContourInfo& contour, Configuration& cfg)
-{
+{   
+    /*
     // 获取轮廓的质心（几何中心）
     cv::Point2f centroid = contour.getCentroid();
     
@@ -41,4 +42,15 @@ Blade::Blade(ContourInfo& contour, Configuration& cfg)
     
     // 计算目标与中心之间的向量，用于表示目标与中心的相对方向和距离
     this->vector = this->target - this->center;//目标与中心之间的平移向量
+    */
+
+    // 如果 contour.center 是一个 cv::Point 类型的数组，取其第一个元素并转换为 cv::Point2f 类型
+    cv::Point2f center = cv::Point2f(contour.center);
+
+    cv::Point2f circle_center = cv::Point2f(contour.circle_center);
+
+    this->contour = contour;
+    this->center = center;//扇叶中心
+    this->circle_center = circle_center;//圆心中心
+    this->vector = center - circle_center;//扇叶中心与圆心之间的平移向量
 }

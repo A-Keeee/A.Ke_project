@@ -13,7 +13,7 @@
 #include <tf2_ros/message_filter.h>
 #include <tf2_ros/transform_listener.h>
 
-#include "image_processer.hpp"
+// #include "image_processer.hpp"
 #include "power_rune.hpp"
 #include "blade.hpp"
 #include "prediction.hpp"
@@ -37,7 +37,7 @@ public:
     cv::Mat camera_matrix_;
 
     Configuration cfg_;
-    ImageProcesser image_processer_;
+    // ImageProcesser image_processer_;
     PowerRune power_rune_;
     ContourInfo contour_info_;
     Prediction predictor;

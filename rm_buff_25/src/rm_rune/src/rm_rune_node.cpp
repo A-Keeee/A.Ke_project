@@ -80,8 +80,27 @@ namespace qianli_rm_rune
         // std::vector<std::vector<cv::Point>> contours;
         // cv::findContours(rune_binary_image, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
+        //调用模型信息
+        const std::string& modelPath = "model/rm_buff_test.onnx"; // 模型路径
+        const std::string& onnx_provider = OnnxProviders::CPU; // "cpu";
+        const std::string& onnx_logid = "yolov8_inference";
+        float mask_threshold = 0.30f;
+        float conf_threshold = 0.30f;
+        float iou_threshold = 0.30f;
+        int conversion_code = cv::COLOR_BGR2RGB;
+        // 初始化模型
+        AutoBackendOnnx model(modelPath.c_str(), onnx_logid.c_str(), onnx_provider.c_str());
+        std::vector<cv::Scalar> colors = generateRandomColors(model.getNc(), model.getCh());
+        std::unordered_map<int, std::string> names = model.getNames();
+        // 转换颜色空间
+        cv::cvtColor(rune_image, rune_image, conversion_code);
+        // 进行推理
+        std::vector<YoloResults> objs = model.predict_once(rune_image, conf_threshold, iou_threshold, mask_threshold, conversion_code);
+
+
+
         std::vector<std::vector<cv::Point>> contours;
-        ContourInfo::plot_results(rune_image, results, posePalette, names, rune_image.size(), contours);//需要对头文件进行修改
+        contour_info_.plot_results(rune_image, objs, posePalette, names, rune_image.size(), contours);//需要对头文件进行修改
 
         // 计算每个轮廓的相关信息，并存入contours_info_向量
         for(auto &contour : contours)
@@ -130,8 +149,8 @@ namespace qianli_rm_rune
         geometry_msgs::msg::PointStamped point_msg;
         point_msg.header.frame_id = "camera_link";
         point_msg.point.x = 1;
-        point_msg.point.y = -(predicted_vector.x + blade.center.x - cam_info_->k[2]) / cam_info_->k[0];
-        point_msg.point.z = -(predicted_vector.y + blade.center.y - cam_info_->k[5]) / cam_info_->k[4];
+        point_msg.point.y = -(predicted_vector.x + blade.circle_center.x - cam_info_->k[2]) / cam_info_->k[0];
+        point_msg.point.z = -(predicted_vector.y + blade.circle_center.y - cam_info_->k[5]) / cam_info_->k[4];
 
         // 根据相机参数和预测向量，计算3D距离
         float distance = (cam_info_->k[0] + cam_info_->k[4]) / 2 / std::sqrt(predicted_vector.x * predicted_vector.x + predicted_vector.y * predicted_vector.y) * 0.7 * cfg_.distance_correction_ratio;
