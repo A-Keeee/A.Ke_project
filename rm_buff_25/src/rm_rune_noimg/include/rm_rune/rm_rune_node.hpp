@@ -34,9 +34,6 @@ public:
     rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::SharedPtr cam_info_sub_;
     std::shared_ptr<sensor_msgs::msg::CameraInfo> cam_info_;
 
-    rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr result_image_pub_;
-
-
     cv::Mat camera_matrix_;
 
     Configuration cfg_;

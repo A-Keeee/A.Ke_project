@@ -222,11 +222,9 @@ void ContourInfo::plot_keypoints(cv::Mat& image, const std::vector<YoloResults>&
 
 void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
                   std::vector<cv::Scalar> color, std::unordered_map<int, std::string>& names,
-                  const cv::Size& shape ,std::vector<std::vector<cv::Point>>& contours,
-                  cv::Mat& result_image
+                  const cv::Size& shape ,std::vector<std::vector<cv::Point>>& contours
                   ) {
-    
-    
+
     cv::Mat mask = img.clone();
 
     int radius = 5;
@@ -391,8 +389,6 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
 
     // Combine the image and mask
     cv::addWeighted(img, 0.6, mask, 0.4, 0, img);
-
-    result_image = img;
 //    resize(img, img, img.size());
 //    resize(img, img, shape);
 //    // Show the image

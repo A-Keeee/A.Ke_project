@@ -21,8 +21,6 @@ namespace qianli_rm_rune
         rune_image_sub_ = create_subscription<sensor_msgs::msg::Image>(
             "/image_raw", rclcpp::SensorDataQoS(), std::bind(&RuneNode::rune_image_callback, this, std::placeholders::_1));
 
-        result_image_pub_ = this->create_publisher<sensor_msgs::msg::Image>("/rune/result_image", 10);
-
         // 订阅相机内参数据（/camera_info），用于相机矩阵的初始化
         cam_info_sub_ = this->create_subscription<sensor_msgs::msg::CameraInfo>(
             "/camera_info", rclcpp::SensorDataQoS(),
@@ -102,13 +100,7 @@ namespace qianli_rm_rune
 
 
         std::vector<std::vector<cv::Point>> contours;
-        cv::Mat result_image; // 声明用于存储处理后图像的变量
-        contour_info_.plot_results(rune_image, objs, posePalette, names, rune_image.size(), contours ,result_image);//需要对头文件进行修改
-
-        // 将处理后的图像转换为 ROS 消息并发布
-        auto result_msg = cv_bridge::CvImage(msg->header, "bgr8", result_image).toImageMsg();
-        result_image_pub_->publish(*result_msg);
-
+        contour_info_.plot_results(rune_image, objs, posePalette, names, rune_image.size(), contours);//需要对头文件进行修改
 
         // 计算每个轮廓的相关信息，并存入contours_info_向量
         for(auto &contour : contours)
