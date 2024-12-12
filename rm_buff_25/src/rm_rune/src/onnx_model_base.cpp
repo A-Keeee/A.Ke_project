@@ -1,4 +1,4 @@
-#include "rm_rune/onnx_model_base.h"
+#include "onnx_model_base.h"
 #include <iostream>
 #include <onnxruntime_cxx_api.h>
 #include <onnxruntime_c_api.h>
@@ -6,8 +6,8 @@
 #include <vector>     // for std::vector
 #include <string>     // for std::string
 
-#include "rm_rune/constants.h"
-#include "rm_rune/common.h"
+#include "constants.h"
+#include "common.h"
 
 
 /**

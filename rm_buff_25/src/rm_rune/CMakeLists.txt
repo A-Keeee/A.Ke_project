@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.8)
 project(rm_rune)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+## Use C++14
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 设置默认的 ONNX Runtime 根目录，如果用户没有手动提供
 if(NOT ONNXRUNTIME_ROOTDIR)
@@ -11,7 +12,7 @@ if(NOT ONNXRUNTIME_ROOTDIR)
         set(ONNXRUNTIME_ROOTDIR "C:/Program Files (x86)/onnxruntime")
     else()
         # 非 Windows 系统下设置默认路径
-        set(ONNXRUNTIME_ROOTDIR "/home/ake/onnxruntime-linux-x64-1.14.1")
+        set(ONNXRUNTIME_ROOTDIR "/home/qianli/onnxruntime")
     endif()
 endif()
 
@@ -40,6 +41,8 @@ find_package(rclcpp_components REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(image_transport REQUIRED)
+find_package(pluginlib REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -61,7 +64,7 @@ add_library(${PROJECT_NAME} SHARED
   src/onnx_model_base.cpp
   src/ops.cpp
 )
-ament_target_dependencies(${PROJECT_NAME} rclcpp rclcpp_components sensor_msgs geometry_msgs cv_bridge OpenCV tf2 tf2_ros)
+ament_target_dependencies(${PROJECT_NAME} rclcpp rclcpp_components sensor_msgs geometry_msgs cv_bridge OpenCV tf2 tf2_ros image_transport)
 
 link_directories(${ONNXRUNTIME_ROOTDIR}/lib)
 
@@ -75,6 +78,9 @@ rclcpp_components_register_node(${PROJECT_NAME}
   EXECUTABLE ${PROJECT_NAME}_node
 )
 
+
+
+
 install(TARGETS
   ${PROJECT_NAME}
   ARCHIVE DESTINATION lib
@@ -82,6 +88,11 @@ install(TARGETS
   RUNTIME DESTINATION bin
   DESTINATION lib/${PROJECT_NAME}
 )
+
+# install(FILES plugins.xml
+#   DESTINATION share/${PROJECT_NAME}
+# )
+
 
 install(DIRECTORY
   launch

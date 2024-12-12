@@ -12,7 +12,7 @@ if(NOT ONNXRUNTIME_ROOTDIR)
         set(ONNXRUNTIME_ROOTDIR "C:/Program Files (x86)/onnxruntime")
     else()
         # 非 Windows 系统下设置默认路径
-        set(ONNXRUNTIME_ROOTDIR "/home/ake/onnxruntime-linux-x64-1.14.1")
+        set(ONNXRUNTIME_ROOTDIR "/home/qianli/onnxruntime")
     endif()
 endif()
 
@@ -59,6 +59,11 @@ target_link_libraries(yolo_pose_buff ${OpenCV_LIBRARIES} onnxruntime)
 install(TARGETS
   yolo_pose_buff
   DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
 )
 
 # 启用测试并进行自动化检查

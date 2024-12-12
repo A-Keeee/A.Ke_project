@@ -1,15 +1,23 @@
-//创建节点 发布参数 
-
+// rm_rune_node.cpp
 
 #include "rm_rune_node.hpp"
 
+
 namespace qianli_rm_rune
 {
-    // RuneNode构造函数，初始化节点，发布者和订阅者
     RuneNode::RuneNode(const rclcpp::NodeOptions & options) : Node("rm_rune_node", options)
     {
         // 在控制台输出节点启动信息
         RCLCPP_INFO(get_logger(), "Hello, QianLi RM Rune!");
+
+        // 调用神经网络识别
+        const std::string& modelPath = "/home/qianli/buff25/mechax_cv_trajectory/src/rm_rune/model/rm_buff.onnx"; // 确保路径正确
+        const std::string& onnx_provider = OnnxProviders::CPU; // "cpu";CPUExecutionProvider
+        const std::string& onnx_logid = "yolov8_inference2";
+
+        // 初始化模型
+        model = std::make_unique<AutoBackendOnnx>(modelPath.c_str(), onnx_logid.c_str(), onnx_provider.c_str());
+        RCLCPP_INFO(get_logger(), "model loaded");
 
         // 初始化相机内参矩阵为全零矩阵
         camera_matrix_ = cv::Mat::zeros(3, 3, CV_64F);
@@ -17,26 +25,25 @@ namespace qianli_rm_rune
         // 创建发布者，用于发布3D预测位置（/rune/prediction）
         rune_pose_pub_ = create_publisher<geometry_msgs::msg::PointStamped>("/rune/prediction", 10);
 
-        // 订阅图像原始数据（/image_raw），处理图像回调
+        // 创建订阅者，订阅图像原始数据（/image_raw）
         rune_image_sub_ = create_subscription<sensor_msgs::msg::Image>(
-            "/image_raw", rclcpp::SensorDataQoS(), std::bind(&RuneNode::rune_image_callback, this, std::placeholders::_1));
+            "/image_raw", rclcpp::SensorDataQoS(),
+            std::bind(&RuneNode::rune_image_callback, this, std::placeholders::_1));
 
-        result_image_pub_ = this->create_publisher<sensor_msgs::msg::Image>("/rune/result_image", 10);
-
-        // 订阅相机内参数据（/camera_info），用于相机矩阵的初始化
+        // 创建订阅者，订阅相机内参数据（/camera_info）
         cam_info_sub_ = this->create_subscription<sensor_msgs::msg::CameraInfo>(
             "/camera_info", rclcpp::SensorDataQoS(),
             [this](sensor_msgs::msg::CameraInfo::ConstSharedPtr camera_info) {
-            cam_info_ = std::make_shared<sensor_msgs::msg::CameraInfo>(*camera_info);
-            // 将相机参数存入相机矩阵
-            camera_matrix_.at<double>(0,0) = camera_info->k[0];
-            camera_matrix_.at<double>(0,2) = camera_info->k[2];
-            camera_matrix_.at<double>(1,1) = camera_info->k[4];
-            camera_matrix_.at<double>(1,2) = camera_info->k[5];
-            camera_matrix_.at<double>(2,2) = 1.0;
-            // 完成相机内参获取后，取消订阅
-            cam_info_sub_.reset();
-        });
+                cam_info_ = std::make_shared<sensor_msgs::msg::CameraInfo>(*camera_info);
+                // 将相机参数存入相机矩阵
+                camera_matrix_.at<double>(0,0) = camera_info->k[0];
+                camera_matrix_.at<double>(0,2) = camera_info->k[2];
+                camera_matrix_.at<double>(1,1) = camera_info->k[4];
+                camera_matrix_.at<double>(1,2) = camera_info->k[5];
+                camera_matrix_.at<double>(2,2) = 1.0;
+                // 完成相机内参获取后，取消订阅
+                cam_info_sub_.reset();
+            });
 
         // 初始化tf2缓存和监听器，用于将预测的3D坐标转换到不同的坐标系
         tf2_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
@@ -44,6 +51,25 @@ namespace qianli_rm_rune
             this->get_node_base_interface(), this->get_node_timers_interface());
         tf2_buffer_->setCreateTimerInterface(timer_interface);
         tf2_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf2_buffer_);
+
+        // 创建一次性定时器，用于延迟初始化 image_transport
+        init_timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(10), // 延迟时间，可以根据需要调整
+            [this]() {
+                try {
+                    // 初始化 image_transport::ImageTransport，传递 shared_ptr<Node>
+                    it_ = std::make_unique<image_transport::ImageTransport>(shared_from_this());
+                    result_image_pub_ = it_->advertise("rune/result_image", 10);
+                    RCLCPP_INFO(get_logger(), "Initialized image_transport publisher for /rune/result_image");
+
+                    // 取消定时器，因为只需要初始化一次
+                    init_timer_->cancel();
+                }
+                catch (const std::bad_weak_ptr & e) {
+                    RCLCPP_ERROR(get_logger(), "Failed to initialize ImageTransport: %s", e.what());
+                }
+            }
+        );
     }
 
     /*
@@ -67,85 +93,59 @@ namespace qianli_rm_rune
             return;
         }
 
-        //改用神经网络识别
-        //需要条用detect中的函数进行神经网络识别
-
-        // cv::Mat rune_gray_image;
-        // // 将BGR图像转换为灰度图
-        // rune_gray_image = image_processer_.to_gray(rune_image, cfg_.kernel_size);
-
-        // cv::Mat rune_binary_image;
-        // // 将灰度图像转换为二值图
-        // rune_binary_image = image_processer_.to_binary(rune_gray_image, cfg_.binary_threshold);
-
-        // // 查找图像中的轮廓
-        // std::vector<std::vector<cv::Point>> contours;
-        // cv::findContours(rune_binary_image, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
-
-        //调用模型信息
-        const std::string& modelPath = "model/rm_buff_test.onnx"; // 模型路径
-        const std::string& onnx_provider = OnnxProviders::CPU; // "cpu";
-        const std::string& onnx_logid = "yolov8_inference";
-        float mask_threshold = 0.30f;
-        float conf_threshold = 0.30f;
-        float iou_threshold = 0.30f;
+        float mask_threshold = 0.70f;
+        float conf_threshold = 0.70f;
+        float iou_threshold = 0.70f;
         int conversion_code = cv::COLOR_BGR2RGB;
-        // 初始化模型
-        AutoBackendOnnx model(modelPath.c_str(), onnx_logid.c_str(), onnx_provider.c_str());
-        std::vector<cv::Scalar> colors = generateRandomColors(model.getNc(), model.getCh());
-        std::unordered_map<int, std::string> names = model.getNames();
+
+        std::vector<cv::Scalar> posePalette = generateRandomColors(model->getNc(), model->getCh());
+        std::unordered_map<int, std::string> names = model->getNames();
+
         // 转换颜色空间
         cv::cvtColor(rune_image, rune_image, conversion_code);
+
         // 进行推理
-        std::vector<YoloResults> objs = model.predict_once(rune_image, conf_threshold, iou_threshold, mask_threshold, conversion_code);
-
-
+        std::vector<YoloResults> objs = model->predict_once(rune_image, conf_threshold, iou_threshold, mask_threshold, conversion_code);
 
         std::vector<std::vector<cv::Point>> contours;
         cv::Mat result_image; // 声明用于存储处理后图像的变量
-        contour_info_.plot_results(rune_image, objs, posePalette, names, rune_image.size(), contours ,result_image);//需要对头文件进行修改
+
+        // 调用 plot_results 并传入 result_image
+        contour_info_.plot_results(rune_image, objs, posePalette, names, rune_image.size(), contours, result_image);
 
         // 将处理后的图像转换为 ROS 消息并发布
-        auto result_msg = cv_bridge::CvImage(msg->header, "bgr8", result_image).toImageMsg();
-        result_image_pub_->publish(*result_msg);
-
-
-        // 计算每个轮廓的相关信息，并存入contours_info_向量
-        for(auto &contour : contours)
+        if (it_ && result_image_pub_)
         {
-            contour_info_.setContour(contour);
-            contours_info_.push_back(contour_info_);
+            auto result_msg = cv_bridge::CvImage(msg->header, "bgr8", result_image).toImageMsg();
+            result_image_pub_.publish(result_msg); // 使用 image_transport 发布
+            RCLCPP_INFO(get_logger(), "Published result_image to /rune/result_image");
+        }
+        else
+        {
+            RCLCPP_WARN(get_logger(), "ImageTransport not initialized yet. Skipping image publish.");
         }
 
-        // // 根据面积和Hu矩过滤轮廓信息  修改为通过阈值进行过滤
-        // contours_info_ = power_rune_.filterByArea(contours_info_, cfg_.min_area);
-        // contours_info_ = power_rune_.filterByHu(contours_info_, cfg_.ref_hu, cfg_.hu_dev_threshold);
-        contours_info_ = power_rune_.sortByconf(contours_info_);//根据置信度进行排序
-        
-        
+        // 计算每个轮廓的相关信息，并存入 co使用cv_bridge将ROS图像消息转换为OpenCV图像rtByconf(contours_info_);
+
         // 如果没有检测到合适的能量机关，输出调试信息
         if (contours_info_.empty()) {
             RCLCPP_DEBUG(get_logger(), "未检测到能量机关");
             return;
         }
-        
+
         // 如果检测到多个能量机关，输出警告并只处理置信度最高的一个
         if (contours_info_.size() > 1) {
-            RCLCPP_WARN(get_logger(), "检测到 %ld 个能量机关，仅使用最形状接近的一个", contours_info_.size());
+            RCLCPP_WARN(get_logger(), "检测到 %ld 个能量机关，仅使用置信度最高的一个", contours_info_.size());
         }
 
-
-        //11/27
         // 使用Blade类对象对检测到的轮廓信息进行处理
-        Blade blade(contours_info_[0],cfg_);
-        
+        Blade blade(contours_info_[0], cfg_);
 
-        //以下部分进行保留
-        // 更新预测器并进行预测，这里改为传入pnp解算过后的目标板中心和buff圆心之间的平移矩阵
-        predictor.update(blade.vector);//计算目标与中心之间的向量，用于表示目标与中心的相对方向和距离
+        // 更新预测器并进行预测
+        predictor.update(blade.vector); // 计算目标与中心之间的向量
 
-        auto radian = predictor.predict();//返回预测的角度
-        auto predicted_vector = power_rune_.predict(blade.vector, radian);//返回预测的x，y坐标
+        auto radian = predictor.predict(); // 返回预测的角度
+        auto predicted_vector = power_rune_.predict(blade.vector, radian); // 返回预测的x，y坐标
 
         // 如果没有相机信息，无法计算3D点位，输出错误信息
         if (cam_info_->k.empty()) {
@@ -171,7 +171,7 @@ namespace qianli_rm_rune
         geometry_msgs::msg::PointStamped transformed_msg;
         try {
             // 将点位信息从相机坐标系转换到全局坐标系
-            transformed_msg.point = tf2_buffer_->transform(point_msg, "odom").point;
+            transformed_msg = tf2_buffer_->transform(point_msg, "odom");
             transformed_msg.header.frame_id = "odom";
             transformed_msg.header.stamp = point_msg.header.stamp;
             // 发布转换后的3D点位信息
@@ -185,5 +185,5 @@ namespace qianli_rm_rune
 
 #include "rclcpp_components/register_node_macro.hpp"
 
-// 注册组件，确保该节点在库加载时可以被发现并使用
+// 注册组件，确保该节点在库加载时可以被发现并使用"CPUExecutionProvider"
 RCLCPP_COMPONENTS_REGISTER_NODE(qianli_rm_rune::RuneNode)

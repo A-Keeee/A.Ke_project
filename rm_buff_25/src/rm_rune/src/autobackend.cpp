@@ -1,6 +1,6 @@
 #pragma once
 
-#include "rm_rune/autobackend.h"
+#include "autobackend.h"
 
 #include <iostream>
 #include <ostream>
@@ -11,10 +11,10 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/core/mat.hpp>
 
-#include "rm_rune/augment.h"
-#include "rm_rune/constants.h"
-#include "rm_rune/common.h"
-#include "rm_rune/ops.h"
+#include "augment.h"
+#include "constants.h"
+#include "common.h"
+#include "ops.h"
 
 
 namespace fs = std::filesystem;

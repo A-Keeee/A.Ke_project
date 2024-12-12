@@ -318,14 +318,14 @@ int main()
 {   
     int flag = 1;
     if(flag == 1){
-    std::string img_path = "test/test1.jpg";
-    const std::string& modelPath = "model/rm_buff_test.onnx"; // pose
-    fs::path imageFilePath(img_path);
-    fs::path newFilePath = imageFilePath.stem();
-    newFilePath += "-kpt-cpp";
-    newFilePath += imageFilePath.extension();
-    assert(newFilePath != imageFilePath);
-    std::cout << "newFilePath: " << newFilePath << std::endl;
+    std::string img_path = "src/1.jpg";
+    const std::string& modelPath = "src/rm_buff.onnx"; // pose
+    // fs::path imageFilePath(img_path);
+    // fs::path newFilePath = imageFilePath.stem();
+    // newFilePath += "-kpt-cpp";
+    // newFilePath += imageFilePath.extension();
+    // assert(newFilePath != imageFilePath);
+    // std::cout << "newFilePath: " << newFilePath << std::endl;
 
     const std::string& onnx_provider = OnnxProviders::CPU; // "cpu";
     const std::string& onnx_logid = "yolov8_inference2";
