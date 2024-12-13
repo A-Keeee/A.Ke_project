@@ -92,7 +92,6 @@ std::vector<cv::Scalar> generateRandomColors(int class_names_num, int numChannel
     return colors;
 }
 
-
 void ContourInfo::plot_masks(cv::Mat img, std::vector<YoloResults>& result, std::vector<cv::Scalar> color,
     std::unordered_map<int, std::string>& names)
 {
@@ -223,11 +222,9 @@ void ContourInfo::plot_keypoints(cv::Mat& image, const std::vector<YoloResults>&
 
 void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
                   std::vector<cv::Scalar> color, std::unordered_map<int, std::string>& names,
-                  const cv::Size& shape ,std::vector<std::vector<cv::Point>>& contours,
-                  cv::Mat& result_image
+                  const cv::Size& shape ,std::vector<std::vector<cv::Point>>& contours
                   ) {
-    
-    
+
     cv::Mat mask = img.clone();
 
     int radius = 5;
@@ -323,23 +320,6 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
                 int conf = static_cast<int>(res.conf * 100);
                 // 将 class_name 转换为整数，确保它是数字
                 int class_name_int = 0;
-
-                if (class_name.find("RR") != std::string::npos) {
-                    class_name = "0";
-                }
-                else if (class_name.find("RW") != std::string::npos) {
-                    class_name = "1";
-                }
-                else if (class_name.find("BR") != std::string::npos) {
-                    class_name = "2";
-                }
-                else if (class_name.find("BW") != std::string::npos) {
-                    class_name = "3";
-                }
-                else {
-                    class_name = "Unknown";  // 如果没有匹配
-                }
-
                 try {
                     class_name_int = std::stoi(class_name);  // 将 label 转换为整数
                 } catch (const std::invalid_argument& e) {
@@ -409,8 +389,6 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
 
     // Combine the image and mask
     cv::addWeighted(img, 0.6, mask, 0.4, 0, img);
-
-    result_image = img;
 //    resize(img, img, img.size());
 //    resize(img, img, shape);
 //    // Show the image
