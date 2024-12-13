@@ -41,6 +41,7 @@ find_package(rclcpp_components REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 find_package(image_transport REQUIRED)
 find_package(pluginlib REQUIRED)
 # uncomment the following section in order to fill in
@@ -64,7 +65,7 @@ add_library(${PROJECT_NAME} SHARED
   src/onnx_model_base.cpp
   src/ops.cpp
 )
-ament_target_dependencies(${PROJECT_NAME} rclcpp rclcpp_components sensor_msgs geometry_msgs cv_bridge OpenCV tf2 tf2_ros image_transport)
+ament_target_dependencies(${PROJECT_NAME} rclcpp rclcpp_components sensor_msgs geometry_msgs cv_bridge OpenCV tf2 tf2_ros image_transport tf2_geometry_msgs)
 
 link_directories(${ONNXRUNTIME_ROOTDIR}/lib)
 

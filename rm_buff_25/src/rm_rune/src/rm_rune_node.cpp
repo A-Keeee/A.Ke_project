@@ -174,69 +174,33 @@ namespace qianli_rm_rune
             return;
         }
 
-        // RCLCPP_INFO(get_logger(), "debug");
-
-        // // 创建消息并填充预测的3D点位
-        // geometry_msgs::msg::PointStamped point_msg;
-        // point_msg.header.frame_id = "camera_link";
-        // point_msg.point.x = 1;
-        // point_msg.point.y = -(predicted_vector.x + blade.circle_center.x - cam_info_->k[2]) / cam_info_->k[0];
-        // point_msg.point.z = -(predicted_vector.y + blade.circle_center.y - cam_info_->k[5]) / cam_info_->k[4];
-        // RCLCPP_INFO(get_logger(), "debug1");
-        // //debug
+        // 创建消息并填充预测的3D点位
+        geometry_msgs::msg::PointStamped point_msg;
+        point_msg.header.frame_id = "camera_link";
+        point_msg.point.x = 1;
+        point_msg.point.y = -(predicted_vector.x + blade.circle_center.x - camera_matrix_.at<double>(0,2)) / camera_matrix_.at<double>(0,0);
+        point_msg.point.z = -(predicted_vector.y + blade.circle_center.y - camera_matrix_.at<double>(1,2)) / camera_matrix_.at<double>(1,1);
+        
+        //debug
 
 
-        // // 根据相机参数和预测向量，计算3D距离
-        // float distance = (cam_info_->k[0] + cam_info_->k[4]) / 2 / std::sqrt(predicted_vector.x * predicted_vector.x + predicted_vector.y * predicted_vector.y) * 0.7 * cfg_.distance_correction_ratio;
+        // 根据相机参数和预测向量，计算3D距离
+        float distance = (camera_matrix_.at<double>(0,0) + camera_matrix_.at<double>(1,1)) / 2 / std::sqrt(predicted_vector.x * predicted_vector.x + predicted_vector.y * predicted_vector.y) * 0.7 * cfg_.distance_correction_ratio;
 
-        // // 将计算后的距离信息应用到3D点位
-        // point_msg.point.x *= distance;
-        // point_msg.point.y *= distance;
-        // point_msg.point.z *= distance;
+        // 将计算后的距离信息应用到3D点位
+        point_msg.point.x *= distance;
+        point_msg.point.y *= distance;
+        point_msg.point.z *= distance;
 
-        // geometry_msgs::msg::PointStamped transformed_msg;
-        // try {
-        //     // 将点位信息从相机坐标系转换到全局坐标系
-        //     transformed_msg = tf2_buffer_->transform(point_msg, "odom");
-        //     transformed_msg.header.frame_id = "odom";        // RCLCPP_INFO(get_logger(), "debug");
-
-        // // 创建消息并填充预测的3D点位
-        // geometry_msgs::msg::PointStamped point_msg;
-        // point_msg.header.frame_id = "camera_link";
-        // point_msg.point.x = 1;
-        // point_msg.point.y = -(predicted_vector.x + blade.circle_center.x - cam_info_->k[2]) / cam_info_->k[0];
-        // point_msg.point.z = -(predicted_vector.y + blade.circle_center.y - cam_info_->k[5]) / cam_info_->k[4];
-        // RCLCPP_INFO(get_logger(), "debug1");
-        // //debug
-
-
-        // // 根据相机参数和预测向量，计算3D距离
-        // float distance = (cam_info_->k[0] + cam_info_->k[4]) / 2 / std::sqrt(predicted_vector.x * predicted_vector.x + predicted_vector.y * predicted_vector.y) * 0.7 * cfg_.distance_correction_ratio;
-
-        // // 将计算后的距离信息应用到3D点位
-        // point_msg.point.x *= distance;
-        // point_msg.point.y *= distance;
-        // point_msg.point.z *= distance;
-
-        // geometry_msgs::msg::PointStamped transformed_msg;
-        // try {
-        //     // 将点位信息从相机坐标系转换到全局坐标系
-        //     transformed_msg = tf2_buffer_->transform(point_msg, "odom");
-        //     transformed_msg.header.frame_id = "odom";
-        //     transformed_msg.header.stamp = point_msg.header.stamp;
-        //     // 发布转换后的3D点位信息
-        //     rune_pose_pub_->publish(transformed_msg);
-        // } catch (tf2::TransformException& ex) {
-        //     // 如果坐标转换失败，输出警告信息
-        //     RCLCPP_WARN(get_logger(), "无法将坐标从 camera_link 转换到 odom：%s", ex.what());
-        // }
-        //     transformed_msg.header.stamp = point_msg.header.stamp;
-        //     // 发布转换后的3D点位信息
-        //     rune_pose_pub_->publish(transformed_msg);
-        // } catch (tf2::TransformException& ex) {
-        //     // 如果坐标转换失败，输出警告信息
-        //     RCLCPP_WARN(get_logger(), "无法将坐标从 camera_link 转换到 odom：%s", ex.what());
-        // }
+        geometry_msgs::msg::PointStamped transformed_msg;
+        try {
+            transformed_msg.point = tf2_buffer_->transform(point_msg, "odom").point;
+            transformed_msg.header.frame_id = "odom";
+            transformed_msg.header.stamp = point_msg.header.stamp;
+            rune_pose_pub_->publish(transformed_msg);
+        } catch (tf2::TransformException& ex) {
+            RCLCPP_WARN(get_logger(), "无法将坐标从 camera_link 转换到 odom：%s", ex.what());
+        }
     }
 } // namespace qianli_rm_rune
 
