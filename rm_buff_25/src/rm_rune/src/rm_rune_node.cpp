@@ -112,17 +112,7 @@ namespace qianli_rm_rune
 
         // 调用 plot_results 并传入 result_image
         contour_info_.plot_results(rune_image, objs, posePalette, names, rune_image.size(), contours, result_image);
-        if (contours.empty()) {
-            RCLCPP_INFO(get_logger(), "未检测到能量机关");
-            return;
-        }
-        else {
-            contour_info_.setContour(contours[0]);
-            RCLCPP_INFO(get_logger(), "检测到rune" );
-        }
-        contour_info_.setContour(contours[0]);
 
-        
 
         // 将处理后的图像转换为 ROS 消息并发布
         if (it_ && result_image_pub_)
@@ -136,29 +126,45 @@ namespace qianli_rm_rune
             RCLCPP_WARN(get_logger(), "ImageTransport not initialized yet. Skipping image publish.");
         }
 
-        // for(auto &contour : contours){
-        //     contour_info_.setContour(contour);
-        //     // contours_info_.push_back(contour_info_);
-        // }
 
-        // // 计算每个轮廓的相关信息，并存入
-        // contours_info_ = power_rune_.sortByconf(contours_info_);
 
-        // // 如果没有检测到合适的能量机关，输出调试信息
-        // if (contours_info_.empty()) {
-        //     RCLCPP_INFO(get_logger(), "未检测到能量机关");
-        //     return;
-        // }
+        if (contours.empty()) {
+            RCLCPP_INFO(get_logger(), "未检测到能量机关");
+            return;
+        }
+        else {
+            // contour_info_.setContour(contours[0]);
+            // std::cout<< contours[0]<<std::endl;
+            RCLCPP_INFO(get_logger(), "检测到rune" );
+        }
 
-        // // 如果检测到多个能量机关，输出警告并只处理置信度最高的一个
-        // if (contours_info_.size() > 1) {
-        //     RCLCPP_WARN(get_logger(), "检测到 %ld 个能量机关，仅使用置信度最高的一个", contours_info_.size());
-        // }
+
+        contours_info_.clear();// 清空上一帧的数据
+        for(auto &contour : contours){
+            contour_info_.setContour(contour);
+            
+            if (contour_info_.index == 0 || contour_info_.index == 2){
+                contours_info_.push_back(contour_info_);
+
+            }
+        }
+
+        // 如果没有检测到合适的能量机关，输出调试信息
+        if (contours_info_.empty()) {
+            RCLCPP_INFO(get_logger(), "未检测到未击打的扇叶");
+            return;
+        }
+
+
+        // 对 contours 按照 conf 字段进行从大到小排序
+        std::sort(contours_info_.begin(), contours_info_.end(), [](const ContourInfo& a, const ContourInfo& b) {
+            return a.conf > b.conf;  // 从大到小排序
+        });
 
 
         
         // 使用Blade类对象对检测到的轮廓信息进行处理
-        Blade blade(contour_info_, cfg_);
+        Blade blade(contours_info_[0], cfg_);
 
         // 更新预测器并进行预测
         

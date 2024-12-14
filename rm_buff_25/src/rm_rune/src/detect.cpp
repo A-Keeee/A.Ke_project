@@ -348,6 +348,7 @@ void ContourInfo::plot_results(cv::Mat img, std::vector<YoloResults>& results,
                     std::cerr << "Out of range: " << e.what() << " for label: " << class_name << std::endl;
                 }
 
+                
                 // 将转换后的 label_int 和 conf 存储到 contours 中
                 contours.back().push_back(cv::Point(class_name_int, conf));  // label_int 用于 x 坐标，conf 用于 y 坐标
 

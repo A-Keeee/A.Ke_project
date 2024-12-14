@@ -129,7 +129,7 @@ double Prediction::predict() {
     }
 
     // 使用拟合的参数进行精确预测
-    double current = radian(times_sec.back(), params.k, params.b, params.a, params.omega, params.phi);
+    double current = (times_sec.back(), params.k, params.b, params.a, params.omega, params.phi);
     double predicted = radian(times_sec.back() + cfg.hit_delay_sec, params.k, params.b, params.a, params.omega, params.phi);
     return predicted - current;
 }
