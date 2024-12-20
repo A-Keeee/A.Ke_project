@@ -1,8 +1,4 @@
-//保留
-// 预测函数 对buff运动进行估计
-
-
-
+//cpp
 
 #include "prediction.hpp"
 
@@ -28,7 +24,7 @@ double radian(double time, double k, double b, double a, double omega, double ph
     return k * time + b + a * sin(omega * time + phi);
 }
 
-    /*
+    /*PRIVATE
     计算旋转到的位置对应的角度，范围为 [0, 2pi/5)。
     @param orientation: 表示方向的二维向量
     @return: 返回计算的角度，范围在 [0, 2pi/5) 内
@@ -62,6 +58,13 @@ RotationParams::RotationParams(double k, double b, double a, double omega, doubl
     this->phi = phi;
 }
 
+
+std::string RotationParams::to_string() const {
+    std::ostringstream oss;
+    oss << "k: " << k << ", b: " << b << ", a: " << a << ", omega: " << omega << ", phi: " << phi;
+    return oss.str();
+}
+
 // 打包旋转参数到元组
 tuple<double, double, double, double, double> RotationParams::pack() 
 {
@@ -84,11 +87,22 @@ bool Prediction::check_timeliness(system_clock::time_point current_time) {
         return elapsed_seconds.count() < 0.3;  // 如果时间差小于 0.3 秒，则认为是及时的
 }
 
-// 解开弧度值（仿照 numpy.unwrap），实际未实现
-vector<double> Prediction::unwrapped_radians() {
-        vector<double> unwrapped = radians;  // 简单占位符，实际的解包逻辑没有实现
-        return unwrapped;
+std::vector<double> Prediction::unwrapped_radians() {//弧度解包（改
+    if (radians.empty()) return {};
+
+    std::vector<double> unwrapped = { radians[0] };
+    for (size_t i = 1; i < radians.size(); ++i) {
+        double delta = radians[i] - radians[i - 1];
+        if (delta > M_PI) {
+            delta -= 2 * M_PI;
+        } else if (delta < -M_PI) {
+            delta += 2 * M_PI;
+        }
+        unwrapped.push_back(unwrapped.back() + delta);
+    }
+    return unwrapped;
 }
+
 
 // 检查是否满足拟合条件（弧度数量超过 50）
 bool Prediction::can_fit() 
@@ -103,12 +117,96 @@ bool Prediction::need_fit() {
         return elapsed_seconds.count() > cfg.refit_delay_sec;  // 如果超过 refit_delay_sec 秒，则需要重新拟合
 }
 
+// 定义残差结构体
+struct RotationResidual {
+    RotationResidual(double t, double theta)
+        : t_(t), theta_(theta) {}
+
+    template <typename T>
+    bool operator()(const T* const params, T* residual) const {
+        // params = [k, b, a, omega, phi]
+        T k = params[0];
+        T b = params[1];
+        T a = params[2];
+        T omega = params[3];
+        T phi = params[4];
+
+        // 计算预测值
+        T predicted = k * T(t_) + b + a * ceres::sin(omega * T(t_) + phi);
+        residual[0] = T(theta_) - predicted;
+        return true;
+    }
+
+private:
+    const double t_;
+    const double theta_;
+};
+
+
+
 // 拟合旋转参数（占位符）
 void Prediction::fit() {
-        params = RotationParams();  // 使用默认旋转参数，实际拟合逻辑未实现
-        has_fitted = true;  // 标记已进行拟合
-        last_fit_time = system_clock::now();  // 更新上次拟合时间
+    if (radians.size() < 5) {  // 至少需要5个参数
+        std::cerr << "Not enough data to fit parameters." << std::endl;
+        return;
+    }
+
+    // 获取解包后的弧度值
+    std::vector<double> unwrapped = unwrapped_radians();
+    if (unwrapped.empty()) {
+        std::cerr << "No data to fit." << std::endl;
+        return;
+    }
+
+    // 准备初始猜测值
+    double k_initial = params.k;
+    double b_initial = params.b;
+    double a_initial = params.a;
+    double omega_initial = params.omega;
+    double phi_initial = params.phi;
+
+    double initial_params[5] = { k_initial, b_initial, a_initial, omega_initial, phi_initial };
+
+    // 构建优化问题
+    ceres::Problem problem;
+
+    for (size_t i = 0; i < times_sec.size(); ++i) {
+        ceres::CostFunction* cost_function =
+            new ceres::AutoDiffCostFunction<RotationResidual, 1, 5>(
+                new RotationResidual(times_sec[i], unwrapped[i]));
+
+        problem.AddResidualBlock(cost_function, nullptr, initial_params);
+    }
+
+    // 配置优化器
+    ceres::Solver::Options options;
+    options.linear_solver_type = ceres::DENSE_QR;
+    options.minimizer_progress_to_stdout = false;
+
+    ceres::Solver::Summary summary;
+    ceres::Solve(options, &problem, &summary);
+
+    // 检查拟合是否成功
+    if (summary.termination_type == ceres::CONVERGENCE ||
+        summary.termination_type == ceres::NO_CONVERGENCE) {
+        // 更新旋转参数
+        params.k = initial_params[0];
+        params.b = initial_params[1];
+        params.a = initial_params[2];
+        params.omega = initial_params[3];
+        params.phi = initial_params[4];
+
+        has_fitted = true;
+        last_fit_time = std::chrono::system_clock::now();
+
+        // 可选：输出拟合结果
+        std::cout << "拟合成功: " << params.to_string() << std::endl;
+    } else {
+        // 拟合失败
+        std::cerr << "拟合失败: " << summary.BriefReport() << std::endl;
+    }
 }
+
 
 // 快速估计旋转的方向
 bool Prediction::fast_estimate_sense_of_rotation() {
@@ -129,7 +227,7 @@ double Prediction::predict() {
     }
 
     // 使用拟合的参数进行精确预测
-    double current = (times_sec.back(), params.k, params.b, params.a, params.omega, params.phi);
+    double current = radian(times_sec.back(), params.k, params.b, params.a, params.omega, params.phi);
     double predicted = radian(times_sec.back() + cfg.hit_delay_sec, params.k, params.b, params.a, params.omega, params.phi);
     return predicted - current;
 }

@@ -4,7 +4,7 @@
 #include <vector>
 #include <iostream>
 #include "configuration.hpp" // Assume configuration settings are defined here
-
+#include <ceres/ceres.h>
 #include "opencv2/opencv.hpp"
 #include "cv_bridge/cv_bridge.h"
 
@@ -23,6 +23,8 @@ public:
     double a;
     double omega;
     double phi;
+
+    std::string to_string() const;
 };
 
 class Prediction
