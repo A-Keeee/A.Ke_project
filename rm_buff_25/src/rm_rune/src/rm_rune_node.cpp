@@ -119,7 +119,7 @@ namespace qianli_rm_rune
         {
             auto result_msg = cv_bridge::CvImage(msg->header, "rgb8", result_image).toImageMsg();
             result_image_pub_.publish(result_msg); // 使用 image_transport 发布
-            RCLCPP_INFO(get_logger(), "Published result_image to /rune/result_image");
+            // RCLCPP_INFO(get_logger(), "Published result_image to /rune/result_image");
         }
         else
         {

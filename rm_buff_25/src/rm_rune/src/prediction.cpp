@@ -1,39 +1,34 @@
-//cpp
-
 #include "prediction.hpp"
+#include <chrono>
+#include <cmath>
+#include <vector>
+#include <iostream>
+#include <ceres/ceres.h>
+#include <ceres/rotation.h>
+#include "opencv2/opencv.hpp"
+#include "cv_bridge/cv_bridge.h"
+#include <sstream>
 
-   /*
-    计算能量机关旋转的位置（弧度制）
-    公式：
-    $$
-    \theta = k t + b + a \cos \left( \omega t + \phi \right)
-    $$
-    其中，k 是线性增长的斜率，b 是截距，a 是振幅，ω 是圆速度，φ 是初始相位。
-
-    @param time: 时间，可以是单个数字或一个数组
-    @param k: 斜率
-    @param b: 截距
-    @param a: 振幅
-    @param omega: 圆速度
-    @param phi: 初相位
-    @return: 旋转到的位置（弧度制）
-    */
-double radian(double time, double k, double b, double a, double omega, double phi) 
+// 计算能量机关旋转的位置（弧度制）
+double Prediction::radian(double time, double k, double b, double a, double omega, double phi) 
 {
     // 计算能量机关的旋转位置，使用正弦函数来模拟旋转中的振荡部分
     return k * time + b + a * sin(omega * time + phi);
 }
 
-    /*PRIVATE
-    计算旋转到的位置对应的角度，范围为 [0, 2pi/5)。
-    @param orientation: 表示方向的二维向量
-    @return: 返回计算的角度，范围在 [0, 2pi/5) 内
-    */
-double angle_of(cv::Point2f orientation) {
+/* PRIVATE
+计算旋转到的位置对应的角度，范围为 [0, 2pi/5)。
+@param orientation: 表示方向的二维向量
+@return: 返回计算的角度，范围在 [0, 2pi/5) 内
+*/
+double Prediction::angle_of(cv::Point2f orientation) {
     // 通过 atan2 计算角度
     float x = orientation.x;
     float y = orientation.y;
-    return fmod(atan2(y, x), 2 * M_PI / 5);  // 将结果限定在 2pi/5 的范围内
+    double angle = atan2(y, x);
+    double mod = fmod(angle, 2 * M_PI / 5);
+    if(mod < 0) mod += 2 * M_PI / 5;  // 确保结果在 [0, 2pi/5) 内
+    return mod;
 }
 
 // RotationParams 默认构造函数，初始化旋转参数
@@ -42,9 +37,9 @@ RotationParams::RotationParams()
     // 初始化默认参数
     k = 0;
     b = 0;
-    a = 0.4;  // 振幅
-    omega = 1.9;  // 圆速度
-    phi = 0;  // 初相位
+    a = 0.4;        // 振幅
+    omega = 1.9;    // 圆速度
+    phi = 0;        // 初相位
 }
 
 // RotationParams 带参构造函数，允许用户传入自定义参数
@@ -57,7 +52,6 @@ RotationParams::RotationParams(double k, double b, double a, double omega, doubl
     this->omega = omega;
     this->phi = phi;
 }
-
 
 std::string RotationParams::to_string() const {
     std::ostringstream oss;
@@ -75,34 +69,53 @@ tuple<double, double, double, double, double> RotationParams::pack()
 // Prediction 构造函数，初始化定时器和旋转参数
 Prediction::Prediction() 
 {
-    start_time = system_clock::now();  // 初始化开始时间
-    last_fit_time = system_clock::now();  // 上次拟合时间
-    last_update_time = system_clock::now();  // 上次更新时间
-    params = RotationParams();  // 初始化旋转参数
+    start_time = system_clock::now();         // 初始化开始时间
+    last_fit_time = system_clock::now();      // 上次拟合时间
+    last_update_time = system_clock::now();   // 上次更新时间
+    params = RotationParams();                // 初始化旋转参数
 }
 
 // 检查当前时间与上次更新的时间差是否在合理范围内
 bool Prediction::check_timeliness(system_clock::time_point current_time) {
-        duration<double> elapsed_seconds = current_time - last_update_time;
-        return elapsed_seconds.count() < 0.3;  // 如果时间差小于 0.3 秒，则认为是及时的
+    duration<double> elapsed_seconds = current_time - last_update_time;
+    return elapsed_seconds.count() < 0.3;  // 如果时间差小于 0.3 秒，则认为是及时的
 }
 
-std::vector<double> Prediction::unwrapped_radians() {//弧度解包（改
+std::vector<double> Prediction::unwrapped_radians() {
+    // 实现 np.unwrap(radians * 5) / 5 的逻辑
     if (radians.empty()) return {};
 
-    std::vector<double> unwrapped = { radians[0] };
+    std::vector<double> unwrapped;
+    unwrapped.reserve(radians.size());
+
+    // 将弧度乘以 5
+    double scale = 5.0;
+    double last = radians[0] * scale;
+    unwrapped.push_back(last);
+
     for (size_t i = 1; i < radians.size(); ++i) {
-        double delta = radians[i] - radians[i - 1];
+        double current = radians[i] * scale;
+        double delta = current - last;
+
         if (delta > M_PI) {
             delta -= 2 * M_PI;
-        } else if (delta < -M_PI) {
+        }
+        else if (delta < -M_PI) {
             delta += 2 * M_PI;
         }
-        unwrapped.push_back(unwrapped.back() + delta);
+
+        double new_angle = last + delta;
+        unwrapped.push_back(new_angle);
+        last = new_angle;
     }
+
+    // 将结果除以 5
+    for(auto& angle : unwrapped){
+        angle /= scale;
+    }
+
     return unwrapped;
 }
-
 
 // 检查是否满足拟合条件（弧度数量超过 50）
 bool Prediction::can_fit() 
@@ -113,8 +126,8 @@ bool Prediction::can_fit()
 
 // 判断是否需要重新拟合旋转参数
 bool Prediction::need_fit() {
-        duration<double> elapsed_seconds = system_clock::now() - last_fit_time;
-        return elapsed_seconds.count() > cfg.refit_delay_sec;  // 如果超过 refit_delay_sec 秒，则需要重新拟合
+    duration<double> elapsed_seconds = system_clock::now() - last_fit_time;
+    return elapsed_seconds.count() > cfg.refit_delay_sec;  // 如果超过 refit_delay_sec 秒，则需要重新拟合
 }
 
 // 定义残差结构体
@@ -133,7 +146,7 @@ struct RotationResidual {
 
         // 计算预测值
         T predicted = k * T(t_) + b + a * ceres::sin(omega * T(t_) + phi);
-        residual[0] = T(theta_) - predicted;
+        residual[0] = T(theta_) - predicted;  // 残差 = 观测值 - 预测值
         return true;
     }
 
@@ -142,19 +155,17 @@ private:
     const double theta_;
 };
 
-
-
-// 拟合旋转参数（占位符）
+// 拟合旋转参数
 void Prediction::fit() {
-    if (radians.size() < 5) {  // 至少需要5个参数
-        std::cerr << "Not enough data to fit parameters." << std::endl;
+    if (radians.size() < 50) {  // 至少需要50个数据点
+        std::cerr << "数据不足以进行拟合。" << std::endl;
         return;
     }
 
     // 获取解包后的弧度值
     std::vector<double> unwrapped = unwrapped_radians();
     if (unwrapped.empty()) {
-        std::cerr << "No data to fit." << std::endl;
+        std::cerr << "没有数据可用于拟合。" << std::endl;
         return;
     }
 
@@ -187,8 +198,7 @@ void Prediction::fit() {
     ceres::Solve(options, &problem, &summary);
 
     // 检查拟合是否成功
-    if (summary.termination_type == ceres::CONVERGENCE ||
-        summary.termination_type == ceres::NO_CONVERGENCE) {
+    if (summary.termination_type == ceres::CONVERGENCE) {
         // 更新旋转参数
         params.k = initial_params[0];
         params.b = initial_params[1];
@@ -207,12 +217,13 @@ void Prediction::fit() {
     }
 }
 
-
 // 快速估计旋转的方向
 bool Prediction::fast_estimate_sense_of_rotation() {
-        double end = radians.back();
-        double start = radians.front();
-        return end > start;  // 如果末尾的角度大于开始的角度，则方向为正
+    if (radians.empty()) return true;  // 默认正转
+
+    double end = radians.back();
+    double start = radians.front();
+    return end > start;  // 如果末尾的角度大于开始的角度，则方向为正
 }
 
 // 根据时间和拟合的旋转参数预测旋转的位置
@@ -223,7 +234,7 @@ double Prediction::predict() {
 
     if (!has_fitted) {
         // 如果未拟合，则使用快速估算来预测角度
-        return fast_estimate_sense_of_rotation() ? M_PI / 3 * cfg.hit_delay_sec : -M_PI / 3 * cfg.hit_delay_sec;
+        return fast_estimate_sense_of_rotation() ? (M_PI / 3.0 * cfg.hit_delay_sec) : (-M_PI / 3.0 * cfg.hit_delay_sec);
     }
 
     // 使用拟合的参数进行精确预测
@@ -233,7 +244,7 @@ double Prediction::predict() {
 }
 
 // 更新预测器的状态，记录当前时间和弧度
-void Prediction::update(cv::Point2f orientation) {//orientation是方向向量矩阵 计算目标与中心之间的向量，用于表示目标与中心的相对方向和距离
+void Prediction::update(cv::Point2f orientation) {
     auto current_time = system_clock::now();
     if (!check_timeliness(current_time)) {
         reset();  // 如果更新不及时，则重置预测器
