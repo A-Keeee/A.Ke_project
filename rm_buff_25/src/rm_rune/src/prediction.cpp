@@ -28,6 +28,13 @@ double Prediction::angle_of(cv::Point2f orientation) {
     double angle = atan2(y, x);
     double mod = fmod(angle, 2 * M_PI / 5);
     if(mod < 0) mod += 2 * M_PI / 5;  // 确保结果在 [0, 2pi/5) 内
+
+    if (mod >= M_PI / 5){
+        mod -= 2 * M_PI / 5;
+    }else if {
+        mod += 2 * M_PI / 5;
+    }
+
     return mod;
 }
 
